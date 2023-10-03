@@ -1,0 +1,51 @@
+/* 
+font-family: 'DM Mono', monospace; 
+*/
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	border: 0;
+}
+
+a,
+button {
+	white-space: nowrap;
+}
+
+ul {
+	list-style-type: none;
+}
