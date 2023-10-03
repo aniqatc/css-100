@@ -81,7 +81,7 @@ ul {
 }
 
 .header-heading h2 {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 }
 
@@ -95,6 +95,7 @@ ul {
 .nav-links a {
 	margin: 0 4px;
 	border-bottom: 1px solid #d8e0e8;
+	font-family: 'DM Mono', monospace;
 }
 
 .nav-icons i {
@@ -113,6 +114,11 @@ ul {
 	transform: scale(1.1);
 }
 
+.header a:active i {
+	transform: scale(1);
+}
+
+/* Media Queries */
 @media (max-width: 700px) {
 	.header {
 		flex-wrap: wrap;
@@ -124,7 +130,7 @@ ul {
 	.header-heading,
 	.nav {
 		width: 100%;
-		padding: 8px 12px;
+		padding: 12px;
 	}
 
 	.header-heading {
