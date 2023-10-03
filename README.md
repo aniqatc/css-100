@@ -11,3 +11,15 @@ I'll be adding a version of my daily completed challenge to my own website at <a
 All challenges will be written in pure **HTML** & **CSS** with occasional JavaScript for functionality (basically, no CSS frameworks.. _for now_).
 
 Each entry will have its own CSS file which will be located in a separate folder (inside `/entries`) along with a README file that'll make note of any new concepts or tricks that I learned. However, all markup will be inside the main `index.html` file.
+
+---
+
+### Note Template
+
+**Day 000**
+
+Time to Complete:
+
+Concepts Learned:
+
+Notes:
