@@ -128,14 +128,12 @@ ul {
 	}
 
 	.header-heading {
-		background-color: rgb(33, 33, 33);
-
+		background-color: #212121;
 		justify-content: start;
 	}
 
 	.nav {
 		background-color: #404040;
-
 		justify-content: space-between;
 	}
 }
