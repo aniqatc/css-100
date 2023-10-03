@@ -121,7 +121,7 @@ ul {
 	gap: 1px;
 }
 
-.container p {
+.container {
 	font-family: 'DM Mono', monospace;
 }
 
@@ -143,6 +143,30 @@ ul {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+/* Frame Code Link */
+.code-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	visibility: hidden;
+}
+
+.code-link a {
+	color: #575757;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.code-link a:hover {
+	color: #000;
+	border-bottom: 1px solid #121212;
+}
+
+.frame:hover .code-link {
+	visibility: visible;
 }
 
 /* Media Queries */
