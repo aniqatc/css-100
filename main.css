@@ -21,6 +21,7 @@ body {
 
 body {
 	font-family: 'Quattrocento Sans', sans-serif;
+	background-color: #f2f4f6;
 }
 
 img,
@@ -48,4 +49,93 @@ button {
 
 ul {
 	list-style-type: none;
+}
+
+/* Header Styling */
+.header {
+	background-color: #404040;
+	color: #fff;
+	padding: 8px 12px;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 36px;
+}
+
+.header-heading,
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: 12px;
+}
+
+.header-heading h1 {
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.header-heading h1 span {
+	font-weight: 700;
+}
+
+.header-heading h2 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.header a {
+	color: #d8e0e8;
+	text-decoration: none;
+	transition: all 200ms ease-in;
+}
+
+.header-heading a,
+.nav-links a {
+	margin: 0 4px;
+	border-bottom: 1px solid #d8e0e8;
+}
+
+.nav-icons i {
+	margin: 0 4px;
+	font-size: 24px;
+	transition: all 200ms ease-in;
+}
+
+.header a:hover {
+	color: #fff;
+	border-bottom: 0;
+}
+
+.header a:hover i {
+	color: #fff;
+	transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+	.header {
+		flex-wrap: wrap;
+		background-color: transparent;
+		padding: 0;
+		gap: 0;
+	}
+
+	.header-heading,
+	.nav {
+		width: 100%;
+		padding: 8px 12px;
+	}
+
+	.header-heading {
+		background-color: rgb(33, 33, 33);
+
+		justify-content: start;
+	}
+
+	.nav {
+		background-color: #404040;
+
+		justify-content: space-between;
+	}
 }
