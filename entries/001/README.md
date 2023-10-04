@@ -10,7 +10,7 @@ For `position: absolute;` & flow layout
 
 - elements will anchor itself to the closest parent element that uses `position: relative;`
 - positioned element is taken out of the normal flow of the page which is important to keep in mind because it will cause the positioned element to stack on top of other elements in the page because those other elements are still in normal flow
-- by declaring a height/width for the parent of the positioned elements, it made sure to take up that amout of space within the normal flow of the page, which stopped my positioned elements from stacking on the non-positioned elements
+- by declaring a height/width for the parent of the positioned elements, it made sure to take up that amout of space within the normal flow of the page, which stopped my positioned elements from *visually* stacking on the non-positioned elements
 
 For `z-index;`
 
