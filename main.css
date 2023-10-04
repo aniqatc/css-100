@@ -118,18 +118,12 @@ ul {
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	gap: 1px;
-}
-
-.container {
-	font-family: 'DM Mono', monospace;
 }
 
 /* Frame */
 .frame {
 	position: relative;
 	height: 400px;
-	border-radius: 2px;
 	box-shadow: 1px 1px 16px 0 rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;

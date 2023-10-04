@@ -1,0 +1,170 @@
+.day-003 {
+	background: #272c34;
+	color: #ffffff;
+}
+
+.day-003 .sky {
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	background-color: #7de0fc;
+	overflow: hidden;
+	position: relative;
+	animation: sky-color 4s ease-in infinite;
+}
+
+.day-003 .sun {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	transform: translate(-10px, 30px);
+	border-radius: 50%;
+	background-color: #ffef00;
+	z-index: 2;
+	animation: sun-movement 4s linear infinite;
+}
+
+.day-003 .sand {
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	width: 170px;
+	background-color: #f0de75;
+	z-index: 2;
+	animation: sand-color 4s ease-in infinite;
+}
+
+.day-003 .pyramid-face {
+	position: absolute;
+	bottom: 60px;
+	left: 45px;
+	background-color: #f4f4f4;
+	clip-path: polygon(0 100%, 100% 100%, 50% 0);
+	height: 50px;
+	width: 85px;
+	animation: pyramid-color 4s ease-in infinite;
+}
+
+.day-003 .pyramid-side {
+	position: absolute;
+	bottom: 60px;
+	left: 88px;
+	background-color: #dddada;
+	clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+	height: 52px;
+	width: 55px;
+	animation: pyramid-color 4s ease-in infinite reverse;
+}
+
+.day-003 .shadow {
+	position: absolute;
+	bottom: 0;
+	right: -32px;
+	background-color: rgba(0, 0, 0, 0.3);
+	clip-path: polygon(35% 0, 75% 0, 100% 100%);
+	height: 60px;
+	width: 240px;
+	z-index: 3;
+	animation: shadow-movement 4s ease infinite;
+	transform-origin: 50% 0%;
+}
+
+@keyframes shadow-movement {
+	0% {
+		transform: scaleY(0);
+		clip-path: polygon(35% 0, 75% 0, 100% 100%);
+	}
+
+	20% {
+		transform: scaleY(0.25);
+		clip-path: polygon(35% 0, 75% 0, 80% 100%);
+	}
+
+	50% {
+		transform: scaleY(0.75);
+	}
+
+	80% {
+		transform: scaleY(1);
+	}
+
+	100% {
+		transform: scaleY(0);
+		clip-path: polygon(35% 0, 75% 0, 0 0);
+	}
+}
+
+@keyframes sand-color {
+	0% {
+		background-color: #272c34;
+	}
+	10% {
+		background-color: #f0de75;
+	}
+	80% {
+		background-color: #c4b560;
+	}
+	100% {
+		background-color: #272c34;
+	}
+}
+
+@keyframes sky-color {
+	0% {
+		background-color: #272c34;
+	}
+	10% {
+		background-color: #7de0fc;
+	}
+	80% {
+		background-color: #7de0fc;
+	}
+	100% {
+		background-color: #272c34;
+	}
+}
+
+@keyframes sun-movement {
+	0% {
+		transform: translate(-10px, 30px);
+		background-color: #272c34;
+	}
+	10% {
+		background-color: #ffef00;
+	}
+	25% {
+		transform: translate(40px, 20px);
+		background-color: #fff22f;
+	}
+	50% {
+		transform: translate(90px, 15px);
+	}
+	75% {
+		transform: translate(130px, 20px);
+		background-color: #fff22f;
+	}
+	100% {
+		transform: translate(160px, 30px);
+		background-color: #272c34;
+	}
+}
+
+@keyframes pyramid-color {
+	0% {
+		background-color: #272c34;
+	}
+
+	10%,
+	20% {
+		background-color: #f4f4f4;
+	}
+
+	50%,
+	80% {
+		background-color: #dddada;
+	}
+
+	100% {
+		background-color: #272c34;
+	}
+}
