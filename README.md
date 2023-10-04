@@ -12,6 +12,8 @@ All challenges will be written in pure **HTML** & **CSS** with occasional JavaSc
 
 Each entry will have its own CSS file which will be located in a separate folder (inside `/entries`) along with a README file that'll make note of any new concepts or tricks that I learned. However, all markup will be inside the main `index.html` file.
 
+Note: To avoid conflict with class naming, I'll be assigning a parent class that will indicate which day of the challenge it is, _e.g. `day-001` or `day-023`_, which will be used with the descendant selector to target classes only within the parent. This is so that I can use generic names for each day and not worry about conflicting classes from something I may have created weeks earlier.
+
 ---
 
 ### Note Template

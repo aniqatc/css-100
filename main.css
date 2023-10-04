@@ -132,7 +132,6 @@ ul {
 	border-radius: 2px;
 	box-shadow: 1px 1px 16px 0 rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	background: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -154,14 +153,14 @@ ul {
 }
 
 .code-link a {
-	color: #575757;
+	color: inherit;
+	font-weight: 700;
 	font-size: 14px;
 	text-decoration: none;
 }
 
 .code-link a:hover {
-	color: #000;
-	border-bottom: 1px solid #121212;
+	text-decoration: underline;
 }
 
 .frame:hover .code-link {
