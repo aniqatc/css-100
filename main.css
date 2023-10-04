@@ -153,8 +153,9 @@ ul {
 }
 
 .code-link a {
+	font-family: 'DM Mono', monospace;
 	color: inherit;
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 14px;
 	text-decoration: none;
 }
@@ -196,5 +197,9 @@ ul {
 @media (max-width: 420px) {
 	.container {
 		grid-template-columns: 1fr;
+	}
+
+	.code-link {
+		visibility: visible;
 	}
 }
