@@ -23,27 +23,27 @@
 }
 
 .day-002 .active > .line-1 {
-	animation: combine-line-1 1000ms ease-in forwards;
+	animation: combine-line-1 800ms ease-in forwards;
 }
 
 .day-002 .active > .line-2 {
-	animation: combine-line-2 1000ms ease-in forwards;
+	animation: combine-line-2 800ms ease-in forwards;
 }
 
 .day-002 .active > .line-3 {
-	animation: combine-line-3 1000ms ease-in forwards;
+	animation: combine-line-3 800ms ease-in forwards;
 }
 
 .day-002 .active-reverse > .line-1 {
-	animation: combine-line-1 1000ms ease-out reverse;
+	animation: combine-line-1 800ms ease-out reverse;
 }
 
 .day-002 .active-reverse > .line-2 {
-	animation: combine-line-2 1000ms ease-out reverse;
+	animation: combine-line-2 800ms ease-out reverse;
 }
 
 .day-002 .active-reverse > .line-3 {
-	animation: combine-line-3 1000ms ease-out reverse;
+	animation: combine-line-3 800ms ease-out reverse;
 }
 
 @keyframes combine-line-1 {
