@@ -66,7 +66,7 @@
 	width: 240px;
 	z-index: 3;
 	animation: shadow-movement 4s ease infinite;
-	transform-origin: 50% 0%;
+	transform-origin: center top;
 }
 
 @keyframes shadow-movement {
