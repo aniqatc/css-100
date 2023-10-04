@@ -36,15 +36,15 @@
 }
 
 .day-002 .active-reverse > .line-1 {
-	animation: reverse-line-1 1000ms ease-out reverse;
+	animation: combine-line-1 1000ms ease-out reverse;
 }
 
 .day-002 .active-reverse > .line-2 {
-	animation: reverse-line-2 1000ms ease-out reverse;
+	animation: combine-line-2 1000ms ease-out reverse;
 }
 
 .day-002 .active-reverse > .line-3 {
-	animation: reverse-line-3 1000ms ease-out reverse;
+	animation: combine-line-3 1000ms ease-out reverse;
 }
 
 @keyframes combine-line-1 {
@@ -66,33 +66,6 @@
 }
 
 @keyframes combine-line-3 {
-	50% {
-		transform: translateY(-16px);
-	}
-	100% {
-		transform: translateY(-16px) rotate(45deg);
-	}
-}
-
-@keyframes reverse-line-1 {
-	50% {
-		transform: translateY(16px);
-	}
-	100% {
-		transform: translateY(16px) rotate(-45deg);
-	}
-}
-
-@keyframes reverse-line-2 {
-	25%,
-	100% {
-		width: 0;
-		transform: scale(0);
-		opacity: 0;
-	}
-}
-
-@keyframes reverse-line-3 {
 	50% {
 		transform: translateY(-16px);
 	}
