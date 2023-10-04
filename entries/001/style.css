@@ -1,3 +1,4 @@
+/* Change frame styling */
 .day-001 {
 	font-family: 'Courier New', 'Courier', sans-serif;
 	background: linear-gradient(
@@ -10,6 +11,7 @@
 	color: #fff;
 }
 
+/* Numbers */
 .day-001 .numbers {
 	position: relative;
 	height: 100px;
@@ -26,7 +28,7 @@
 	left: 6px;
 }
 
-.day-001 one::before {
+.day-001 .one::before {
 	content: '';
 	position: absolute;
 	height: 40px;
@@ -37,7 +39,7 @@
 	transform: rotate(50deg);
 	left: -18px;
 	top: 2px;
-	z-index: -2;
+	z-index: -1;
 }
 
 .day-001 .zero {
@@ -59,6 +61,7 @@
 	z-index: -2;
 }
 
+/* Text */
 .day-001 .text {
 	display: flex;
 	flex-direction: column;

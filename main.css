@@ -192,3 +192,9 @@ ul {
 		justify-content: space-between;
 	}
 }
+
+@media (max-width: 420px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+}
