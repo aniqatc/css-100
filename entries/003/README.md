@@ -33,6 +33,8 @@ For this particular challenge, I used `clip-path: polygon()` with three vertices
   - `100%` horizontally (right edge)
   - `100%` vertically (bottom edge)
 
+Note: You can keep adding additional 'points' to create other shapes (e.g. 4 vertices = 8 values = 4-sided shape or 6 vertices = 12 values = 6 sided-shape).
+
 <a href="https://bennettfeely.com/clippy/">Here's the CSS clip-path tool</a> that I used to help me create my pyramid shape for this challenge + to help get values for my animation.
 
 **For `transform-origin` property**:
