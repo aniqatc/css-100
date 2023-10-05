@@ -1,0 +1,240 @@
+/* Frame */
+.day-005 {
+	background: #44a7a0;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Reusable */
+.day-005 .text-lg {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+	letter-spacing: 0.6px;
+}
+
+.day-005 .text-md {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+/* Graph Wrapper */
+.day-005 .graph-wrapper {
+	background-color: #fff;
+	width: 300px;
+	height: 250px;
+	box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3), -4px -4px 16px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+
+/* Graph Heading */
+.day-005 .graph__heading {
+	height: 60px;
+	border-radius: 4px 4px 0 0;
+	background-color: #f1ba63;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 8px 14px;
+}
+
+.day-005 .graph--title,
+.day-005 .graph--revenue {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.day-005 .graph--revenue {
+	text-align: end;
+}
+
+/* Graph Data Wrapper */
+.day-005 .graph__body {
+	color: #777777;
+	padding: 8px 14px;
+	display: flex;
+	flex-direction: column;
+	font-size: 10px;
+}
+
+/* Graph Data: Key */
+.day-005 .graph--key {
+	margin-top: 8px;
+	align-self: end;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.day-005 .key-red,
+.day-005 .key-blue {
+	display: inline-block;
+	width: 16px;
+	height: 4px;
+	border-radius: 4px;
+	margin-left: 16px;
+}
+
+.day-005 .key-red {
+	background-color: #fa7373;
+}
+
+.day-005 .key-blue {
+	background-color: #7ba2ff;
+}
+
+/* Graph Data: Line Graph */
+.day-005 .graph--data {
+	margin: 8px 0 0;
+}
+
+.day-005 .x-line {
+	stroke: #d3d3d3;
+	stroke-width: 1;
+}
+
+.day-005 .data-line-red,
+.day-005 .data-line-blue {
+	stroke-width: 2;
+	fill: transparent;
+}
+
+.day-005 .data-line-red {
+	stroke: #fa7373;
+}
+
+.day-005 .data-line-blue {
+	stroke: #7ba2ff;
+}
+
+/* Graph Data: Points & Tooltip */
+.day-005 .data-point-red {
+	fill: #fa7373;
+}
+
+.day-005 .data-point-blue {
+	fill: #7ba2ff;
+}
+
+.day-005 .data-point-red,
+.day-005 .data-point-blue {
+	cursor: pointer;
+}
+
+/* Tooltips */
+.day-005 .data-tooltip-red,
+.day-005 .data-tooltip-blue {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	color: #fff;
+	border-radius: 2px;
+	padding: 3px;
+	z-index: 10;
+	height: 0;
+	clip-path: polygon(
+		0% 0%,
+		100% 0%,
+		100% 75%,
+		65% 75%,
+		50% 100%,
+		35% 75%,
+		0% 75%
+	);
+	transition: all 250ms ease-in-out;
+}
+
+.day-005 .data-tooltip-red {
+	background-color: #fa7373;
+}
+
+.day-005 .data-tooltip-red:nth-child(1) {
+	bottom: 90px;
+	left: 6px;
+}
+
+.day-005 .data-tooltip-red:nth-child(2) {
+	bottom: 124px;
+	left: 51px;
+}
+
+.day-005 .data-tooltip-red:nth-child(3) {
+	bottom: 114px;
+	left: 94px;
+}
+
+.day-005 .data-tooltip-red:nth-child(4) {
+	bottom: 129px;
+	left: 138px;
+}
+
+.day-005 .data-tooltip-red:nth-child(5) {
+	bottom: 100px;
+	left: 182px;
+}
+
+.day-005 .data-tooltip-red:nth-child(6) {
+	bottom: 91px;
+	left: 225px;
+}
+
+.day-005 .data-tooltip-red:nth-child(7) {
+	bottom: 119px;
+	left: 269px;
+}
+
+.day-005 .data-tooltip-blue {
+	background-color: #7ba2ff;
+}
+
+.day-005 .data-tooltip-blue:nth-child(1) {
+	bottom: 80px;
+	left: 6px;
+}
+
+.day-005 .data-tooltip-blue:nth-child(2) {
+	bottom: 90px;
+	left: 51px;
+}
+
+.day-005 .data-tooltip-blue:nth-child(3) {
+	bottom: 71px;
+	left: 94px;
+}
+
+.day-005 .data-tooltip-blue:nth-child(4) {
+	bottom: 86px;
+	left: 138px;
+}
+
+.day-005 .data-tooltip-blue:nth-child(5) {
+	bottom: 81px;
+	left: 182px;
+}
+
+.day-005 .data-tooltip-blue:nth-child(6) {
+	bottom: 62px;
+	left: 225px;
+}
+
+.day-005 .data-tooltip-blue:nth-child(7) {
+	bottom: 76px;
+	left: 269px;
+}
+
+/* Graph Data: Label */
+.day-005 .graph--label {
+	margin-top: 8px;
+}
+
+.day-005 .graph--label ul {
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+}
