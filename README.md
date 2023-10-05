@@ -6,7 +6,7 @@
 
 Starting at Day 1, I'll be completing at least one CSS challenge a day for the next 100 days in order to improve how I write CSS and to explore different ways of styling components or creating pure CSS art.
 
-I'll be adding a version of my daily completed challenge to my own website at <a href="https://css-100.aniqa.dev">css-100.aniqa.dev</a> in addition to submitting codepens to the official <a href="https://100dayscss.com/progress/aniqatc/">challenge website</a>.
+I'll be adding a version of my daily completed challenge to my own website at <a href="https://css100.aniqa.dev">css100.aniqa.dev</a> in addition to submitting codepens to the official <a href="https://100dayscss.com/progress/aniqatc/">challenge website</a>.
 
 All challenges will be written in pure **HTML** & **CSS** with occasional JavaScript for functionality (basically, no CSS frameworks.. _for now_).
 
