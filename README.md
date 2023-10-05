@@ -22,7 +22,7 @@ Note: To avoid conflict with class naming, I'll be assigning a parent class that
 
 Time to Complete:
 
-Concepts Learned:
+Key Concepts:
 
 Notes:
 

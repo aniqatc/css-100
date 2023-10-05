@@ -2,7 +2,7 @@
 
 **Time to Complete**: 30 mins to code, additional 30 mins to search more about key concepts
 
-**Concepts Learned**: z-index, absolute positioning, flow layout, pseudo-elements
+**Key Concepts**: z-index, absolute positioning, flow layout, pseudo-elements
 
 **Notes**:
 

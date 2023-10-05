@@ -2,7 +2,7 @@
 
 **Time to Complete**: ~1 hour
 
-**Concepts Learned**: clip-path property, animations, transform-origin
+**Key Concepts**: clip-path property, animations, transform-origin
 
 **Notes**:
 

@@ -2,7 +2,7 @@
 
 **Time to Complete**: ~1 hour - majority working through a bug
 
-**Concepts Learned**: transform property, animation property, reflow, block vs inline elements
+**Key Concepts**: transform property, animation property, reflow, block vs inline elements
 
 **Notes**:
 
