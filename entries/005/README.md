@@ -48,7 +48,7 @@ I learned how to build a tooltip before and I simply set the content inside a cu
 }
 ```
 
-Note including any extra styling properties so it's actually pretty straightforward.
+Not including any extra styling/positioning properties but it's actually pretty straightforward.
 
 **SVG tags cannot have pseudoelements**
 
@@ -57,3 +57,48 @@ I created my graph entirely with SVG elements and it almost seemed too easy... u
 I didn't want to redo my graph entirely so I opted to create all the tooltips in a single `<div>` and I used absolute positioning to get them to appear in the correct spots. With the help of some JS event listeners `mouseover` and `mouseleave`, the tooltips appear rather nicely!
 
 #### Writing SVGs from scratch
+
+Whenever I see SVG code, it's always a bunch of numbers separated by commas and weird shorthand attributes in between. Up until now, I was intimidated by them and thought that everyone just uses generators/programs to create them. But they are actually AMAZING and not so bad to use (for something like this).
+
+**Creating an SVG element**
+
+- Declare the SVG with `<svg>` tag and the `viewBox` attribute:
+
+```html
+<svg viewBox="0 0 300 300"></svg>
+```
+
+- `viewBox` creates a frame in which our different SVG shapes, lines and content will be contained in.
+  - First value: x-coordinate of the top-left corner of the box
+  - Second value: y-coordinate of the top-left corner of the box
+  - Third value: width of the box
+  - Fourth value: height of the box
+
+**Key SVG elements & attributes**
+
+- `<line>` element creates a line; we just need provide the following attributes:
+
+  - `x1` & `y1` first point of the line
+  - `x2` & `y2` second point of the line
+  - `stroke-width`
+  - `stroke` color of the line
+
+- `<circle>` element creates a circle:
+
+  - `cx` x-coordinate for positioning
+  - `cy` y-coordinate for positioning
+  - `r` radius of the circle
+  - `fill` to change default color
+
+- `<g>` element is used to group elements
+
+- `<polyline>` elements takes specific points and creates lines in between those points (perfect for a line graph!):
+  - `points` attribute takes multiple `x,y` coordinates that are separated by a space to define multiple points
+  - default `fill` is black and fills from the first point to the last point
+  - style attributes: `stroke`, `stroke-width`, `stroke-dasharray`, `fill-opacity`
+
+Note about `stroke-dasharray`: takes two values seperated by a space, # of dashes and space between dashes
+
+**Resources**
+
+This short <a href="https://youtu.be/nhieMw1vegc?si=z-qJQR9oxWqcP8As">YouTube video</a> makes it super clear how to create a `<polyline>`.
