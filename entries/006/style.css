@@ -1,0 +1,142 @@
+.day-006 {
+	color: #fff;
+	background: linear-gradient(to bottom left, #d08d62, #eec17a);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.day-006 .text-sm {
+	font-size: 12px;
+	font-weight: 300;
+	display: block;
+	margin-top: 2px;
+}
+
+.day-006 .profile-wrapper {
+	display: grid;
+	grid-template-columns: 215px 120px;
+	background-color: #ffffff;
+	color: #786450;
+	border-radius: 4px;
+	box-shadow: 6px 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.day-006 .profile-info {
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+.day-006 .profile--img img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}
+
+.day-006 .profile--name {
+	font-weight: 500;
+	text-align: center;
+}
+
+.day-006 .profile--buttons {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.day-006 .profile--buttons > a {
+	color: #786450;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 12px;
+	border: 1px solid #786450;
+	padding: 8px;
+	width: 100px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.day-006 .profile--buttons > a:hover {
+	background-color: #786450;
+	color: #fff;
+	cursor: pointer;
+	transition: all 250ms ease-in-out;
+}
+
+.day-006 .profile-stats {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+}
+
+.day-006 .profile-stats > div {
+	background-color: #f5e7df;
+	font-size: 18px;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	transition: all 250ms ease-in-out;
+}
+
+.day-006 .profile-stats > div:first-of-type {
+	border-radius: 0 4px 0 0;
+}
+
+.day-006 .profile-stats > div:last-of-type {
+	border-radius: 0 0 4px 0;
+}
+
+.day-006 .profile-stats > div:hover {
+	background-color: #e1cfc2;
+	cursor: pointer;
+}
+
+/* Animation */
+.day-006 .profile--img {
+	position: relative;
+}
+
+.day-006 .profile--circle,
+.day-006 .profile--circle::before {
+	border-style: solid;
+	border-width: 1px;
+	position: absolute;
+	border-radius: 50%;
+	transform: rotate(0);
+}
+
+.day-006 .profile--circle {
+	width: 81px;
+	height: 81px;
+	top: -3px;
+	left: -3px;
+	border-color: #786450 #786450 #786450 transparent;
+}
+
+.day-006 .profile--circle::before {
+	content: '';
+	width: 87px;
+	height: 87px;
+	top: -4px;
+	left: -4px;
+	border-color: #786450 transparent #786450 #786450;
+}
+
+.day-006 .profile--img:hover .profile--circle {
+	cursor: pointer;
+	animation: profile-circle-rotate 2s ease-out;
+}
+
+@keyframes profile-circle-rotate {
+	to {
+		transform: rotate(720deg);
+	}
+}

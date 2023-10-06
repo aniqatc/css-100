@@ -18,6 +18,8 @@ body {
 body {
 	font-family: 'Quattrocento Sans', sans-serif;
 	background-color: #f2f4f6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img,
@@ -126,8 +128,6 @@ ul {
 	height: 400px;
 	box-shadow: 1px 1px 16px 0 rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 .center {
