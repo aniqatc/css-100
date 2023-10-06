@@ -1,6 +1,6 @@
 # Day 003
 
-**Time to Complete**: ~1 hour
+**Time to Complete**: ~2 hour
 
 **Key Concepts**: clip-path property, animations, transform-origin
 

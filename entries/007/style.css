@@ -1,0 +1,239 @@
+.day-007 {
+	background: #274057;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Notifications Card */
+.day-007 .notifications {
+	height: 300px;
+	width: 300px;
+	box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	background-color: #fff;
+	color: #666666;
+	position: relative;
+	transition: all 400ms ease-out;
+	overflow: hidden;
+}
+
+/* Notifications Header */
+.day-007 .notifications-header {
+	background-color: #5f98cc;
+	color: #fff;
+	border-radius: 4px 4px 0 0;
+	font-weight: 500;
+	display: flex;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px;
+}
+
+.day-007 .notifications-header i {
+	color: #b2dafe;
+	font-size: 20px;
+}
+
+.day-007 .notifications-header i:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.day-007 .menu-icon-button {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.day-007 .menu-icon-button:hover .menu-icon {
+	background-color: #fff;
+}
+
+.day-007 .menu-icon {
+	position: absolute;
+	background-color: #b2dafe;
+	height: 3px;
+	border-radius: 8px;
+	transition: all 200ms ease-in;
+	display: block;
+}
+
+.day-007 .icon-line-half {
+	width: 21px;
+	top: 6px;
+}
+
+.day-007 .icon-line-full {
+	width: 30px;
+	top: 16px;
+}
+
+.day-007 .icon-dot {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	top: 4px;
+	left: 23px;
+}
+
+.day-007 .search-bar {
+	position: absolute;
+	right: 48px;
+	top: 12px;
+	border: none;
+	border-radius: 50px;
+	padding: 8px 16px;
+	opacity: 0;
+	visibility: hidden;
+	width: 0;
+	transition: all 400ms ease-in;
+}
+
+.day-007 .search-bar.active {
+	opacity: 1;
+	visibility: visible;
+	width: 240px;
+}
+
+.day-007 .search-bar::placeholder {
+	font-size: 12px;
+}
+
+.day-007 .search-bar:focus {
+	outline: none;
+}
+
+.day-007 .search-button {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	width: 20px;
+}
+
+/* Notification Body */
+.day-007 .vertical-line {
+	position: absolute;
+	background-color: #ebebeb;
+	width: 3px;
+	height: 240px;
+	bottom: 0;
+	top: 60px;
+	left: 20px;
+}
+
+.day-007 .point {
+	position: absolute;
+	height: 7px;
+	width: 7px;
+	background-color: #fff;
+	border: 2px solid #5f98cc;
+	border-radius: 50%;
+	left: -23px;
+	top: 1px;
+}
+
+.day-007 .notifications-list {
+	margin: 20px 14px 20px 40px;
+}
+
+.day-007 .notifications-list li {
+	margin: 24px 0;
+	font-size: 15px;
+	transition: all 250ms ease-in;
+	position: relative;
+	opacity: 0;
+	transform: translate(0, 100px);
+	animation: notification-appear ease-in 1s forwards;
+}
+
+.day-007 .notifications-list li:nth-of-type(1) {
+	animation-delay: 200ms;
+}
+
+.day-007 .notifications-list li:nth-of-type(2) {
+	animation-delay: 400ms;
+}
+
+.day-007 .notifications-list li:nth-of-type(3) {
+	animation-delay: 600ms;
+}
+
+@keyframes notification-appear {
+	from {
+		opacity: 0;
+		transform: translate(0, 100px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+.day-007 .notifications-list li:hover {
+	cursor: pointer;
+	color: #5f98cc;
+}
+
+.day-007 .notifications-list b {
+	font-weight: 600;
+}
+
+.day-007 .notifications-time {
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+
+/* Menu Card */
+.day-007 .menu {
+	z-index: -1;
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	bottom: 20px;
+	background-color: #44627d;
+	color: #93b2cc;
+	width: 220px;
+	padding: 12px 0;
+	border-radius: 4px;
+	box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.2);
+	transition: all 300ms ease-in;
+}
+
+.day-007 .menu ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2px;
+}
+
+.day-007 .menu li {
+	font-size: 14px;
+	padding: 14px 24px;
+	width: 100%;
+	margin: 0;
+	transition: all 150ms ease;
+}
+
+.day-007 .menu span {
+	padding-right: 2px;
+}
+
+.day-007 .menu li:hover {
+	color: #fff;
+	cursor: pointer;
+	background-color: #385269;
+}
+
+/* Card Active Classes */
+.day-007 .notifications.active {
+	transform: translate(150px, 0);
+}
+
+.day-007 .menu.active {
+	transform: translate(-50px, 0);
+}
