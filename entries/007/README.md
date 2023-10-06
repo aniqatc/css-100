@@ -10,10 +10,11 @@
 
 <img src="/entries/007/alignment.png" width="400"/>
 
-
 In the above image, it shows what my header looked like when I used `position: absolute` on the menu icon (to the left). Absolute positioning takes elements out of the regular flow the page -- so even though I was using `justify-content: space-between` on the entire header (so that the menu icon, notifications title and search icon could have equal distance between them), there wasn't equal distance.
 
-This is because in the regular flow the page, there was no space being occupied by the menu icon - the menu icon was existing in its own plane. **To fix the alignment**, I simply had to give the wrapping element a `height` and `width` so that the elements in the regular flow can know that that space is reserved. Once I did so, the `justify-content` went adjusted and it now looks visually balanced.
+This is because in the regular flow the page, there was no space being occupied by the menu icon - the menu icon was existing in its own plane (of absolute positioning). **Elements can't be in multiple layout modes: it's either in flexbox or it's in positioned layout -- in this case, positioned layout wins.**
+
+**To fix the alignment**, I simply had to give the wrapping element a `height` and `width` so that the elements in the regular flow can know that that space is reserved. Once I did so, the `justify-content` went adjusted and it now looks visually balanced.
 
 On the same note, adding `height` and `width` also ensured that the entire element is hoverable. If I hadn't done that, then the space in between the two lines is not considered part of the element so hovering between that space doesn't allow the hover state to show -- it would only show when hovering over the icon.
 
