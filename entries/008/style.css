@@ -11,9 +11,8 @@
 	border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
 	height: 100px;
 	width: 100px;
-	z-index: -1;
 	animation: shape-morph 5s ease-in infinite alternate,
-		rotate-morph 8s linear infinite;
+		rotate-morph 9s linear infinite;
 	filter: blur(10px);
 }
 
