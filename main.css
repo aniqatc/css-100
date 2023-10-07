@@ -58,6 +58,9 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	gap: 36px;
+
+	isolation: isolate;
+	z-index: 10;
 }
 
 .header-heading,
