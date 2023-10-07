@@ -151,11 +151,11 @@ ul {
 	color: inherit;
 	font-weight: bold;
 	font-size: 14px;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .code-link a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .frame:hover .code-link {

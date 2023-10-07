@@ -10,9 +10,9 @@
 
 **Transitions on `display: none` don't work**
 
-For my tooltip to show up, I originally use `display: none` to remove it from the page and I use JavaScript to bring it back with `display: block` whenever the points on the line graph are hovered over. I wanted it to appear smoothly so I used a `transition` property but it wasn't making the tooltip appear nicely.
+For my tooltip to show up, I originally used `display: none` to remove it from the page and I used JavaScript to bring it back with `display: block` whenever the points on the line graph are hovered over. I wanted it to appear smoothly so I used a `transition` property but it wasn't making the tooltip appear nicely.
 
-This is because using `display:none` removes the element from the **flow** of the page (kind of like absolute positioning except it's not even on the page visually).
+This is because using `display:none` removes the element from the **flow** of the page (kind of like absolute positioning except it's not even on the page visually). So we can't get the transition property to work as expected if the element isn't in the DOM - using `display:block` brings it into the DOM and we can't use a transition for that process; however, any transitions applied after it's in the page will work as expected.
 
 **Using `visiblity`, `opacity`, & `height` property instead**
 
