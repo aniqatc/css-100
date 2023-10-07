@@ -193,6 +193,15 @@ ul {
 		grid-template-columns: 1fr;
 	}
 
+	.header-heading {
+		flex-wrap: wrap;
+		gap: 6px;
+	}
+
+	.header-heading h1 {
+		font-size: 32px;
+	}
+
 	.code-link {
 		visibility: visible;
 	}

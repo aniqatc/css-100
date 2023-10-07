@@ -1,7 +1,7 @@
 .day-008 {
-	background: #000;
 	-webkit-filter: contrast(25);
 	filter: contrast(25);
+	background: #000;
 }
 
 .day-008 .blob {
