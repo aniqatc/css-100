@@ -34,3 +34,9 @@ The animation itself focuses on getting the elements to move upwards into its de
 
 - `translate()` value for `transform`
 - set the opacity from `0` to `1` to get a fade-in effect
+
+**`animationend` JavaScript Event**
+
+`animationend`, along with `animationstart`, `animationcancel`, `animationiteration` are events that are triggered based on the cycle of a CSS animation.
+
+At some point, Day 007 will be buried by all the recent challenges but I still want users to get a chance to see the notification animation after it plays initially. So, I used `animationend` to let me know that the animation has ended so that I can reset it every 5 seconds.

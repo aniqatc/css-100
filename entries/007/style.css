@@ -146,9 +146,7 @@
 	font-size: 15px;
 	transition: all 250ms ease-in;
 	position: relative;
-	opacity: 0;
-	transform: translate(0, 100px);
-	animation: notification-appear ease-in 1s forwards;
+	animation: notification-appear ease-in 1s;
 }
 
 .day-007 .notifications-list li:nth-of-type(1) {
