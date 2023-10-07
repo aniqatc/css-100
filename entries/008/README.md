@@ -70,8 +70,9 @@ Note: these properties are different for each group of mini circles (there are 4
 
 **Rotation & transform-origin**
 
-- I had to set a custom `transform-origin` for the mini circles otherwise they would be rotating 360 degrees in place. I needed it to do a 360 degree turn around the main blob element. By setting it to `400% 300%`, I am giving it a percentage in relation to my element's width/height:
-  - `400% 300%` means 60 pixels to the right and 45 pixels below -- rotations would now occur around this point instead of within the element's width/height (in place)
+I had to set a custom `transform-origin` for the mini circles otherwise they would be rotating 360 degrees in place. I needed it to do a 360 degree turn around the main blob element. By setting it to `400% 300%`, I am giving it a percentage in relation to my element's width/height:
+
+- `400% 300%` means 60 pixels to the right and 45 pixels below -- rotations would now occur around this point instead of within the element's width/height (in place)
 
 #### Blob generators (SVG-Based)
 
