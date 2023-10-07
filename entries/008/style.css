@@ -1,5 +1,6 @@
 .day-008 {
 	background: #000;
+	-webkit-filter: contrast(25);
 	filter: contrast(25);
 }
 
@@ -11,8 +12,11 @@
 	border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
 	height: 100px;
 	width: 100px;
+	-webkit-animation: shape-morph 5s ease-in infinite alternate,
+		rotate-morph 9s linear infinite;
 	animation: shape-morph 5s ease-in infinite alternate,
 		rotate-morph 9s linear infinite;
+	-webkit-filter: blur(10px);
 	filter: blur(10px);
 }
 
@@ -20,6 +24,7 @@
 	background-color: #fff;
 	border-radius: 50%;
 	position: absolute;
+	-webkit-filter: blur(5px);
 	filter: blur(5px);
 	top: 0;
 	left: 0;
