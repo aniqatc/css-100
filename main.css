@@ -189,6 +189,10 @@ ul {
 }
 
 @media (max-width: 420px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
 	.header-heading {
 		flex-wrap: wrap;
 		gap: 6px;
