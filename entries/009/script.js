@@ -19,5 +19,5 @@ droplets.forEach((el, i) => {
 		800 + Math.random() * 2000
 	}ms ease-out infinite both`;
 	el.style.opacity = `${Math.random()}`;
-	el.style.animationDelay = `${500 + Math.random() * 2000}ms`;
+	el.style.animationDelay = `${600 + Math.random() * 2000}ms`;
 });

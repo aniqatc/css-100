@@ -58,9 +58,9 @@ The different ways `Math.random()` was used to get random values for the rain dr
 
 - give each `<span>` a random class by generating a random index number to target either `lg`, `md` or `sm` classes
 - `left` positional property is given a number between `0px` and `820px` because that's the width of the container and I want droplets to appear from different starting positions
-- `animation` property is given a random duration between a minimum `800ms` and a maximum of `2000ms`
+- `animation` property is given a random duration between a minimum `800ms` and a maximum of `2000ms` (some will drop faster, some a little slower)
 - `opacity` property is given a random number between `0` and `1`
-- `animation-delay` property is given a random delay between a minimum `500ms` and a maximum of `2000ms`
+- `animation-delay` property is given a random delay between a minimum `600ms` and a maximum of `2000ms` (the moon has an animation in which it appears after `1000ms` so I want the rain to begin right before the moon appears but not immediately when the page loads, hence, the delay)
 
 **Animation**
 
