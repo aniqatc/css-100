@@ -163,7 +163,7 @@
 .day-009 .info {
 	background-color: #fff;
 	height: 95px;
-	padding: 0 24px;
+	padding: 0 24px 12px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
