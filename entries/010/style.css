@@ -18,6 +18,7 @@
 	stroke: #f85b5b;
 	stroke-width: 6;
 	stroke-dasharray: 800;
+	stroke-dashoffset: 800;
 	stroke-linecap: round;
 	fill: transparent;
 	transform-origin: center center;
@@ -26,23 +27,13 @@
 }
 
 @keyframes spin {
-	0% {
+	0%,
+	100% {
 		stroke-dashoffset: 800;
 	}
 	50% {
 		stroke-dashoffset: 0;
 	}
-	100% {
-		stroke-dashoffset: 800;
-	}
-}
-
-/* Dotted Inner Border */
-.day-010 .inner-border {
-	height: 165px;
-	width: 165px;
-	border-radius: 50%;
-	border: 3px dotted #fff;
 }
 
 /* Content: Watch Data */
@@ -51,6 +42,8 @@
 	height: 175px;
 	width: 175px;
 	border-radius: 50%;
+	outline: 3px dotted #fff;
+	outline-offset: -8px;
 }
 
 .day-010 .content {
@@ -87,7 +80,7 @@ Original idea for spinning spin-border with conic-gradient.
 It's not as flexible as an SVG...
 
 .spin-border {
-	background: conic-gradient(transparent 15%, #f85b5b 85%);
+	background: conic-gradient(transparent 0%, #f85b5b 100%);
 	height: 197px;
 	width: 197px; 
 	border-radius: 50%;
