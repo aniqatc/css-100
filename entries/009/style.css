@@ -207,7 +207,7 @@
 
 .day-009 .droplet {
 	position: absolute;
-	bottom: -4px;
+	bottom: -5px;
 	border-radius: 100% 0% 60% 40% / 60% 0% 100% 40%;
 	background-color: #7fc1f9;
 }
@@ -236,7 +236,7 @@
 		opacity: 1;
 	}
 	100% {
-		transform: translate(0, 0) scale(2, 0);
+		transform: translate(0, 0) scale(4, 0);
 		opacity: 0;
 	}
 }

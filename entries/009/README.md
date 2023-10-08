@@ -65,4 +65,4 @@ for (let i = 0; i < 45; i++) {
 
 **Animation**
 
-The droplets default starting position is at the bottom of the container. The animation is what makes the droplet start at the top of the container and will drop it down to its original position by the end of the animation -- giving it a drop effect. Transform property using `scale()` with x-value is what causes the droplet to flatten at the end of the animation. For the slanted drop, I used `rotate()` and `translate()`.
+The droplets default starting position is at the bottom of the container. The animation is what makes the droplet start at the top of the container and will drop it down to its original position by the end of the animation -- giving it a drop effect. Transform property using `scale()` with an x-value is what causes the droplet to flatten at the end of the animation (it's expanding only on the x-axis). For the slanted drop, I used `rotate()` and `translate()`.
