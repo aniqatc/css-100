@@ -140,7 +140,7 @@ ul {
 /* Frame Code Link */
 .code-link {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	right: 0;
 	padding: 10px;
 	visibility: hidden;
