@@ -8,7 +8,7 @@ Starting at Day 1, I'll be completing at least one CSS challenge a day for the n
 
 I'll be adding a version of my daily completed challenge to my own website at <a href="https://css100.aniqa.dev">css100.aniqa.dev</a> in addition to submitting codepens to the official <a href="https://100dayscss.com/progress/aniqatc/">challenge website</a>.
 
-All challenges will be written in pure **HTML** & **CSS** with occasional JavaScript for functionality (basically, no CSS frameworks.. _for now_).
+All challenges will be written in pure **HTML** & **CSS** with occasional JavaScript for functionality (basically, no CSS preprocessors.. _for now_).
 
 Each entry will have its own CSS file which will be located in a separate folder (inside `/entries`) along with a README file that'll make note of any new concepts or tricks that I learned. However, all markup will be inside the main `index.html` file.
 
