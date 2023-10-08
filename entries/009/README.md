@@ -2,7 +2,7 @@
 
 **Time to Complete**: 1.5 hours
 
-**Key Concepts**: CSS art with absolute positioning, flexbox margin trick, DOM manipulation, Math.random(), transform with scale() value, animation property,
+**Key Concepts**: CSS art with absolute positioning, flexbox margin trick, DOM manipulation, Math.random(), animation property
 
 **Notes**:
 
@@ -53,3 +53,15 @@ for (let i = 0; i < 45; i++) {
 - To set a minimum number, just add it to `Math.random() + 5`
 - To set a maximum number, just multiply it to `Math.random() * 10`
 - To get round the number, use `Math.round(Math.random())` or `Math.ceil`/`Math.floor`
+
+The different ways `Math.random()` was used to get random values for the rain droplets:
+
+- give each `<span>` a random class by generating a random index number to target either `lg`, `md` or `sm` classes
+- `left` positional property is given a number between `0px` and `820px` because that's the width of the container and I want droplets to appear from different starting positions
+- `animation` property is given a random duration between a minimum `800ms` and a maximum of `2000ms`
+- `opacity` property is given a random number between `0` and `1`
+- `animation-delay` property is given a random delay between a minimum `500ms` and a maximum of `2000ms`
+
+**Animation**
+
+The droplets default starting position is at the bottom of the container. The animation is what makes the droplet start at the top of the container and will drop it down to its original position by the end of the animation -- giving it a drop effect. Transform property using `scale()` with x-value is what causes the droplet to flatten at the end of the animation. For the slanted drop, I used `rotate()` and `translate()`.
