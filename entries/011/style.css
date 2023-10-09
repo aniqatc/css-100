@@ -1,0 +1,54 @@
+.day-011 {
+	background: radial-gradient(circle at center, #faeddc, #dbc09d);
+	color: #333;
+}
+
+.day-011 .floor {
+	position: absolute;
+	top: 30px;
+	left: -400px;
+	width: 805px;
+	height: 170px;
+	background-color: #232323;
+}
+
+.day-011 .left-shoe,
+.day-011 .right-shoe {
+	position: absolute;
+	top: -95px;
+	z-index: 2;
+	transform-origin: 50% 0%;
+}
+
+.day-011 .left-shoe {
+	left: -30px;
+	animation: shoe-fade 800ms ease-in, shoe-swing 2s linear infinite alternate;
+}
+
+.day-011 .right-shoe {
+	left: -120px;
+	animation: shoe-fade 800ms ease-in,
+		shoe-swing 2s linear infinite alternate-reverse;
+}
+
+@keyframes shoe-swing {
+	0% {
+		transform: rotate(-50deg) translate(100px, 15px);
+	}
+	49%,
+	51% {
+		transform: rotate(0) translate(-5px, -10px);
+	}
+	100% {
+		transform: rotate(40deg) translate(-100px, 15px);
+	}
+}
+
+@keyframes shoe-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
