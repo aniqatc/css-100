@@ -23,7 +23,7 @@ I was still able to create a visual dotted border with the same styling that the
 
 **Difference between `outline` and `border` property**:
 
-- `border` is computed along with the width/height of the element; can style individual sides
+- `border` is computed along with the width/height of the element; it's part of the box model (goes between margin & padding); can style individual sides
 - `outline` is drawn outside of the element and do not take up any space; cannot style individual sides
 
 #### Conic-gradients
