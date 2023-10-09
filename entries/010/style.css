@@ -73,27 +73,3 @@
 .day-010 .content i {
 	color: #f85b5b;
 }
-
-/*****************************************************************************
-
-Original idea for spinning spin-border with conic-gradient.
-It's not as flexible as an SVG...
-
-.spin-border {
-	background: conic-gradient(transparent 0%, #f85b5b 100%);
-	height: 197px;
-	width: 197px; 
-	border-radius: 50%;
-	animation: conic-spin 3s linear infinite; 
-} 
-
-@keyframes conic-spin {
-	0% {
-		transform: translate(-50%, -50%) rotate(0);
-	}
-	100% {
-		transform: translate(-50%, -50%) rotate(360deg);
-	}
-}
-
-************************************************************************/

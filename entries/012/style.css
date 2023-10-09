@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300,300italic);
+
+.day-012 {
+	background: #4bb6de;
+	color: #fff;
+	font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.day-012 .quote::before {
+	content: ',,';
+	font-family: Arial;
+	font-size: 240px;
+	line-height: 0;
+	letter-spacing: -30px;
+	position: absolute;
+	opacity: 0.2;
+	top: -50px;
+	left: -30px;
+}
+
+.day-012 .quote {
+	width: 335px;
+	font-size: 24px;
+	line-height: 1.55;
+	margin-top: 36px;
+}
+
+.day-012 .author {
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 24px;
+}
+
+.day-012 .word {
+	background-color: #276f8a;
+	padding: 4px 8px;
+	cursor: pointer;
+}
+
+.day-012 .tooltip {
+	position: absolute;
+	width: 290px;
+	font-size: 16px;
+	top: -39px;
+	left: 20px;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-25px);
+	transition: all 350ms ease-in-out;
+}
+
+.day-012 .tooltip::before {
+	content: '';
+	position: absolute;
+	left: 49%;
+	bottom: -6px;
+	background-color: #286f8a;
+	width: 12px;
+	height: 12px;
+	transform: rotate(-45deg);
+	border-radius: 2px;
+}
+
+.day-012 .tooltip-enunciate {
+	display: block;
+	color: #276f8a;
+	background-color: #fff;
+	padding: 8px 16px;
+	border-radius: 4px 4px 0 0;
+}
+
+.day-012 .tooltip-enunciate i {
+	font-size: 14px;
+}
+
+.day-012 .tooltip-definition {
+	display: block;
+	background-color: #276f8a;
+	padding: 8px 16px 12px;
+	border-radius: 0 0 4px 4px;
+}
+
+.day-012 .word:hover + .tooltip {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
