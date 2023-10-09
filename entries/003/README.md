@@ -33,13 +33,13 @@ For this particular challenge, I used `clip-path: polygon()` with three vertices
   - `100%` horizontally (right edge)
   - `100%` vertically (bottom edge)
 
-Note: You can keep adding additional 'points' to create other shapes (e.g. 4 vertices = 8 values = 4-sided shape or 6 vertices = 12 values = 6 sided-shape).
+Note: You can keep adding additional 'points' to create other shapes (e.g. 4 vertices is 8 values resulting in a 4-sided shape (parallelogram) OR 6 vertices is 12 values resulting in a 6 sided-shape (hexagon)).
 
-<a href="https://bennettfeely.com/clippy/">Here's the CSS clip-path tool</a> that I used to help me create my pyramid shape for this challenge + to help get values for my animation.
+<a href="https://bennettfeely.com/clippy/">Here's the CSS clip-path tool</a> that I used to create my pyramid shape along with the animation that moves the shadow across the frame.
 
 **For `transform-origin` property**:
 
-I specifically used `transform-origin` on the pyramid's shadow animation.
+I specifically used `transform-origin` on the pyramid's shadow element so that any transformations that occur will happen **along** the edge that I specified (in this case, I used `center top` so that the top edge of the pyramid's shadow would be aligned with the pyramid at its bottom edge - any rotations and movements would happen below that point).
 
 - `transform-origin` is used to specify the point around which an element is transformed, rotated, scaled, skewed (anything using the `transform` property)
 - `transform-origin: center top` = `center` represents the horizontal position (x-axis) and `top` represents vertical (y-axis) position

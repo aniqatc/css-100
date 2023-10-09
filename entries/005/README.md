@@ -12,21 +12,21 @@
 
 For my tooltip to show up, I originally used `display: none` to remove it from the page and I used JavaScript to bring it back with `display: block` whenever the points on the line graph are hovered over. I wanted it to appear smoothly so I used a `transition` property but it wasn't making the tooltip appear nicely.
 
-This is because using `display:none` removes the element from the **flow** of the page (kind of like absolute positioning except it's not even on the page visually). So we can't get the transition property to work as expected if the element isn't in the DOM - using `display:block` brings it into the DOM and we can't use a transition for that process; however, any transitions applied after it's in the page will work as expected.
+This is because using `display:none` removes the element from the **flow** of the page (kind of like absolute positioning except it's not even on the page visually). So we can't get the transition property to work as expected if the element isn't in the DOM - using `display: block` brings it into the DOM and we can't use a transition for that process; however, any transitions applied after it's in the page will work as expected.
 
 **Using `visiblity`, `opacity`, & `height` property instead**
 
 To get around this issue, I used a combination of the `visibility`, `opacity` and `height` properties to get a nice, smooth transition on my tooltip.
 
 - `visibility` shows and hides an element without changing effecting elements around it
-- `opacity` changes how transparent or opaque an element is
-- `height` sets the height
+- `opacity` changes how transparent or opaque an element is (set to `0`, and then increased to `1` on hover, giving a fade-in effect)
+- `height` sets the height (set to `0` and then, increased to intended height on hover)
 
 #### Different ways to achieve a tooltip
 
 **`data-` attribute and pseudoelements**
 
-I learned how to build a tooltip before and I simply set the content inside a custom HTML `data-` attribute and later, used a pseudoelement's `content` property to get the content to appear:
+I learned how to build a tooltip before: I simply set the content inside a custom HTML `data-` attribute and later, used a pseudoelement's `content` property and `attr()` function to get the content to appear:
 
 ```html
 <div class="tooltip" data-tooltip="Hello World!"></div>

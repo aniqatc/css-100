@@ -1,6 +1,6 @@
 # Day 008
 
-**Time to Complete**: 1 hour
+**Time to Complete**: 1.5 hour
 
 **Key Concepts**: animatable properties, 8 value border-radius, filter property, random numbers for CSS using JS, rotation & transform-origin
 
@@ -25,7 +25,7 @@ I found a <a href="https://projects.verou.me/animatable/">visual tool</a> that s
   - `border-bottom-right-radius: 60% 40%;`
   - `border-bottom-left-radius: 60% 40%;`
 
-9Elements posted a great <a href="https://9elements.com/blog/css-border-radius-can-do-that/">article with labeled figures</a> that helped me better understand how it works, but they also have a really <a href="https://9elements.github.io/fancy-border-radius/">handy tool to create custom round shapes</a>. I used the tool to help me get values for the shapes I wanted to use for this challenge.
+9Elements posted a great <a href="https://9elements.com/blog/css-border-radius-can-do-that/">article about 8-value border-radius with labeled figures</a> that helped me better understand how it works, but they also have a really <a href="https://9elements.github.io/fancy-border-radius/">handy tool to create custom round shapes</a>. I used the tool to help me get values for the shapes I wanted to use for this challenge.
 
 For the main element at the center of my frame: I used an animation to adjust the `border-radius` property on a circle that is also rotating slowly -- this gives it the shape-shifting illusion.
 

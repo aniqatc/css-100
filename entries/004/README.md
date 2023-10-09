@@ -12,15 +12,15 @@ Since this animation has to run in an infinite cycle including alternating backw
 
 **Timing within `@keyframes`**
 
-- Use `%` percentages to define the different time periods of the animation
+- I used `%` percentages to define the different time periods of the animation
 
-So, my largest circle started scaling earlier and my smallest circle started scaling later. I didn't use `animation-delay` or any other trick. I just specified that the `scale()` property would begin at different points of the 2-second animation.
+So, my largest circle started scaling earlier and my smallest circle started scaling later. I didn't use `animation-delay` or any other trick. I just specified that the `scale()` property would begin at different points of the 2-second animation for each of the circles.
 
 **`transform` property**
 
-I used `position: absolute` to create a stacking context: by default (order of the DOM), the circles were stacked in the order I needed them to be. However, I opted to not use directional properties that come with absolute positioning, instead, I used `transform: translate(-50%, -50%)`. I figured it was giving me exactly what I needed without having to calculate exact positions for each individual circle.
+I used `position: absolute` to create a stacking context: by default (which is the order of the DOM), the circles were stacked in the order I needed them to be. However, I opted to not use directional properties that come with absolute positioning, instead, I used `transform: translate(-50%, -50%)`. I figured it was giving me exactly what I needed without having to calculate exact positions for each individual circle.
 
-My animation was using `scale()` so it was cancelling out my positioning handled by `translate()` so I had to include it in my animation declaration so that the scaling would happen from the correct position.
+My animation was using `scale()` so it was cancelling out my positioning handled by `translate()` so I had to include it in my animation declaration so that the scaling would happen from the correct, _translated_ position.
 
 **Custom Timing Functions**
 
