@@ -17,7 +17,7 @@
 	position: absolute;
 	top: -95px;
 	z-index: 2;
-	transform-origin: 50% 0%;
+	transform-origin: center top;
 }
 
 .day-011 .left-shoe {
