@@ -7,6 +7,10 @@
 		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
+.day-012 .code-link {
+	z-index: revert;
+}
+
 .day-012 .quote::before {
 	content: ',,';
 	font-family: Arial;
