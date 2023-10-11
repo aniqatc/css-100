@@ -2,6 +2,6 @@
 
 **Time to Complete**: 1 hour
 
-**Key Concepts**: transform: translate, pointer-events, transitions and transition delays
+**Key Concepts**: responsive images, transformations (translations), transitions and transition delays, pointer-events
 
 **Notes**:

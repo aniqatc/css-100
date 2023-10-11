@@ -1,8 +1,8 @@
-const openActive = document.querySelectorAll('.image span');
+const openActive = document.querySelectorAll('.gallery-image span');
+const closeActive = document.querySelector('.close-icon');
 const activeElements = document.querySelectorAll(
 	'.profile-bottom, .profile-cover, .profile-avatar, .close-icon, .profile'
 );
-const closeActive = document.querySelector('.close-icon');
 
 openActive.forEach(button => {
 	button.addEventListener('click', () => {
