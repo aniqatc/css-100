@@ -2,6 +2,6 @@
 
 **Time to Complete**: 1 hour
 
-**Key Concepts**: responsive images, transformations (translations), transitions and transition delays, pointer-events
+**Key Concepts**: responsive images, image optimization, transformations (translations), transitions and transition delays, pointer-events
 
 **Notes**:
