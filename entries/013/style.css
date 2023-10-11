@@ -34,7 +34,6 @@
 .day-013 .gallery-image img {
 	width: 100%;
 	height: 192px;
-	aspect-ratio: 1 / 1;
 	object-fit: cover;
 }
 
