@@ -7,7 +7,7 @@
 	position: absolute;
 	top: 30px;
 	left: -400px;
-	width: 805px;
+	width: 800px;
 	height: 170px;
 	background-color: #232323;
 }
@@ -22,13 +22,14 @@
 
 .day-011 .left-shoe {
 	left: -30px;
-	animation: shoe-fade 800ms ease-in, shoe-swing 2s linear infinite alternate;
+	animation: shoe-fade 800ms ease-in,
+		shoe-swing 1500ms linear infinite alternate;
 }
 
 .day-011 .right-shoe {
 	left: -120px;
 	animation: shoe-fade 800ms ease-in,
-		shoe-swing 2s linear infinite alternate-reverse;
+		shoe-swing 1500ms linear infinite alternate-reverse;
 }
 
 @keyframes shoe-swing {

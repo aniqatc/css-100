@@ -53,7 +53,7 @@
 	align-items: center;
 }
 
-.day-010 .content span {
+.day-010 .content > span {
 	display: flex;
 	justify-content: space-between;
 	gap: 12px;

@@ -92,7 +92,7 @@ ul {
 .nav-links a {
 	margin: 0 4px;
 	border-bottom: 1px solid #d8e0e8;
-	font-family: 'DM Mono', monospace;
+	font-family: 'DM Mono', monaco, monospace;
 }
 
 .nav-icons i {
@@ -147,7 +147,7 @@ ul {
 }
 
 .code-link a {
-	font-family: 'DM Mono', monospace;
+	font-family: 'DM Mono', monaco, monospace;
 	color: inherit;
 	font-weight: bold;
 	font-size: 14px;
