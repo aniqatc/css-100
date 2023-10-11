@@ -5,9 +5,14 @@
 }
 
 .day-013 .code-link {
-	background-color: #fff;
-	padding: 2px 6px;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 5px 6px;
+	top: 5px;
 	border-radius: 0 0 0 4px;
+}
+
+.day-013 .code-link:hover {
+	background-color: #fff;
 }
 
 .day-013 .wrapper {
