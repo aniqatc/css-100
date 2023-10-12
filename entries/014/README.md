@@ -21,7 +21,7 @@ In order to achieve a card flip animation, I need to create a 3D space for it. E
 
 The `perspective` property has to be applied to the containing parent element -- it represents the 3D space that will hold the child elements that will transformed into 3D objects.
 
-The direct child of an element that is initialized with `perspective` has to declare the `transform-style` property with the `preserve-3d` value. This ensures that child elements in the container will have 3D transformations that are relative to the parent container. Without this, the elements will remain flat and child elements will be treated in a 2D plane (which is the default behavior).
+The direct child of an element that is initialized with `perspective` has to declare the `transform-style` property with the `preserve-3d` value. This ensures that child elements in the container will have 3D transformations that are relative to the parent container. Without this, the elements will remain flat and child elements will be treated in a 2D plane (which is the default behavior). The child elements will be displayed based on their position in the 3D space instead of how they appear in the DOM.
 
 ```css
 /* Card Container: create 3D Space */
@@ -139,3 +139,4 @@ I used JavaScript to generate random values for the little dashes that are anima
 
 - <a href="https://3dtransforms.desandro.com/">Intro to CSS 3D Transforms</a>
 - <a href="https://css-irl.info/learning-about-css-3d-transforms/">CSS 3D Transforms & Perspective + Demos</a>
+- <a href="https://css-tricks.com/how-css-perspective-works/">How CSS Perspective Works</a>
