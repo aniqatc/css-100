@@ -1,4 +1,4 @@
-function insertAnimatedLines(container, dashNum) {
+function insertAnimatedDashes(container, dashNum) {
 	for (let i = 0; i < dashNum; i++) {
 		const span = document.createElement('span');
 		span.className = 'dash';
@@ -17,5 +17,5 @@ function insertAnimatedLines(container, dashNum) {
 	});
 }
 
-insertAnimatedLines('sky', 24);
-insertAnimatedLines('ground', 12);
+insertAnimatedDashes('sky', 24);
+insertAnimatedDashes('ground', 12);
