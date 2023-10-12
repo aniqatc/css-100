@@ -3,14 +3,14 @@
 	color: #ffce4d;
 }
 
-.card {
+.day-014 .card {
 	-webkit-perspective: 1000px;
 	perspective: 1000px;
 	height: 180px;
 	width: 300px;
 }
 
-.card-face {
+.day-014 .card-face {
 	height: 100%;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -18,8 +18,7 @@
 	transform: rotateX(0) translateZ(0);
 }
 
-.front,
-.back {
+.day-014 .card-face > div {
 	background-color: #ffce4d;
 	border-radius: 4px;
 	box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.5);
@@ -35,16 +34,16 @@
 	justify-content: center;
 }
 
-.back {
+.day-014 .back {
 	transform: rotateX(180deg);
 }
 
-.card:hover .card-face {
+.day-014 .card:hover .card-face {
 	transform: rotateX(180deg);
 }
 
 /* Bike Bounce */
-.front img {
+.day-014 .front img {
 	transform-origin: bottom center;
 	animation: bike-bounce 300ms ease-in infinite alternate;
 }
@@ -56,7 +55,7 @@
 }
 
 /* Helicopter Flying */
-.back img {
+.day-014 .back img {
 	animation: heli-movement 1s ease infinite alternate;
 }
 
@@ -71,7 +70,7 @@
 }
 
 /* Background Scene Animations */
-.dash {
+.day-014 .dash {
 	background-color: #4a4841;
 	height: 3px;
 	border-radius: 4px;
@@ -79,26 +78,26 @@
 	animation: scene-movement linear infinite;
 }
 
-.ground,
-.sky {
+.day-014 .ground,
+.day-014 .sky {
 	position: absolute;
 	overflow: hidden;
 	height: 115px;
 }
 
-.ground {
+.day-014 .ground {
 	width: 180px;
 	top: 125px;
 	right: 50px;
 }
 
-.sky {
-	width: 200px;
+.day-014 .sky {
+	width: 230px;
 	top: 30px;
 	left: 70px;
 }
 
-.sky .dash {
+.day-014 .sky .dash {
 	z-index: -1;
 }
 
