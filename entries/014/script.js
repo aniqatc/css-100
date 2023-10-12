@@ -26,9 +26,9 @@ for (let i = 0; i < 20; i++) {
 }
 
 document.querySelectorAll('.sky .dash').forEach(dash => {
-	dash.style.left = `${Math.random() * 195}px`;
+	dash.style.left = `${Math.random() * 200}px`;
 	dash.style.animationDelay = `${Math.random() * 300}ms`;
 	dash.style.width = `${5 + Math.random() * 12}px`;
 	dash.style.animationDuration = `${400 + Math.random() * 900}ms`;
-	dash.style.top = `${Math.random() * 130}px`;
+	dash.style.top = `${Math.random() * 140}px`;
 });

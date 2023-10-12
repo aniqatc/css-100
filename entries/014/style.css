@@ -4,15 +4,14 @@
 }
 
 .card {
+	-webkit-perspective: 1000px;
 	perspective: 1000px;
+	height: 180px;
+	width: 300px;
 }
 
 .card-face {
-	background-color: #ffce4d;
-	height: 180px;
-	width: 300px;
-	border-radius: 4px;
-	box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.5);
+	height: 100%;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	transition: transform 600ms ease-in;
@@ -21,24 +20,25 @@
 
 .front,
 .back {
-	position: absolute;
+	background-color: #ffce4d;
+	border-radius: 4px;
+	box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.5);
+	text-align: center;
 	backface-visibility: hidden;
 	overflow: hidden;
-	width: 180px;
-	height: 95px;
-	text-align: center;
-}
 
-.front {
-	top: 55px;
-	left: 75px;
+	position: absolute;
+	inset: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .back {
 	transform: rotateX(180deg);
-	bottom: 45px;
-	left: 75px;
 }
+
 .card:hover .card-face {
 	transform: rotateX(180deg);
 }
@@ -57,12 +57,16 @@
 
 /* Helicopter Flying */
 .back img {
-	animation: heli-movement 700ms ease infinite alternate;
+	animation: heli-movement 1s ease infinite alternate;
 }
 
 @keyframes heli-movement {
+	50% {
+		transform: translateY(5px);
+	}
+	0%,
 	100% {
-		transform: translateY(15px);
+		transform: translateY(-5px);
 	}
 }
 
@@ -75,12 +79,23 @@
 	animation: scene-movement linear infinite;
 }
 
-.ground {
-	position: relative;
+.ground,
+.sky {
+	position: absolute;
+	overflow: hidden;
+	height: 115px;
 }
 
-.ground .dash {
-	top: -5px;
+.ground {
+	width: 180px;
+	top: 125px;
+	right: 50px;
+}
+
+.sky {
+	width: 200px;
+	top: 30px;
+	left: 70px;
 }
 
 .sky .dash {
