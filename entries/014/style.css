@@ -13,9 +13,10 @@
 	width: 300px;
 	border-radius: 4px;
 	box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.5);
+	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	transition: transform 600ms ease-in;
-	transform: rotateX(0);
+	transform: rotateX(0) translateZ(0);
 }
 
 .front,
