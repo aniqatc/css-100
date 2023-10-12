@@ -1,0 +1,93 @@
+.day-014 {
+	background: #4a4841;
+	color: #ffce4d;
+}
+
+.card {
+	perspective: 1000px;
+}
+
+.card-face {
+	background-color: #ffce4d;
+	height: 180px;
+	width: 300px;
+	border-radius: 4px;
+	box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.5);
+	transform-style: preserve-3d;
+	transition: transform 600ms ease-in;
+	transform: rotateX(0);
+}
+
+.front,
+.back {
+	position: absolute;
+	backface-visibility: hidden;
+	overflow: hidden;
+	width: 180px;
+	height: 95px;
+	text-align: center;
+}
+
+.front {
+	top: 55px;
+	left: 75px;
+}
+
+.back {
+	transform: rotateX(180deg);
+	bottom: 45px;
+	left: 75px;
+}
+.card:hover .card-face {
+	transform: rotateX(180deg);
+}
+
+/* Bike Bounce */
+.front img {
+	transform-origin: bottom center;
+	animation: bike-bounce 300ms ease-in infinite alternate;
+}
+
+@keyframes bike-bounce {
+	to {
+		transform: scaleY(0.95);
+	}
+}
+
+/* Helicopter Flying */
+.back img {
+	animation: heli-movement 700ms ease infinite alternate;
+}
+
+@keyframes heli-movement {
+	100% {
+		transform: translateY(15px);
+	}
+}
+
+/* Background Scene Animations */
+.dash {
+	background-color: #4a4841;
+	height: 3px;
+	border-radius: 4px;
+	position: absolute;
+	animation: scene-movement linear infinite;
+}
+
+.ground {
+	position: relative;
+}
+
+.ground .dash {
+	top: -5px;
+}
+
+.sky .dash {
+	z-index: -1;
+}
+
+@keyframes scene-movement {
+	to {
+		transform: translateX(-180px);
+	}
+}
