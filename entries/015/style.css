@@ -11,6 +11,7 @@
 	background-color: #fff;
 	border-radius: 4px;
 	box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.2);
+	padding-bottom: 16px;
 
 	display: flex;
 	flex-direction: column;
@@ -40,7 +41,7 @@
 }
 
 .day-015 .progress.active {
-	width: 300px;
+	width: 100%;
 }
 
 .day-015 .file-upload {
@@ -73,8 +74,10 @@
 	opacity: 0;
 	position: absolute;
 	inset: 0;
-	width: 100%;
-	height: 100%;
+}
+
+.day-015 #file-input::file-selector-button {
+	display: none;
 }
 
 .day-015 .dropzone {
