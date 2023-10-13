@@ -25,6 +25,7 @@
 	position: relative;
 	width: 100%;
 	color: #777;
+	font-weight: 500;
 }
 
 .day-015 .progress {
@@ -60,6 +61,10 @@
 	cursor: pointer;
 }
 
+.day-015 .file-upload.disabled {
+	cursor: not-allowed;
+}
+
 .day-015 .file-label {
 	position: relative;
 }
@@ -74,7 +79,7 @@
 
 .day-015 .dropzone {
 	display: inline-block;
-	height: 80px;
+	height: 90px;
 	width: 120px;
 	border: 1px dashed #bdbdbd;
 	border-radius: 2px;
@@ -84,6 +89,8 @@
 
 	font-size: 12px;
 	color: #5c9f5c;
+	word-break: break-all;
+	padding: 2px 4px;
 }
 
 .day-015 .sync {

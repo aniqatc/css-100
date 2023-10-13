@@ -10,6 +10,7 @@ fileInput.addEventListener('change', event => {
 
 fileUpload.addEventListener('click', () => {
 	if (fileInput.files.length > 0) {
+		fileInput.disabled = true;
 		progressBar.classList.add('active');
 		dropzone.style.border = `0`;
 		dropzone.innerHTML = `
@@ -23,5 +24,8 @@ fileUpload.addEventListener('click', () => {
 			fileUpload.style.boxShadow = 'none';
 			fileUpload.textContent = 'Upload Complete';
 		}, 2000);
+
+		fileUpload.classList.add('disabled');
+		fileUpload.disabled = true;
 	}
 });
