@@ -1,0 +1,85 @@
+.day-017 {
+	background: repeating-linear-gradient(
+		45deg,
+		#000000,
+		#000000 3px,
+		#fff 3px,
+		#fff 20px
+	);
+	color: #333;
+}
+
+.day-017 .code-link {
+	background-color: #fff;
+	padding: 5px 6px;
+	top: 5px;
+	border-radius: 0 0 0 4px;
+}
+
+.day-017 .box {
+	background-color: #353535;
+	height: 260px;
+	width: 260px;
+	border-radius: 4px;
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
+
+	display: grid;
+	place-items: center;
+	position: relative;
+	z-index: 0;
+}
+
+.day-017 .triangle {
+	overflow: hidden;
+	width: 158px;
+	height: 133px;
+	position: relative;
+}
+
+.day-017 .triangle-left {
+	position: absolute;
+	top: 0;
+	left: 1px;
+	transform: rotate(0deg);
+}
+
+.day-017 .triangle-right {
+	position: absolute;
+	top: 71px;
+	left: -99px;
+	transform: rotate(120deg);
+}
+
+.triangle-bottom {
+	position: absolute;
+	top: -51px;
+	left: -111px;
+	transform: rotate(-120deg);
+}
+
+.day-017 .left {
+	fill: #eeeeee;
+	transition: all 300ms ease-in;
+}
+
+.day-017 .right {
+	fill: #cccccc;
+	transition: all 300ms ease-in;
+}
+
+.day-017 .bottom {
+	fill: #aaaaaa;
+	transition: all 300ms ease-in;
+}
+
+.day-017 .triangle:hover .left {
+	fill: #aaaaaa;
+}
+
+.day-017 .triangle:hover .right {
+	fill: #eeeeee;
+}
+
+.day-017 .triangle:hover .bottom {
+	fill: #cccccc;
+}
