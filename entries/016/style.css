@@ -8,7 +8,7 @@
 	height: 90px;
 	background-color: #fff;
 	border-radius: 50%;
-	animation: circle-in-out 6s linear infinite;
+	animation: circle-in-out 5s linear infinite;
 }
 
 @keyframes circle-in-out {
@@ -59,26 +59,26 @@
 	height: 90px;
 	width: 90px;
 	border-radius: 50%;
-	animation: circle-border-in-out 6s linear infinite;
+	animation: circle-border-in-out 5s linear infinite;
 }
 
 @keyframes circle-border-in-out {
 	0%,
-	15%,
-	30%,
+	18%,
+	32%,
 	74% {
 		transform: translate(-50%, -50%) scale(0);
 	}
-	18%,
+	21%,
 	80% {
 		opacity: 1;
 	}
-	22%,
+	24%,
 	28%,
 	84%,
 	88%,
 	100% {
-		transform: translate(-50%, -50%) scale(1.8);
+		transform: translate(-50%, -50%) scale(2);
 		opacity: 0;
 	}
 }
@@ -93,11 +93,11 @@
 }
 
 .day-016 .hexagon {
-	width: 100px;
-	height: 90px;
+	width: 90px;
+	height: 80px;
 	background-color: #fff;
 	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-	animation: hexagon-in-out 6s linear infinite;
+	animation: hexagon-in-out 5s linear infinite;
 	transform: translate(-50%, -50%) scale(0);
 }
 
@@ -117,7 +117,7 @@
 }
 
 .day-016 .hexagon-borders {
-	animation: hex-border-in-out 6s linear infinite;
+	animation: hex-border-in-out 5s linear infinite;
 	transform: scale(0);
 	opacity: 0;
 }
@@ -177,11 +177,11 @@
 }
 
 .day-016 .triangle {
-	width: 100px;
-	height: 90px;
+	width: 90px;
+	height: 80px;
 	background-color: #fff;
 	clip-path: polygon(50% 12.5%, 0% 100%, 100% 100%);
-	animation: triangle-in-out 6s linear infinite;
+	animation: triangle-in-out 5s linear infinite;
 	transform: translate(-50%, -50%) scale(0);
 }
 
@@ -201,7 +201,7 @@
 }
 
 .day-016 .triangle-borders {
-	animation: tri-border-in-out 6s linear infinite;
+	animation: tri-border-in-out 5s linear infinite;
 	transform: scale(0);
 	opacity: 0;
 }
