@@ -1,0 +1,243 @@
+.day-016 {
+	background-color: #46a6da;
+	color: #fff;
+}
+
+.day-016 .circle {
+	width: 90px;
+	height: 90px;
+	background-color: #fff;
+	border-radius: 50%;
+	animation: circle-in-out 6s linear infinite;
+}
+
+@keyframes circle-in-out {
+	0% {
+		transform: translate(-50%, -300px) scaleY(1.2);
+	}
+	10% {
+		transform: translate(-50%, 40px) scaleY(0.8);
+	}
+	14% {
+		transform: translate(-50%, -40px) scaleY(1.1);
+	}
+	18% {
+		transform: translate(-50%, -50%) scaleY(0.9);
+	}
+	20%,
+	22% {
+		transform: translate(-50%, -50%) scaleY(1);
+	}
+	26% {
+		transform: translate(-50%, -50%) scale(1.2);
+	}
+	32%,
+	74% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	80% {
+		transform: translate(-50%, -50%) scale(1.2);
+	}
+	84% {
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+	86%,
+	88% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	92% {
+		transform: translate(-50%, -30px) scaleY(0.9);
+	}
+	100% {
+		transform: translate(-50%, 300px) scaleY(1.2);
+	}
+}
+
+.day-016 .circle-border {
+	display: block;
+	border: 4px solid #fff;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	animation: circle-border-in-out 6s linear infinite;
+}
+
+@keyframes circle-border-in-out {
+	0%,
+	15%,
+	30%,
+	74% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	18%,
+	80% {
+		opacity: 1;
+	}
+	22%,
+	28%,
+	84%,
+	88%,
+	100% {
+		transform: translate(-50%, -50%) scale(1.8);
+		opacity: 0;
+	}
+}
+
+.day-016 .tri-border,
+.day-016 .hex-border {
+	width: 24px;
+	height: 4px;
+	border-radius: 5px;
+	background-color: #fff;
+	position: absolute;
+}
+
+.day-016 .hexagon {
+	width: 100px;
+	height: 90px;
+	background-color: #fff;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	animation: hexagon-in-out 6s linear infinite;
+	transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes hexagon-in-out {
+	0%,
+	39%,
+	53%,
+	100% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	42% {
+		transform: translate(-50%, -50%) scale(1.2);
+	}
+	50% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+.day-016 .hexagon-borders {
+	animation: hex-border-in-out 6s linear infinite;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.day-016 .hexagon-borders > span:nth-of-type(1) {
+	left: -50px;
+	top: -70px;
+	transform: rotate(-120deg);
+}
+
+.day-016 .hexagon-borders > span:nth-of-type(2) {
+	left: 20px;
+	top: -70px;
+	transform: rotate(-240deg);
+}
+
+.day-016 .hexagon-borders > span:nth-of-type(3) {
+	top: -2px;
+	left: -94px;
+	transform: rotate(180deg);
+}
+
+.day-016 .hexagon-borders > span:nth-of-type(4) {
+	top: -2px;
+	left: 63px;
+	transform: rotate(180deg);
+}
+
+.day-016 .hexagon-borders > span:nth-of-type(5) {
+	top: 69px;
+	left: 24px;
+	transform: rotate(240deg);
+}
+
+.day-016 .hexagon-borders > span:nth-of-type(6) {
+	top: 69px;
+	left: -54px;
+	transform: rotate(120deg);
+}
+
+@keyframes hex-border-in-out {
+	0%,
+	39%,
+	53%,
+	100% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	42% {
+		transform: scale(1.8);
+		opacity: 0.55;
+	}
+	50% {
+		transform: scale(1);
+		opacity: 0.25;
+	}
+}
+
+.day-016 .triangle {
+	width: 100px;
+	height: 90px;
+	background-color: #fff;
+	clip-path: polygon(50% 12.5%, 0% 100%, 100% 100%);
+	animation: triangle-in-out 6s linear infinite;
+	transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes triangle-in-out {
+	0%,
+	59%,
+	73%,
+	100% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	62% {
+		transform: translate(-50%, -50%) scale(1.4);
+	}
+	70% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+.day-016 .triangle-borders {
+	animation: tri-border-in-out 6s linear infinite;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.day-016 .triangle-borders > span:nth-of-type(1) {
+	left: -95px;
+	top: 68px;
+	transform: rotate(-45deg);
+}
+
+.day-016 .triangle-borders > span:nth-of-type(2) {
+	left: 60px;
+	top: 68px;
+	transform: rotate(45deg);
+}
+
+.day-016 .triangle-borders > span:nth-of-type(3) {
+	left: -12px;
+	top: -70px;
+	transform: rotate(90deg);
+}
+
+@keyframes tri-border-in-out {
+	0%,
+	59%,
+	73%,
+	100% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	62% {
+		transform: scale(1.3);
+		opacity: 0.55;
+	}
+	70% {
+		transform: scale(1);
+		opacity: 0.25;
+	}
+}
