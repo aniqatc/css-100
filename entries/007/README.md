@@ -8,7 +8,7 @@
 
 **Absolute Positioning**
 
-<img src="/entries/007/alignment.png" width="400"/>
+<img src="/entries/007/alignment.png" width="500"/>
 
 In the above image, it shows what my header looked like when I used `position: absolute` on the menu icon (to the left). Absolute positioning takes elements out of the regular flow the page -- so even though I was using `justify-content: space-between` on the entire header (so that the menu icon, notifications title and search icon could have equal distance between them), there wasn't a **visual** equal distance.
 
