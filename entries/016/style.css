@@ -1,16 +1,14 @@
-:root {
-	--center-position: translate(-50%, -50%);
-}
-
 .day-016 {
-	background-color: #46a6da;
+	background-color: #da4661;
 	color: #fff;
+	--center-position: translate(-50%, -50%);
 }
 
 .day-016 .circle {
 	width: 90px;
 	height: 90px;
 	background-color: #fff;
+	opacity: 0.75;
 	border-radius: 50%;
 	animation: circle-in-out 5s linear infinite;
 }
@@ -25,25 +23,20 @@
 	14% {
 		transform: translate(-50%, -40px) scaleY(1.1);
 	}
-	18% {
-		transform: var(--center-position) scaleY(0.9);
-	}
-	20%,
 	22% {
 		transform: var(--center-position) scaleY(1);
 	}
 	26% {
 		transform: var(--center-position) scale(1.2);
+		opacity: 1;
 	}
 	32%,
 	74% {
 		transform: var(--center-position) scale(0);
+		opacity: 0.75;
 	}
 	80% {
 		transform: var(--center-position) scale(1.2);
-	}
-	84% {
-		transform: var(--center-position) scale(0.9);
 	}
 	86%,
 	88% {
@@ -53,7 +46,8 @@
 		transform: translate(-50%, -30px) scaleY(0.9);
 	}
 	100% {
-		transform: translate(-50%, 300px) scaleY(1.2);
+		transform: translate(-50%, 300px) scaleY(1);
+		opacity: 1;
 	}
 }
 
@@ -97,6 +91,7 @@
 	width: 90px;
 	height: 80px;
 	background-color: #fff;
+	opacity: 0.75;
 	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 	animation: hexagon-in-out 5s linear infinite;
 	transform: var(--center-position) scale(0);
@@ -108,9 +103,11 @@
 	53%,
 	100% {
 		transform: var(--center-position) scale(0);
+		opacity: 0.5;
 	}
 	42% {
 		transform: var(--center-position) scale(1.2);
+		opacity: 1;
 	}
 	50% {
 		transform: var(--center-position) scale(1);
@@ -181,6 +178,7 @@
 	width: 90px;
 	height: 80px;
 	background-color: #fff;
+	opacity: 0.75;
 	clip-path: polygon(50% 12.5%, 0% 100%, 100% 100%);
 	animation: triangle-in-out 5s linear infinite;
 	transform: var(--center-position) scale(0);
@@ -192,9 +190,11 @@
 	73%,
 	100% {
 		transform: var(--center-position) scale(0);
+		opacity: 0.5;
 	}
 	62% {
 		transform: var(--center-position) scale(1.4);
+		opacity: 1;
 	}
 	70% {
 		transform: var(--center-position) scale(1);
