@@ -1,3 +1,7 @@
+:root {
+	--center-position: translate(-50%, -50%);
+}
+
 .day-016 {
 	background-color: #46a6da;
 	color: #fff;
@@ -22,28 +26,28 @@
 		transform: translate(-50%, -40px) scaleY(1.1);
 	}
 	18% {
-		transform: translate(-50%, -50%) scaleY(0.9);
+		transform: var(--center-position) scaleY(0.9);
 	}
 	20%,
 	22% {
-		transform: translate(-50%, -50%) scaleY(1);
+		transform: var(--center-position) scaleY(1);
 	}
 	26% {
-		transform: translate(-50%, -50%) scale(1.2);
+		transform: var(--center-position) scale(1.2);
 	}
 	32%,
 	74% {
-		transform: translate(-50%, -50%) scale(0);
+		transform: var(--center-position) scale(0);
 	}
 	80% {
-		transform: translate(-50%, -50%) scale(1.2);
+		transform: var(--center-position) scale(1.2);
 	}
 	84% {
-		transform: translate(-50%, -50%) scale(0.9);
+		transform: var(--center-position) scale(0.9);
 	}
 	86%,
 	88% {
-		transform: translate(-50%, -50%) scale(1);
+		transform: var(--center-position) scale(1);
 	}
 	92% {
 		transform: translate(-50%, -30px) scaleY(0.9);
@@ -54,7 +58,6 @@
 }
 
 .day-016 .circle-border {
-	display: block;
 	border: 4px solid #fff;
 	height: 90px;
 	width: 90px;
@@ -67,18 +70,16 @@
 	18%,
 	32%,
 	74% {
-		transform: translate(-50%, -50%) scale(0);
+		transform: var(--center-position) scale(0);
 	}
-	21%,
-	80% {
+	23%,
+	78% {
 		opacity: 1;
 	}
-	24%,
 	28%,
-	84%,
-	88%,
+	83%,
 	100% {
-		transform: translate(-50%, -50%) scale(2);
+		transform: var(--center-position) scale(2);
 		opacity: 0;
 	}
 }
@@ -98,7 +99,7 @@
 	background-color: #fff;
 	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 	animation: hexagon-in-out 5s linear infinite;
-	transform: translate(-50%, -50%) scale(0);
+	transform: var(--center-position) scale(0);
 }
 
 @keyframes hexagon-in-out {
@@ -106,13 +107,13 @@
 	39%,
 	53%,
 	100% {
-		transform: translate(-50%, -50%) scale(0);
+		transform: var(--center-position) scale(0);
 	}
 	42% {
-		transform: translate(-50%, -50%) scale(1.2);
+		transform: var(--center-position) scale(1.2);
 	}
 	50% {
-		transform: translate(-50%, -50%) scale(1);
+		transform: var(--center-position) scale(1);
 	}
 }
 
@@ -167,7 +168,7 @@
 		opacity: 0;
 	}
 	42% {
-		transform: scale(1.8);
+		transform: scale(1.6);
 		opacity: 0.55;
 	}
 	50% {
@@ -182,7 +183,7 @@
 	background-color: #fff;
 	clip-path: polygon(50% 12.5%, 0% 100%, 100% 100%);
 	animation: triangle-in-out 5s linear infinite;
-	transform: translate(-50%, -50%) scale(0);
+	transform: var(--center-position) scale(0);
 }
 
 @keyframes triangle-in-out {
@@ -190,13 +191,13 @@
 	59%,
 	73%,
 	100% {
-		transform: translate(-50%, -50%) scale(0);
+		transform: var(--center-position) scale(0);
 	}
 	62% {
-		transform: translate(-50%, -50%) scale(1.4);
+		transform: var(--center-position) scale(1.4);
 	}
 	70% {
-		transform: translate(-50%, -50%) scale(1);
+		transform: var(--center-position) scale(1);
 	}
 }
 
@@ -233,7 +234,7 @@
 		opacity: 0;
 	}
 	62% {
-		transform: scale(1.3);
+		transform: scale(1.6);
 		opacity: 0.55;
 	}
 	70% {
