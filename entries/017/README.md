@@ -10,7 +10,7 @@ To create a Penrose triangle, I used an SVG to map out a polygon shape that woul
 
 I could've done a separate SVG polygon for each of the sides but I figured I could get away with using a single one that I use three times in the markup and then, I'd use CSS transforms to rotate them:
 
-<img src="/entries/017/svg-rotation.png" style="max-width:400px">
+<img src="/entries/017/svg-rotation.png" width="500">
 
 At this point, I just needed to connect them together to create the triangular shape. I couldn't position the SVG `<polygon>` directly so I had to wrap each of the `<polygon>` elements in their own `<svg>` tag and then, I positioned those tags with absolute positioning instead. I used Chrome's Dev Tools to get the exact values to position them with `top` and `left`.
 
