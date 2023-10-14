@@ -14,44 +14,44 @@ I'll be writing my notes inside the following code block:
 
 ```css
 @keyframes circle-in-out {
-	/* Circle's starting position + scaled up on the Y-axis to make it give an illusion that the ball is falling -- the weight is pulling the shape down */
+/* Circle's starting position + scaled up on the Y-axis to make it give an illusion that the ball is falling -- the weight is pulling the shape down */
 	0% {
 		transform: translate(-50%, -300px) scaleY(1.2);
 	}
-	/* Circle hits its lowest point -- scaled on Y-axis to make it seem like it bounced */
+/* Circle hits its lowest point -- scaled on Y-axis to make it seem like it bounced */
 	10% {
 		transform: translate(-50%, 40px) scaleY(0.8);
 	}
-	/* Circle bounces upwards to the center of the screen and scales up */
+/* Circle bounces upwards to the center of the screen and scales up */
 	14% {
 		transform: translate(-50%, -40px) scaleY(1.1);
 	}
-	/* Return size to normal -- no scale */
+/* Return size to normal -- no scale */
 	22% {
 		transform: var(--center-position) scaleY(1);
 	}
-	/* Small increase on both x, y axis */
-	/* RIPPLE ANIMATION FOR CIRCLE OCCURS HERE */
+/* Small increase on both x, y axis */
+/* RIPPLE ANIMATION FOR CIRCLE OCCURS HERE */
 	26% {
 		transform: var(--center-position) scale(1.2);
 	}
-	/* Circle scales down until it appears to disappear */
+/* Circle scales down until it appears to disappear */
 	32%,
 	74% {
 		transform: var(--center-position) scale(0);
 	}
-	/************************************************************/
-	/* In between 32% and 74% of this circle animation, 
-    the hexagon appears at 42% & disappears around 53% with its ripple effect,
-    then, the triangle appears at 62% and disappears around 73% with its ripple effect */
-	/************************************************************/
+/************************************************************/
+/* In between 32% and 74% of this circle animation, 
+   the hexagon appears at 42% & disappears around 53% with its ripple effect,
+   then, the triangle appears at 62% and disappears around 73% with its ripple effect */
+/************************************************************/
 
-	/* Circle reappears with a ripple effect */
-	/* RIPPLE ANIMATION FOR CIRCLE OCCURS HERE */
+/* Circle reappears with a ripple effect */
+/* RIPPLE ANIMATION FOR CIRCLE OCCURS HERE */
 	80% {
 		transform: var(--center-position) scale(1.2);
 	}
-	/* Subtle scaling between 86% and 92% to give the dropping (drag) effect */
+/* Subtle scaling between 86% and 92% to give the dropping (drag) effect */
 	86%,
 	88% {
 		transform: var(--center-position) scale(1);
@@ -59,7 +59,7 @@ I'll be writing my notes inside the following code block:
 	92% {
 		transform: translate(-50%, -30px) scaleY(0.9);
 	}
-	/* Circle drops out of the frame */
+/* Circle drops out of the frame */
 	100% {
 		transform: translate(-50%, 300px) scaleY(1.2);
 	}
@@ -81,24 +81,24 @@ For example (below), having all these percentages assigned to the first declarat
 
 ```css
 @keyframes hexagon-in-out {
-	/* initial state */
+/* initial state */
 	0%,
-     /* ensures that element hasn't started scaling and is still at 0; 
-    if I don't specify 39% here then the scaling will begin at 0% up to 42% instead of 39% to 42% */ 
+/* ensures that element hasn't started scaling and is still at 0; 
+if I don't specify 39% here then the scaling will begin at 0% up to 42% instead of 39% to 42% */ 
 	39%,
-    /* ensures that element scales down to 0 immediately,
-    if I don't specify 53% here then the scaling down will happen slowly from 50% to 100% */
+/* ensures that element scales down to 0 immediately,
+if I don't specify 53% here then the scaling down will happen slowly from 50% to 100% */
 	53%,
 	100% {
 		transform: var(--center-position) scale(0);
 		opacity: 0.5;
 	}
-	/* scaling up happens between 39% and 42% */
+/* scaling up happens between 39% and 42% */
 	42% {
 		transform: var(--center-position) scale(1.2);
 		opacity: 1;
 	}
-	/* scaling down happens between 50% and 53% */
+/* scaling down happens between 50% and 53% */
 	50% {
 		transform: var(--center-position) scale(1);
 	}
