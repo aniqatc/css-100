@@ -1,0 +1,97 @@
+.day-018 .top,
+.day-018 .bottom {
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.day-018 .top {
+	background-color: #53a2be;
+}
+
+.day-018 .bottom {
+	top: 50%;
+	background-color: #132e32;
+}
+
+.day-018 .circles {
+	transform-style: preserve-3d;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: elastic-bounce 5s ease-in-out infinite;
+}
+
+.day-018 .circles > div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	backface-visibility: hidden;
+}
+
+.day-018 .top-circle {
+	background-color: #53a2be;
+	transform: rotateX(0deg);
+}
+
+.day-018 .bottom-circle {
+	background-color: #132e32;
+	transform: rotateX(180deg);
+}
+
+@keyframes elastic-bounce {
+	0% {
+		transform: rotateX(90deg);
+	}
+	15% {
+		transform: rotateX(150deg);
+	}
+	20% {
+		transform: rotateX(50deg);
+	}
+	25% {
+		transform: rotateX(120deg);
+	}
+	30% {
+		transform: rotateX(70deg);
+	}
+	35% {
+		transform: rotateX(100deg);
+	}
+	40% {
+		transform: rotateX(80deg);
+	}
+	45% {
+		transform: rotateX(95deg);
+	}
+	50% {
+		transform: rotateX(90deg);
+	}
+	65% {
+		transform: rotateX(30deg);
+	}
+	70% {
+		transform: rotateX(130deg);
+	}
+	75% {
+		transform: rotateX(60deg);
+	}
+	80% {
+		transform: rotateX(110deg);
+	}
+	85% {
+		transform: rotateX(80deg);
+	}
+	90% {
+		transform: rotateX(100deg);
+	}
+	95% {
+		transform: rotateX(95deg);
+	}
+	100% {
+		transform: rotateX(90deg);
+	}
+}
