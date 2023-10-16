@@ -8,12 +8,12 @@
 }
 
 .day-018 .top {
-	background-color: #53a2be;
+	background-color: #a7a2a9;
 }
 
 .day-018 .bottom {
 	top: 50%;
-	background-color: #132e32;
+	background-color: #222823;
 }
 
 .day-018 .circles {
@@ -33,12 +33,12 @@
 }
 
 .day-018 .top-circle {
-	background-color: #53a2be;
+	background-color: #a7a2a9;
 	transform: rotateX(0deg);
 }
 
 .day-018 .bottom-circle {
-	background-color: #132e32;
+	background-color: #222823;
 	transform: rotateX(180deg);
 }
 
