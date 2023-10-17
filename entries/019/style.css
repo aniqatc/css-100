@@ -1,0 +1,77 @@
+.day-019 {
+	color: #fff;
+}
+
+.day-019 .center {
+	display: flex;
+}
+
+/* Radio Button Unchecked Styling */
+.day-019 input[type='radio'] {
+	display: none;
+}
+
+.day-019 .radio-button {
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 2px solid #fbeff4;
+	margin: 8px;
+	cursor: pointer;
+}
+
+/* Checked Styling: Circles */
+.day-019 .checked-circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #fbeff4;
+	position: absolute;
+	top: 13px;
+	left: 13px;
+	transition: all 300ms ease-in;
+}
+
+.day-019 #radio-1:checked ~ .checked-circle {
+	transform: translateX(0px);
+}
+
+.day-019 #radio-2:checked ~ .checked-circle {
+	transform: translateX(56px);
+}
+
+.day-019 #radio-3:checked ~ .checked-circle {
+	transform: translateX(112px);
+}
+
+.day-019 #radio-4:checked ~ .checked-circle {
+	transform: translateX(168px);
+}
+
+/* Checked Styling: Background */
+.day-019 .checked-bg {
+	position: absolute;
+	z-index: -1;
+	height: 410px;
+	width: 800px;
+	top: -175px;
+	left: -280px;
+	transition: all 450ms ease-in;
+}
+
+.day-019 #radio-1:checked ~ .checked-bg {
+	background-color: #673e52;
+}
+
+.day-019 #radio-2:checked ~ .checked-bg {
+	background-color: #8f5d77;
+}
+
+.day-019 #radio-3:checked ~ .checked-bg {
+	background-color: #aa798d;
+}
+
+.day-019 #radio-4:checked ~ .checked-bg {
+	background-color: #c797aa;
+}
