@@ -30,7 +30,7 @@
 	position: absolute;
 	top: 13px;
 	left: 13px;
-	transition: all 300ms ease-in;
+	transition: all 350ms ease-in;
 }
 
 .day-019 #radio-1:checked ~ .checked-circle {
