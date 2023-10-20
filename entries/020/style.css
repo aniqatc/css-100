@@ -1,0 +1,155 @@
+.day-020 {
+	background: #2d3e4f;
+	color: #fff;
+}
+
+.day-020 .circle {
+	background-color: #354a5f;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	z-index: -1;
+	position: absolute;
+	left: -100px;
+	top: -140px;
+}
+
+.day-020 .btn {
+	display: block;
+	background-color: #fff;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 50px;
+	height: 40px;
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 300ms ease;
+	position: absolute;
+	top: 85px;
+	left: -100px;
+}
+
+.day-020 .btn:hover {
+	background-color: #1abc9c;
+	color: #fff;
+	cursor: pointer;
+}
+
+.day-020 .reset {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.day-020 .mail {
+	fill: transparent;
+	stroke: #fff;
+	stroke-width: 2;
+	position: absolute;
+	top: -72px;
+	left: -59px;
+	stroke-dasharray: 350 350;
+	stroke-dashoffset: 0;
+}
+
+.day-020 .plane {
+	fill: transparent;
+	stroke: #fff;
+	stroke-width: 2;
+	position: absolute;
+	top: -85px;
+	left: -65px;
+	stroke-dasharray: 350 350;
+	stroke-dashoffset: 350;
+}
+
+.day-020 #checkbox {
+	display: none;
+}
+
+.day-020 #checkbox:checked ~ .mail {
+	stroke-dashoffset: 350;
+	transition: all 1s ease-out;
+}
+
+.day-020 #checkbox:checked ~ .plane {
+	stroke-dashoffset: 0;
+	transition: all 1s ease-out 1s;
+	animation: plane-fly 2s ease-out 750ms forwards;
+}
+
+.day-020 #checkbox:checked ~ .circle {
+	animation: circle-disappear 750ms ease-out forwards;
+}
+
+.day-020 #checkbox:checked ~ .send {
+	animation: button-send 1s ease-out 2s forwards;
+}
+
+.day-020 #checkbox:checked ~ .reset {
+	animation: button-reset 500ms ease-in 3s forwards;
+}
+
+@keyframes circle-disappear {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes button-send {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		background-color: #1abc9c;
+		color: transparent;
+	}
+	60% {
+		width: 40px;
+		border-radius: 50%;
+		background-color: #1abc9c;
+		color: transparent;
+		left: -22px;
+		transform: scale(1.1);
+	}
+	100% {
+		width: 40px;
+		border-radius: 50%;
+		background-color: #1abc9c;
+		color: transparent;
+		left: -22px;
+		transform: scale(0);
+	}
+}
+
+@keyframes button-reset {
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@keyframes plane-fly {
+	0%,
+	50% {
+		transform: translate(0, 0) scale(1);
+	}
+	60% {
+		transform: translate(-10px, 10px) scale(1.1);
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate(300px, -150px) scale(0.5);
+		opacity: 0;
+	}
+}
