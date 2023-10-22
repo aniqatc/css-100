@@ -144,8 +144,6 @@
 	}
 	60% {
 		transform: translate(-10px, 10px) scale(1.1);
-	}
-	70% {
 		opacity: 1;
 	}
 	100% {
