@@ -118,7 +118,7 @@ ul {
 /* Container */
 .container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
 }
 
 /* Frame */
@@ -189,10 +189,6 @@ ul {
 }
 
 @media (max-width: 420px) {
-	.container {
-		grid-template-columns: 1fr;
-	}
-
 	.header-heading {
 		flex-wrap: wrap;
 		gap: 6px;
