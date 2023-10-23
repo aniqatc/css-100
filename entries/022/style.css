@@ -1,0 +1,160 @@
+.day-022 {
+	background: linear-gradient(to bottom, #273e4c, #1c2e39);
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.day-022 .center {
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+}
+
+/* Main heading */
+.day-022 .title {
+	text-transform: uppercase;
+	font-weight: 200;
+	text-align: center;
+	font-size: 18px;
+}
+
+.day-022 .title span {
+	display: block;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+/* Large circle: text */
+.day-022 .lg-circle .text {
+	font-size: 14px;
+	color: #648192;
+	text-align: center;
+}
+
+.day-022 .lg-circle .text span {
+	display: block;
+	font-weight: 400;
+	font-size: 24px;
+	color: #fff;
+}
+
+/* Large circle: progress bars */
+.day-022 .lg-circle {
+	position: relative;
+}
+
+.day-022 .lg-circle .lg-bars {
+	position: absolute;
+	top: -118px;
+	left: 16px;
+	width: 200px;
+	height: 200px;
+	transform: rotate(-90deg);
+}
+
+.day-022 .lg-circle .muted-bar {
+	fill: none;
+	stroke-width: 8px;
+	stroke: #1b2a33;
+}
+
+.day-022 .lg-circle .completed-bar {
+	fill: none;
+	stroke-width: 8px;
+	stroke-linecap: round;
+	stroke: #27e1ae;
+	stroke-dasharray: 360;
+	animation: progress-circle-large 2s ease-out forwards;
+}
+
+/* Small circle: text */
+.day-022 .sm-circle .text {
+	font-size: 12px;
+	color: #648192;
+	text-align: center;
+}
+
+.day-022 .sm-circle .text span {
+	display: block;
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+}
+
+/* Small circle: progress bars */
+.day-022 .sm-circles {
+	display: flex;
+	gap: 96px;
+}
+
+.day-022 .sm-circle {
+	position: relative;
+}
+
+.day-022 .sm-circle .sm-bars {
+	position: absolute;
+	top: -27px;
+	width: 85px;
+	height: 85px;
+	transform: rotate(-90deg);
+}
+
+.day-022 .sm-circle .muted-bar {
+	fill: none;
+	stroke-width: 6px;
+	stroke: #1b2a33;
+}
+
+.day-022 .sm-circle .completed-bar {
+	fill: none;
+	stroke-width: 6px;
+	stroke-linecap: round;
+	stroke: #5ce1ec;
+	stroke-dasharray: 300;
+}
+
+/* Small circles, individual positioning & animations */
+.day-022 .sm-one {
+	left: -24px;
+}
+
+.day-022 .sm-one .completed-bar {
+	animation: progress-circle-sm-one 2s ease-out forwards;
+}
+
+.day-022 .sm-two {
+	left: -28px;
+}
+
+.day-022 .sm-two .completed-bar {
+	animation: progress-circle-sm-two 2s ease-out forwards;
+}
+
+/* Progress bar animations */
+@keyframes progress-circle-large {
+	from {
+		stroke-dashoffset: 360;
+	}
+	to {
+		stroke-dashoffset: 60;
+	}
+}
+
+@keyframes progress-circle-sm-one {
+	from {
+		stroke-dashoffset: 300;
+	}
+	to {
+		stroke-dashoffset: 150;
+	}
+}
+
+@keyframes progress-circle-sm-two {
+	from {
+		stroke-dashoffset: 300;
+	}
+	to {
+		stroke-dashoffset: 200;
+	}
+}
