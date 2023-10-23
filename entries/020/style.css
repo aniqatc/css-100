@@ -76,6 +76,7 @@
 
 .day-020 #checkbox:checked ~ .plane {
 	stroke-dashoffset: 0;
+	stroke: #1abc9c;
 	transition: all 1s ease-out 1s;
 	animation: plane-fly 2s ease-out 750ms forwards;
 }
