@@ -6,7 +6,7 @@
 .day-021 .pacman {
 	position: absolute;
 	top: 150px;
-	left: 165px;
+	left: 130px;
 	width: 100px;
 	height: 100px;
 	stroke: #f4d145;
@@ -30,8 +30,8 @@
 
 .day-021 .paceye {
 	position: absolute;
-	top: 162px;
-	left: 215px;
+	top: 160px;
+	left: 175px;
 	height: 20px;
 	width: 20px;
 	fill: #2b2e2e;
@@ -43,7 +43,7 @@
 	100% {
 		transform: translate(0) scaleX(1);
 	}
-	50% {
+	55% {
 		transform: translate(-5px) scaleX(1.05);
 	}
 }
