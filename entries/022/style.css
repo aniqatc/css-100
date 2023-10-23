@@ -44,7 +44,7 @@
 	position: relative;
 }
 
-.day-022 .lg-circle .lg-bars {
+.day-022 .lg-bars {
 	position: absolute;
 	top: -118px;
 	left: 16px;
@@ -92,9 +92,9 @@
 	position: relative;
 }
 
-.day-022 .sm-circle .sm-bars {
+.day-022 .sm-bars {
 	position: absolute;
-	top: -27px;
+	top: -25px;
 	width: 85px;
 	height: 85px;
 	transform: rotate(-90deg);
@@ -124,7 +124,7 @@
 }
 
 .day-022 .sm-two {
-	left: -28px;
+	left: -27px;
 }
 
 .day-022 .sm-two .completed-bar {
