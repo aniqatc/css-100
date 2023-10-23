@@ -13,7 +13,7 @@
 	fill: none;
 	stroke-width: 50px;
 	stroke-dasharray: 200;
-	animation: pac-mouth 1s ease-in infinite;
+	animation: pac-mouth 1.2s ease-in infinite;
 }
 
 @keyframes pac-mouth {
@@ -24,7 +24,7 @@
 	}
 	50% {
 		stroke-dashoffset: 75;
-		transform: rotate(30deg);
+		transform: rotate(35deg);
 	}
 }
 
@@ -58,12 +58,11 @@
 	stroke-width: 12px;
 	stroke-linecap: round;
 	stroke-dasharray: 0px 50px;
-	stroke-dashoffset: 15;
 	animation: pac-dots 1s linear infinite;
 }
 
 @keyframes pac-dots {
 	100% {
-		stroke-dashoffset: 65;
+		stroke-dashoffset: 50;
 	}
 }
