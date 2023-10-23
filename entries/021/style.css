@@ -13,7 +13,7 @@
 	fill: none;
 	stroke-width: 50px;
 	stroke-dasharray: 200;
-	animation: pac-mouth 1.2s ease-in infinite;
+	animation: pac-mouth 1s ease-in infinite;
 }
 
 @keyframes pac-mouth {
@@ -58,7 +58,7 @@
 	stroke-width: 12px;
 	stroke-linecap: round;
 	stroke-dasharray: 0px 50px;
-	animation: pac-dots 1s linear infinite;
+	animation: pac-dots 1s linear 400ms infinite;
 }
 
 @keyframes pac-dots {
