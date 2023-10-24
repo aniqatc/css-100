@@ -60,13 +60,14 @@
 }
 
 .day-022 .lg-circle .completed-bar {
+	--circumference: 345.4;
+	--offset: 69.08;
 	fill: none;
 	stroke-width: 8px;
 	stroke-linecap: round;
 	stroke: #27e1ae;
-	/* stroke-dasharray: 2 * radius * pi */
-	stroke-dasharray: 345.4;
-	animation: progress-circle-large 2s ease-out forwards;
+	stroke-dasharray: var(--circumference);
+	animation: progress-circle 2s ease-out forwards;
 }
 
 /* Small circle: text */
@@ -108,55 +109,32 @@
 }
 
 .day-022 .sm-circle .completed-bar {
+	--circumference: 219.8;
 	fill: none;
 	stroke-width: 6px;
 	stroke-linecap: round;
 	stroke: #5ce1ec;
-	/* stroke-dasharray: 2 * radius * pi */
-	stroke-dasharray: 219.8;
+	stroke-dasharray: var(--circumference);
+	animation: progress-circle 2s ease-out forwards;
 }
 
 /* Small circles, individual positioning & animations */
 .day-022 .sm-one {
 	left: -24px;
-}
-
-.day-022 .sm-one .completed-bar {
-	animation: progress-circle-sm-one 2s ease-out forwards;
+	--offset: 65.94;
 }
 
 .day-022 .sm-two {
-	left: -27px;
-}
-
-.day-022 .sm-two .completed-bar {
-	animation: progress-circle-sm-two 2s ease-out forwards;
+	left: -28px;
+	--offset: 87.92;
 }
 
 /* Progress bar animations */
-@keyframes progress-circle-large {
+@keyframes progress-circle {
 	from {
-		stroke-dashoffset: 345.4;
+		stroke-dashoffset: var(--circumference);
 	}
 	to {
-		stroke-dashoffset: 69.08; /* 80% complete */
-	}
-}
-
-@keyframes progress-circle-sm-one {
-	from {
-		stroke-dashoffset: 219.8;
-	}
-	to {
-		stroke-dashoffset: 65.94; /* 70% complete */
-	}
-}
-
-@keyframes progress-circle-sm-two {
-	from {
-		stroke-dashoffset: 219.8;
-	}
-	to {
-		stroke-dashoffset: 87.92; /* 60% complete */
+		stroke-dashoffset: var(--offset);
 	}
 }
