@@ -43,7 +43,7 @@
 	100% {
 		transform: translate(0) scaleX(1);
 	}
-	55% {
+	50% {
 		transform: translate(-5px) scaleX(1.05);
 	}
 }
@@ -51,7 +51,7 @@
 .day-021 .pacdots {
 	position: absolute;
 	top: 190px;
-	left: 215px;
+	left: 195px;
 	stroke: #f4d145;
 	width: 600px;
 	height: 16px;
