@@ -64,7 +64,8 @@
 	stroke-width: 8px;
 	stroke-linecap: round;
 	stroke: #27e1ae;
-	stroke-dasharray: 360;
+	/* stroke-dasharray: 2 * radius * pi */
+	stroke-dasharray: 345.4;
 	animation: progress-circle-large 2s ease-out forwards;
 }
 
@@ -111,7 +112,8 @@
 	stroke-width: 6px;
 	stroke-linecap: round;
 	stroke: #5ce1ec;
-	stroke-dasharray: 300;
+	/* stroke-dasharray: 2 * radius * pi */
+	stroke-dasharray: 219.8;
 }
 
 /* Small circles, individual positioning & animations */
@@ -134,27 +136,27 @@
 /* Progress bar animations */
 @keyframes progress-circle-large {
 	from {
-		stroke-dashoffset: 360;
+		stroke-dashoffset: 345.4;
 	}
 	to {
-		stroke-dashoffset: 60;
+		stroke-dashoffset: 69.08; /* 80% complete */
 	}
 }
 
 @keyframes progress-circle-sm-one {
 	from {
-		stroke-dashoffset: 300;
+		stroke-dashoffset: 219.8;
 	}
 	to {
-		stroke-dashoffset: 150;
+		stroke-dashoffset: 65.94; /* 70% complete */
 	}
 }
 
 @keyframes progress-circle-sm-two {
 	from {
-		stroke-dashoffset: 300;
+		stroke-dashoffset: 219.8;
 	}
 	to {
-		stroke-dashoffset: 200;
+		stroke-dashoffset: 87.92; /* 60% complete */
 	}
 }
