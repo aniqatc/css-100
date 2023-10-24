@@ -78,3 +78,49 @@ Here's the exact values I used for the `stroke-dashoffset` in the animations for
 	}
 }
 ```
+
+### Reusing animations with CSS Variables
+
+There's something very obvious happening with my original keyframe declarations (in the code block above). I am repeating the same single property (`stroke-dashoffset`) for the same duration **three** times. The only difference is that all three of the animations have a different starting and ending value for the `stroke-dashoffset`. There's a way to declare a single keyframe that'll achieve the same goal: using CSS variables to define the values.
+
+```css
+/* A single keyframe declaration that'll work for all three progress circles */
+@keyframes progress-circle {
+	from {
+		stroke-dashoffset: var(--circumference);
+	}
+	to {
+		stroke-dashoffset: var(--offset);
+	}
+}
+```
+
+The only thing left to do is to declare the `--circumference` and `--offset` values in the selector that is also declaring the animation (so that the animation can inherit the variable's respective values).
+
+```css
+/* Large circle */
+.lg-circle .completed-bar {
+	--circumference: 345.4;
+	--offset: 69.08; /* 20% offset */
+	stroke-dasharray: var(--circumference);
+	animation: progress-circle 2s ease-out forwards;
+}
+
+/* Small circles */
+.sm-circle .completed-bar {
+	--circumference: 219.8;
+	stroke-dasharray: var(--circumference);
+	animation: progress-circle 2s ease-out forwards;
+}
+
+/* Individual circles (smaller size) */
+.sm-one {
+	left: -24px;
+	--offset: 65.94; /* 30% offset */
+}
+
+.sm-two {
+	left: -28px;
+	--offset: 87.92; /* 40% offset */
+}
+```
