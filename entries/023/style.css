@@ -45,15 +45,15 @@
 }
 
 .day-023 .line.right {
-	--origin-initial: right top;
-	--origin-final: left top;
-	left: 50px;
+	--origin-initial: left center;
+	--origin-final: right center;
+	right: 50px;
 }
 
 .day-023 .line.left {
-	--origin-initial: left top;
-	--origin-final: right top;
-	right: 50px;
+	--origin-initial: right center;
+	--origin-final: left center;
+	left: 50px;
 }
 
 /* Horizontal line that appears after circle disappears */
