@@ -1,0 +1,209 @@
+.day-023 {
+	background: #e16c6b;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.day-023 .center {
+	position: relative;
+	display: grid;
+	place-items: center;
+	height: 100%;
+	width: 400px;
+}
+
+.day-023 .circle {
+	position: absolute;
+	background-color: #fff;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	animation: circle-out-scaledown 1s ease-out 300ms both;
+}
+
+/* First animation: circle scales up before it scales to 0 */
+@keyframes circle-out-scaledown {
+	0% {
+		transform: scale(0.8);
+	}
+	25% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+.day-023 .line {
+	position: absolute;
+	background-color: #fff;
+	height: 5px;
+	width: 150px;
+	animation: line-in-out 1s ease-in-out 1.3s both;
+}
+
+.day-023 .line.right {
+	--origin-initial: right top;
+	--origin-final: left top;
+	left: 50px;
+}
+
+.day-023 .line.left {
+	--origin-initial: left top;
+	--origin-final: right top;
+	right: 50px;
+}
+
+/* Horizontal line that appears after circle disappears */
+@keyframes line-in-out {
+	0% {
+		transform: scaleX(0);
+		transform-origin: var(--origin-initial);
+	}
+	50% {
+		transform: scaleX(1);
+	}
+	50%,
+	100% {
+		transform-origin: var(--origin-final);
+	}
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+.day-023 .bracket {
+	position: absolute;
+	background-color: #fff;
+	height: 80px;
+	width: 5px;
+	animation: y-axis-scaleup 700ms ease-out 2.3s both;
+}
+
+.day-023 .bracket.right {
+	left: 50px;
+}
+
+.day-023 .bracket.right::before {
+	content: '';
+	background-color: #fff;
+	height: 5px;
+	width: 30px;
+	position: absolute;
+	bottom: 0;
+	animation: bracket-line-slidein 500ms ease-out 3s both;
+}
+
+.day-023 .bracket.right::after {
+	content: '';
+	background-color: #fff;
+	height: 5px;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	animation: bracket-line-slidein 500ms ease-out 3s both;
+}
+
+.day-023 .bracket.left {
+	right: 50px;
+}
+
+.day-023 .bracket.left::before {
+	content: '';
+	background-color: #fff;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	animation: bracket-line-slidein 500ms ease-out 3s both;
+}
+
+.bracket.left::after {
+	content: '';
+	background-color: #fff;
+	height: 5px;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	animation: bracket-line-slidein 500ms ease-out 3s both;
+}
+
+/* Used for all the bracket lines (4 - two on each side) */
+@keyframes bracket-line-slidein {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 30px;
+	}
+}
+
+.day-023 .text-wrap {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.1;
+	overflow: hidden;
+}
+
+.day-023 .light-text {
+	font-weight: 200;
+	font-size: 32px;
+	letter-spacing: 1.5px;
+	animation: text-fade-in 400ms ease-out 3.3s both;
+}
+
+.day-023 .light-text:first-of-type {
+	animation: text-left-inwards 750ms ease-out 3s both;
+}
+
+.day-023 .light-text:last-of-type {
+	animation: text-right-inwards 750ms ease-out 3s both;
+}
+
+.day-023 .bold-text {
+	font-weight: 800;
+	font-size: 50px;
+	animation: y-axis-scaleup 300ms ease-out 3s both;
+}
+
+/* Used for bracket scaling & bold text scaling */
+@keyframes y-axis-scaleup {
+	0% {
+		transform: scaleY(0);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+/* Used for light text elements */
+@keyframes text-fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Used for first light text element */
+@keyframes text-left-inwards {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* Used for second light text element */
+@keyframes text-right-inwards {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
