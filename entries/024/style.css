@@ -1,0 +1,123 @@
+.day-024 {
+	background: #58d794;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.day-024 .center {
+	height: 100%;
+	position: relative;
+	display: grid;
+	place-items: center;
+}
+
+.day-024 .button {
+	height: 60px;
+	width: 250px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	transition: background-color 300ms ease-out;
+}
+
+.day-024 .button:hover {
+	background-color: #37be77;
+	cursor: pointer;
+}
+
+.day-024 .text {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 500;
+	font-size: 20px;
+	color: #fff;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 300ms ease-in;
+}
+
+.day-024 .checkmark {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 300ms ease-out;
+}
+
+.day-024 .active.text {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.day-024 .active.checkmark {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 2.2s;
+}
+
+.day-024 .active.button {
+	animation: finish-button-active 1s ease-out forwards,
+		finish-button-active-bg 600ms ease-out 2s both;
+}
+
+@keyframes finish-button-active {
+	100% {
+		width: 60px;
+		background-color: transparent;
+		border: 2px solid #44b078;
+	}
+}
+
+@keyframes finish-button-active-bg {
+	100% {
+		background-color: #fff;
+	}
+}
+
+.day-024 .circle-wrapper {
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+.day-024 .circle {
+	transform: rotate(-90deg) scale(1);
+	stroke: #fff;
+	stroke-width: 2px;
+	fill: transparent;
+	stroke-linecap: round;
+	stroke-dasharray: 188;
+	transform-origin: center center;
+	opacity: 0;
+}
+
+.day-024 .active.circle {
+	animation: finish-button-progress 0.75s ease-out 1s forwards,
+		finish-button-progress-scale 400ms ease-out 1.75s forwards;
+}
+
+@keyframes finish-button-progress {
+	0% {
+		stroke-dashoffset: 188;
+		opacity: 1;
+	}
+	100% {
+		stroke-dashoffset: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes finish-button-progress-scale {
+	to {
+		stroke-dashoffset: 0;
+		transform: rotate(-90deg) scale(1.5);
+		opacity: 0;
+	}
+}
