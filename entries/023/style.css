@@ -19,7 +19,8 @@
 	height: 70px;
 	width: 70px;
 	border-radius: 50%;
-	animation: circle-out-scaledown 1s ease-out 300ms both;
+	transform: scale(0);
+	animation: circle-out-scaledown 1s ease-out 300ms forwards;
 }
 
 /* First animation: circle scales up before it scales to 0 */
@@ -82,16 +83,16 @@
 }
 
 .day-023 .bracket.right {
-	left: 50px;
+	right: 50px;
 }
 
 .day-023 .bracket.right::before {
 	content: '';
 	background-color: #fff;
 	height: 5px;
-	width: 30px;
 	position: absolute;
 	bottom: 0;
+	right: 0;
 	animation: bracket-line-slidein 500ms ease-out 3s both;
 }
 
@@ -99,14 +100,14 @@
 	content: '';
 	background-color: #fff;
 	height: 5px;
-	width: 30px;
 	position: absolute;
 	top: 0;
+	right: 0;
 	animation: bracket-line-slidein 500ms ease-out 3s both;
 }
 
 .day-023 .bracket.left {
-	right: 50px;
+	left: 50px;
 }
 
 .day-023 .bracket.left::before {
@@ -115,18 +116,17 @@
 	height: 5px;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	left: 0;
 	animation: bracket-line-slidein 500ms ease-out 3s both;
 }
 
-.bracket.left::after {
+.day-023 .bracket.left::after {
 	content: '';
 	background-color: #fff;
 	height: 5px;
-	width: 30px;
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 0;
 	animation: bracket-line-slidein 500ms ease-out 3s both;
 }
 
