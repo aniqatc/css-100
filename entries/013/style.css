@@ -71,7 +71,6 @@
 .day-013 .gallery-image:hover .open-icon {
 	opacity: 1;
 	visibility: revert;
-	opacity: 1;
 	transform: translate(-50%, -50%) scale(1);
 }
 
