@@ -1,5 +1,7 @@
 # Day 002
 
+**<a href="https://css100.aniqa.dev#day-002">Live Demo</a>**
+
 **Time to Complete**: ~1 hour - majority working through a bug
 
 **Key Concepts**: transform property, animation property, reflow, block vs inline elements

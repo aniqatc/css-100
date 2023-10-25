@@ -1,5 +1,7 @@
 # Day 012
 
+**<a href="https://css100.aniqa.dev#day-012">Live Demo</a>**
+
 **Time to Complete**: 30 mins
 
 **Key Concepts**: text properties, tooltip on hover

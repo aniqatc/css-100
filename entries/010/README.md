@@ -1,5 +1,7 @@
 # Day 010
 
+**<a href="https://css100.aniqa.dev#day-010">Live Demo</a>**
+
 **Time to Complete**: 1 hour
 
 **Key Concepts**: outline vs border property, conic-gradient(), animating SVG borders

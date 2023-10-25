@@ -1,8 +1,8 @@
 # Day 001
 
-**Time to Complete**: 30 mins
+**<a href="https://css100.aniqa.dev#day-001">Live Demo</a>**
 
-<a href="https://aniqa.dev#day-001">Live Demo</a>
+**Time to Complete**: 30 mins
 
 **Key Concepts**: z-index, absolute positioning, flow layout, pseudo-elements
 

@@ -1,5 +1,7 @@
 # Day 008
 
+**<a href="https://css100.aniqa.dev#day-008">Live Demo</a>**
+
 **Time to Complete**: 1.5 hour
 
 **Key Concepts**: animatable properties, 8 value border-radius, filter property, random numbers for CSS using JS, rotation & transform-origin

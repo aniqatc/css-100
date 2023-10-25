@@ -1,5 +1,7 @@
 # Day 017
 
+**<a href="https://css100.aniqa.dev#day-017">Live Demo</a>**
+
 **Time to Complete**: 35 mins
 
 **Key Concepts**: rotations, absolute positioning, SVG polygons

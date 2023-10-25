@@ -1,5 +1,7 @@
 # Day 020
 
+**<a href="https://css100.aniqa.dev#day-020">Live Demo</a>**
+
 **Time to Complete**: 50 mins
 
 **Key Concepts**: checkbox input, animating svg polylines

@@ -1,5 +1,7 @@
 # Day 003
 
+**<a href="https://css100.aniqa.dev#day-003">Live Demo</a>**
+
 **Time to Complete**: ~2 hour
 
 **Key Concepts**: clip-path property, animations, transform-origin
