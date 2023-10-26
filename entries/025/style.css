@@ -1,0 +1,152 @@
+.day-025 {
+	background-color: #1d8de3;
+	color: #fff;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.day-025 .background {
+	position: relative;
+	background-color: #2097f3;
+	width: 400px;
+	height: 400px;
+}
+
+.day-025 .island {
+	fill: #1d8de3;
+	isolation: isolate;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	border-left: 2px solid #2097f3;
+	border-right: 2px solid #2097f3;
+}
+
+/* Location Marker */
+.day-025 .marker {
+	fill: #ffcc30;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: transform 500ms ease-in 500ms;
+	animation: location-marker-bounce 2s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+@keyframes location-marker-bounce {
+	0% {
+		top: 50%;
+	}
+	50% {
+		top: calc(50% - 6px);
+	}
+	100% {
+		top: 50%;
+	}
+}
+
+.day-025 .shadow {
+	position: absolute;
+	top: 240px;
+	left: calc(50% - 6px);
+	background-color: #1d7ac7;
+	border-radius: 80%;
+	height: 8px;
+	width: 12px;
+	transition: opacity 500ms ease-in;
+	animation: location-marker-shadow 2s ease-in-out infinite alternate;
+}
+
+@keyframes location-marker-shadow {
+	0% {
+		transform: scaleX(1.5);
+	}
+	50% {
+		transform: scaleX(0.75);
+	}
+	100% {
+		transform: scaleX(1.5);
+	}
+}
+
+/* Card */
+.day-025 .card {
+	width: 240px;
+	height: 180px;
+	border-radius: 2px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1),
+		2px 2px 6px 6px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: transform 450ms ease-in;
+	transform: translate(-50%, -50%) rotateY(-90deg);
+	pointer-events: none;
+	color: #333;
+}
+
+.day-025 .card img {
+	max-width: 100%;
+	display: block;
+	border-radius: 2px 2px 0 0;
+}
+
+.day-025 .card-content {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	line-height: 1.4;
+	height: 110px;
+}
+
+.day-025 .card-content h1 {
+	font-weight: 500;
+	font-size: 14px;
+	margin: 20px 0 0;
+}
+
+.day-025 .card-content p {
+	font-size: 12px;
+}
+
+.day-025 .card-content__links {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	margin-top: auto;
+	font-size: 12px;
+	color: #2097f3;
+}
+
+.day-025 .card-content__links li {
+	width: 50%;
+	cursor: pointer;
+}
+
+.day-025 .card-content__links li:first-of-type {
+	border-right: 1px solid #2097f3;
+}
+
+/* Active Classes */
+.day-025 .active.marker {
+	transform: translate(-50%, -50%) perspective(500px) rotateY(90deg);
+	transition: transform 500ms ease-in;
+}
+
+.day-025 .active.shadow {
+	animation-play-state: paused;
+	opacity: 0;
+	transition: opacity 500ms ease-in 300ms;
+}
+
+.day-025 .active.card {
+	transform: translate(-50%, -50%) perspective(500px) rotateY(0);
+	transition: transform 700ms ease-out 650ms;
+	pointer-events: revert;
+}
