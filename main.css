@@ -38,6 +38,7 @@ select {
 a,
 button {
 	white-space: nowrap;
+	-webkit-tap-highlight-color: transparent;
 }
 
 ul {

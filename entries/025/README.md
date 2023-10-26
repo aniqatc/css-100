@@ -4,7 +4,7 @@
 
 **Time to Complete**: 45 mins
 
-**Key Concepts**: transform perspective() function, animation-play-state, handling different transitions on a single element
+**Key Concepts**: transform perspective() function, animation-play-state, handling different transitions on a single element, tap highlight on mobile
 
 **Notes**:
 
@@ -91,3 +91,17 @@ So I kept the transitions I applied on my active class and added a different tra
 	transition: transform 450ms ease-in;
 }
 ```
+
+#### Tap highlight on mobile
+
+On mobile, I noticed that when I tapped on the location marker icon, a greyed out box would appear for a split second. This box appears on most mobile devices as a default indication that a button is being clicked. In this case, I found it annoying to see a box appear around my location marker, especially because it doesn't adapt to the shape of the element itself.
+
+So I learned about a property that'll remove that minor annoyance:
+
+```css
+button {
+	-webkit-tap-highlight-color: transparent;
+}
+```
+
+Note: This only applies to Webkit browsers.
