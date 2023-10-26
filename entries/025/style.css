@@ -50,7 +50,7 @@
 	border-radius: 80%;
 	height: 8px;
 	width: 12px;
-	transition: opacity 500ms ease-in;
+	transition: opacity 500ms ease-in 500ms;
 	animation: location-marker-shadow 2s ease-in-out infinite alternate;
 }
 

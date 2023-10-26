@@ -75,7 +75,7 @@ It allowed me to have control over the sequencing of multiple transitions. For e
 
 However, when I click the card to go back to my initial state (removing all the active classes), there was no transition for the changes (because I applied the property to the element's active state). If I applied these transitions to the initial state of the element, then the delays would be applied both ways (when active class is added and when it is removed) but that would throw the sequence out of whack.
 
-So I kept the transitions I applied on my active class and added a different transition with a different sequence for when we leave the active state. In this case, I want the sequence to happen quicker:
+So I kept the transitions I applied on my active class and added a different transition with a different sequence for when we leave the active state. In this case, I want the sequence to happen quicker - the card flips over quickly (no delay) and the location marker along with its shadow will appear after a 500ms delay:
 
 ```css
 /* Initial state of the elements */
@@ -84,7 +84,7 @@ So I kept the transitions I applied on my active class and added a different tra
 }
 
 .shadow {
-	transition: opacity 500ms ease-in;
+	transition: opacity 500ms ease-in 500ms;
 }
 
 .card {
