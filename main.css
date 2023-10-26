@@ -10,15 +10,10 @@
 	padding: 0;
 }
 
-html,
-body {
-	height: 100%;
-	scroll-behavior: smooth;
-}
-
 body {
 	font-family: 'Quattrocento Sans', sans-serif;
 	background-color: #f2f4f6;
+	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -58,6 +53,11 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	gap: 36px;
+
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.1), 2px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-heading,
@@ -144,7 +144,7 @@ ul {
 	right: 0;
 	padding: 10px;
 	visibility: hidden;
-	z-index: 100;
+	z-index: 10;
 }
 
 .code-link a {
