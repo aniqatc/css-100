@@ -1,0 +1,113 @@
+.day-026 {
+	background: #e2daeb;
+	color: #333;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.day-026 .modal {
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.15);
+	width: 275px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -137.5px;
+	padding: 24px 24px 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	transform: scale(0.75);
+	opacity: 0;
+	pointer-events: none;
+}
+
+.day-026 .inactive.modal {
+	z-index: 2;
+	animation: modal-scale-out 500ms ease-out forwards;
+}
+
+.day-026 .active.modal {
+	pointer-events: auto;
+	z-index: 1;
+	animation: modal-scale-in 500ms ease-out forwards 500ms;
+}
+
+@keyframes modal-scale-in {
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes modal-scale-out {
+	from {
+		transform: scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: scale(1.25);
+		opacity: 0;
+	}
+}
+
+.day-026 .pagebg {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	background: #ff6e6c;
+	width: 62px;
+	height: 62px;
+	transform: rotate(45deg) translateY(-45px);
+}
+
+.day-026 .pagenum {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	margin: 6px 8px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.day-026 .text {
+	text-align: center;
+}
+
+.day-026 .text p:first-of-type {
+	font-weight: 600;
+	color: #606f7d;
+	font-size: 14px;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+
+.day-026 .text p:last-of-type {
+	font-weight: 400;
+	color: #8392a0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.day-026 .button {
+	display: block;
+	border: 0;
+	background: #67568c;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	height: 42px;
+	margin-left: -24px;
+	margin-right: -24px;
+	margin-top: auto;
+	transition: background 350ms ease-out;
+}
+
+.day-026 .button:hover {
+	cursor: pointer;
+	background: #4c346b;
+}
