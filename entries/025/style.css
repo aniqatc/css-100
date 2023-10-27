@@ -24,7 +24,8 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	margin-top: -36px;
+	margin-left: -24px;
 	transition: transform 500ms ease-in 500ms;
 	animation: location-marker-bounce 2s ease-in-out infinite alternate;
 	-webkit-tap-highlight-color: transparent;
@@ -78,8 +79,10 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	margin-left: -120px;
+	margin-top: -90px;
 	transition: transform 450ms ease-in;
-	transform: translate(-50%, -50%) rotateY(-90deg);
+	transform: rotateY(-90deg);
 	pointer-events: none;
 	color: #333;
 }
@@ -130,7 +133,7 @@
 
 /* Active Classes */
 .day-025 .active.marker {
-	transform: translate(-50%, -50%) perspective(500px) rotateY(90deg);
+	transform: perspective(500px) rotateY(90deg);
 	transition: transform 500ms ease-in;
 }
 
@@ -141,7 +144,7 @@
 }
 
 .day-025 .active.card {
-	transform: translate(-50%, -50%) perspective(500px) rotateY(0);
+	transform: perspective(500px) rotateY(0);
 	transition: transform 700ms ease-out 650ms;
 	pointer-events: revert;
 }

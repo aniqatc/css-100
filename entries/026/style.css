@@ -26,13 +26,11 @@
 }
 
 .day-026 .inactive.modal {
-	z-index: 2;
 	animation: modal-scale-out 500ms ease-out forwards;
 }
 
 .day-026 .active.modal {
 	pointer-events: auto;
-	z-index: 1;
 	animation: modal-scale-in 500ms ease-out forwards 500ms;
 }
 
