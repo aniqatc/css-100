@@ -94,12 +94,12 @@ So I kept the transitions I applied on my active class and added a different tra
 
 #### Tap highlight on mobile
 
-On mobile, I noticed that when I tapped on the location marker icon, a greyed out box would appear for a split second. This box appears on most mobile devices as a default indication that a button is being clicked. In this case, I found it annoying to see a box appear around my location marker, especially because it doesn't adapt to the shape of the element itself.
+On mobile, I noticed that when I tapped on the location marker icon, a greyed out box would appear for a split second. This box appears on most mobile devices as a default indication that we are tapping (clicking) a clickable element. In this case, I found it annoying to see a box appear around my location marker, especially because it doesn't adapt to the shape of the element itself.
 
-So I learned about a property that'll remove that minor annoyance:
+So I learned about a property that'll remove it by making it transparent:
 
 ```css
-button {
+.marker {
 	-webkit-tap-highlight-color: transparent;
 }
 ```
