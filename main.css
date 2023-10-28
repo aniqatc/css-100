@@ -121,9 +121,6 @@ ul {
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
-	height: 100vh;
 }
 
 /* Frame */
@@ -132,7 +129,6 @@ ul {
 	height: 400px;
 	box-shadow: 1px 1px 16px 0 rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	scroll-snap-align: start;
 }
 
 .center {
