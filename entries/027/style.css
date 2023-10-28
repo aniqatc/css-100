@@ -1,0 +1,98 @@
+.day-027 {
+	background: linear-gradient(45deg, #fda330, #fcc930);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.day-027 .card {
+	height: 300px;
+	width: 250px;
+	padding: 32px;
+	background: #fff;
+	color: #497081;
+	border-radius: 4px;
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1), 4px 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.day-027 .card-header {
+	text-align: center;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #d3dcdf;
+}
+
+.day-027 .card-header h1 {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+.day-027 .card-header p {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.day-027 .card-list {
+	list-style-type: none;
+	padding-top: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.day-027 .card-list-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+	position: relative;
+}
+
+.day-027 .circle {
+	display: block;
+	height: 16px;
+	width: 16px;
+	border: 1px solid #497081;
+	border-radius: 50%;
+	transition: all 300ms ease-in 350ms;
+}
+
+.day-027 .checkmark {
+	stroke: #c8d4d9;
+	stroke-width: 1px;
+	fill: transparent;
+	pointer-events: none;
+	stroke-dasharray: 29;
+	stroke-dashoffset: 29;
+	transition: all 450ms ease-in;
+}
+
+.day-027 .card-list-item svg {
+	position: absolute;
+	top: -2px;
+	right: 0;
+}
+
+.day-027 input {
+	display: none;
+}
+
+.day-027 label {
+	cursor: pointer;
+}
+
+.day-027 input:checked ~ .label {
+	color: #c8d4d9;
+	transition: color 300ms ease-in;
+}
+
+.day-027 input:checked ~ .circle {
+	transform: scale(1.3);
+	opacity: 0;
+	transition: all 300ms ease-in;
+}
+
+.day-027 input:checked ~ .checkmark {
+	stroke-dashoffset: 0;
+	transition: all 450ms ease-in 300ms;
+}
