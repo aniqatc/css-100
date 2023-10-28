@@ -50,7 +50,7 @@
 	position: absolute;
 	top: -72px;
 	left: -59px;
-	stroke-dasharray: 350 350;
+	stroke-dasharray: 280;
 	stroke-dashoffset: 0;
 }
 
@@ -61,8 +61,8 @@
 	position: absolute;
 	top: -85px;
 	left: -65px;
-	stroke-dasharray: 350 350;
-	stroke-dashoffset: 350;
+	stroke-dasharray: 320;
+	stroke-dashoffset: 320;
 }
 
 .day-020 #checkbox {
@@ -70,7 +70,7 @@
 }
 
 .day-020 #checkbox:checked ~ .mail {
-	stroke-dashoffset: 350;
+	stroke-dashoffset: 280;
 	transition: all 1s ease-out;
 }
 
