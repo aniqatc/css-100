@@ -17,8 +17,8 @@
 .day-010 .spin-border {
 	stroke: #f85b5b;
 	stroke-width: 6;
-	stroke-dasharray: 800;
-	stroke-dashoffset: 800;
+	stroke-dasharray: 564;
+	stroke-dashoffset: 564;
 	stroke-linecap: round;
 	fill: transparent;
 	transform-origin: center center;
@@ -29,7 +29,7 @@
 @keyframes spin {
 	0%,
 	100% {
-		stroke-dashoffset: 800;
+		stroke-dashoffset: 564;
 	}
 	50% {
 		stroke-dashoffset: 0;
