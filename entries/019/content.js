@@ -1,4 +1,5 @@
-<!-- Day 019 -->
+export function getMarkup() {
+	return `<!-- Day 019 -->
 <div class="day-019 frame" id="day-019">
 	<span class="code-link">
 		<a
@@ -25,3 +26,5 @@
 		<div class="checked-circle"></div>
 	</div>
 </div>
+`;
+}

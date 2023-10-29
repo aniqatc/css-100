@@ -1,4 +1,6 @@
-<!-- Day 021 -->
+export function getMarkup() {
+	return `
+	<!-- Day 021 -->
 <div class="day-021 frame" id="day-021">
 	<span class="code-link">
 		<a
@@ -18,3 +20,5 @@
 		<polyline points="0,10 600,10" />
 	</svg>
 </div>
+`;
+}

@@ -1,3 +1,5 @@
+export function getMarkup() {
+	return `
 <!-- Day 027 --->
 <div class="day-027 frame" id="day-027">
 	<span class="code-link">
@@ -50,3 +52,5 @@
 		</div>
 	</div>
 </div>
+`;
+}
