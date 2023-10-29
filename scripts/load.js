@@ -1,11 +1,14 @@
-function loadContent(entry) {
+async function loadContent(entry) {
 	const htmlURL = `/entries/${entry}/content.js`;
 
-	import(htmlURL).then(module => {
+	try {
+		const module = await import(htmlURL);
 		const markup = module.getMarkup();
 		const container = document.querySelector('.container');
 		container.insertAdjacentHTML('beforeend', markup);
-	});
+	} catch (error) {
+		console.error(`Failed to load content for entry ${entry}:`, error);
+	}
 }
 
 function loadStyle(entry) {
@@ -28,9 +31,11 @@ function loadScript(entry) {
 }
 
 /* Load files for current number of entries */
-for (let i = 27; i > 0; i--) {
-	const entry = String(i).padStart(3, '0');
-	loadContent(entry);
-	loadStyle(entry);
-	loadScript(entry);
-}
+(async function () {
+	for (let i = 27; i > 0; i--) {
+		const entry = String(i).padStart(3, '0');
+		await loadContent(entry);
+		loadStyle(entry);
+		loadScript(entry);
+	}
+})();
