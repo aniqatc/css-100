@@ -20,9 +20,10 @@
 	}
 
 	date.innerHTML = `${current.toDateString()}`;
-	time.innerHTML = `${formatHours(current.getHours())}:${
-		minutes.length === 2 ? minutes : '0' + minutes
-	}`;
+	time.innerHTML = `${formatHours(current.getHours())}:${minutes.padStart(
+		2,
+		'0'
+	)}`;
 	calories.innerHTML = `<b>${Math.floor(Math.random() * 1200) + 600}</b> CAL`;
 	heartRate.innerHTML = ` ${Math.floor(Math.random() * 100) + 65}`;
 })();

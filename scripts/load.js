@@ -1,14 +1,10 @@
 async function loadContent(entry) {
 	const htmlURL = `/entries/${entry}/content.js`;
 
-	try {
-		const module = await import(htmlURL);
-		const markup = module.getMarkup();
-		const container = document.querySelector('.container');
-		container.insertAdjacentHTML('beforeend', markup);
-	} catch (error) {
-		console.error(`Failed to load content for entry ${entry}:`, error);
-	}
+	const module = await import(htmlURL);
+	const markup = module.getMarkup();
+	const container = document.querySelector('.container');
+	container.insertAdjacentHTML('beforeend', markup);
 }
 
 function loadStyle(entry) {
@@ -34,8 +30,8 @@ function loadScript(entry) {
 (async function () {
 	for (let i = 27; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');
-		await loadContent(entry);
 		loadStyle(entry);
 		loadScript(entry);
+		await loadContent(entry);
 	}
 })();
