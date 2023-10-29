@@ -1,0 +1,122 @@
+.day-028 {
+	background: #dd3c53;
+	color: #fff;
+}
+
+.day-028 .bell {
+	width: 50px;
+	height: 50px;
+	fill: #fff;
+	transform-origin: top center;
+	animation: bell-ringing 2s linear infinite alternate;
+}
+
+@keyframes bell-ringing {
+	0%,
+	50%,
+	100% {
+		transform: rotate(0deg);
+	}
+
+	45% {
+		transform: rotate(2deg);
+	}
+
+	55% {
+		transform: rotate(-2deg);
+	}
+
+	5%,
+	15%,
+	25%,
+	35%,
+	65%,
+	75%,
+	85%,
+	95% {
+		transform: rotate(8deg);
+	}
+
+	10%,
+	20%,
+	30%,
+	40%,
+	60%,
+	70%,
+	80%,
+	90% {
+		transform: rotate(-8deg);
+	}
+}
+
+.day-028 .line {
+	position: absolute;
+	fill: transparent;
+	stroke: #fff;
+	stroke-width: 3px;
+	stroke-linecap: round;
+	width: 15px;
+	height: 60px;
+	top: -4px;
+	opacity: 0;
+}
+
+.day-028 .line-left {
+	left: -30px;
+}
+
+.day-028 .line-left-1 {
+	animation: line-left-ring 1.5s ease-in infinite;
+}
+
+.day-028 .line-left-2 {
+	animation: line-left-ring 1.5s ease-in infinite 750ms;
+}
+
+.day-028 .line-left-3 {
+	animation: line-left-ring 1.5s ease-in infinite 1500ms;
+}
+
+.day-028 .line-right {
+	right: -30px;
+}
+
+.day-028 .line-right-1 {
+	animation: line-right-ring 1.5s ease-in infinite;
+}
+
+.day-028 .line-right-2 {
+	animation: line-right-ring 1.5s ease-in infinite 750ms;
+}
+
+.day-028 .line-right-3 {
+	animation: line-right-ring 1.5s ease-in infinite 1500ms;
+}
+
+@keyframes line-left-ring {
+	0% {
+		transform: translateX(0) scale(1);
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.9;
+	}
+	100% {
+		transform: translateX(-50px) scale(2);
+		opacity: 0;
+	}
+}
+
+@keyframes line-right-ring {
+	0% {
+		transform: translateX(0) scale(1);
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.8;
+	}
+	100% {
+		transform: translateX(50px) scale(2);
+		opacity: 0;
+	}
+}

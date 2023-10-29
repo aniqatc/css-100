@@ -28,7 +28,7 @@ function loadScript(entry) {
 
 /* Load files for current number of entries */
 (async function () {
-	for (let i = 27; i > 0; i--) {
+	for (let i = 28; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');
 		loadStyle(entry);
 		loadScript(entry);
