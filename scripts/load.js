@@ -21,6 +21,7 @@ function loadScript(entry) {
 		if (response.ok) {
 			const script = document.createElement('script');
 			script.src = scriptURL;
+			script.defer = true;
 			document.head.appendChild(script);
 		}
 	});
