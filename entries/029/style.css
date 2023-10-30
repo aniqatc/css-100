@@ -23,6 +23,7 @@
 	width: 250px;
 	padding: 10px 46px 10px 16px;
 	font-weight: 600;
+	font-size: 14px;
 	color: #4d8dcb;
 	border-radius: 2px;
 	border-bottom: 1px solid #4d8dcb;
@@ -30,6 +31,7 @@
 
 .day-029 .search-input::placeholder {
 	color: #a4b9ce;
+	font-size: 14px;
 }
 
 .day-029 .search-btn {
