@@ -3,8 +3,9 @@
 .day-012 {
 	background: #4bb6de;
 	color: #fff;
-	font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont,
-		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	font-family: 'Open Sans', 'Quattrocento Sans', system-ui, -apple-system,
+		BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Helvetica Neue', sans-serif;
 }
 
 .day-012 .code-link {

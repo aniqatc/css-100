@@ -82,6 +82,9 @@
 	height: 400px;
 	box-shadow: 1px 1px 16px 0 rgba(0, 0, 0, 0.1);
 	overflow: hidden;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Quattrocento Sans',
+		'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+		sans-serif;
 }
 
 .center {
@@ -97,8 +100,9 @@
 	top: 0;
 	right: 0;
 	padding: 10px;
-	visibility: hidden;
+	opacity: 0;
 	z-index: 10;
+	transition: opacity 300ms ease-out;
 }
 
 .code-link a {
@@ -114,7 +118,7 @@
 }
 
 .frame:hover .code-link {
-	visibility: visible;
+	opacity: 1;
 }
 
 /* Media Queries */
@@ -154,6 +158,6 @@
 	}
 
 	.code-link {
-		visibility: visible;
+		opacity: 1;
 	}
 }
