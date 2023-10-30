@@ -4,8 +4,8 @@
 }
 
 .day-029 .center {
+	top: calc(50% - 20px);
 	left: calc(50% - 125px);
-	top: calc(50% - 40px);
 	transform: none;
 	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1),
 		4px 12px 16px 0 rgba(0, 0, 0, 0.1);
