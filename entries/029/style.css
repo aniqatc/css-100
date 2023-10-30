@@ -45,6 +45,8 @@
 .day-029 .suggestions {
 	list-style-type: none;
 	background: #fff;
+	max-height: 160px;
+	overflow-y: scroll;
 }
 
 .day-029 .suggestions li {
