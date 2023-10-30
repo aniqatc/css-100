@@ -1,0 +1,24 @@
+.day-031 {
+	background: #4c4ba2;
+	color: #fff;
+}
+
+.day-031 .dot {
+	--time: calc(60 / (60 - var(--index)));
+	background: #fff;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	margin: 6px auto;
+	animation: pendulum-wave calc(var(--time) * 1000ms) ease-in infinite;
+}
+
+@keyframes pendulum-wave {
+	0%,
+	100% {
+		transform: translateX(50px);
+	}
+	50% {
+		transform: translateX(-50px);
+	}
+}
