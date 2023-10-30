@@ -1,0 +1,45 @@
+.day-030 {
+	background: #16a184;
+	color: #fff;
+}
+
+.day-030 .svg-wrapper {
+	width: 800px;
+	height: 65px;
+	fill: transparent;
+	stroke-width: 2px;
+	stroke-linecap: round;
+	stroke: #fff;
+}
+
+.day-030 .path {
+	transform: scaleX(2);
+	stroke-dasharray: 0.05 0.95;
+	stroke-dashoffset: 0;
+	animation: animated-path-line 3s ease-out infinite reverse;
+}
+
+@keyframes animated-path-line {
+	to {
+		stroke-dashoffset: 1;
+	}
+}
+
+.day-030 .circle {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: 50% 50%;
+	animation: animated-circle 3s ease-out infinite forwards;
+}
+
+@keyframes animated-circle {
+	0%,
+	50% {
+		opacity: 1;
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
