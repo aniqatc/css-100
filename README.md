@@ -4,15 +4,25 @@
 
 ---
 
-I'll be completing at least one CSS challenge a day for the next 100 days in order to improve how I write CSS and to explore different ways of styling components or creating pure CSS art.
+For the next 100 days, I'm committing to tackle at least one CSS challenge daily. My goal? To refine my CSS skills, explore diverse styling techniques, and delve into crafting pure CSS artwork and animations.
 
-I'll add a version of my daily completed challenge to my own website at <a href="https://css100.aniqa.dev">css100.aniqa.dev</a> in addition to submitting codepens to the official <a href="https://100dayscss.com/progress/aniqatc/">challenge website</a>.
+A version of my completed daily challenge can be found on my own website at <a href="https://css100.aniqa.dev">css100.aniqa.dev</a>. In addition to that, I'll be submitting codepens to the official <a href="https://100dayscss.com/progress/aniqatc/">challenge website</a> where my progress will also be tracked.
 
-All challenges will be written in pure **HTML** & **CSS** with occasional JavaScript for functionality (basically, no CSS preprocessors.. _for now_).
+### Project Structure
 
-Each entry will have its own CSS file which will be located in a separate folder (inside `/entries`) along with a README file that'll make note of any new concepts or tricks that I learned -- however, all markup will be inside the main `index.html` file.
+All challenges will be written in **HTML** & **CSS** with the occasional JavaScript for functionality (basically, no CSS preprocessors.. *for now*).
 
-Note: To avoid conflict with class naming, I'll be assigning a parent class that will indicate which day of the challenge it is, _e.g. `day-001` or `day-023`_, which will be used with the descendant selector to target classes only within the parent. This is so that I can use generic class names for each day and not worry about conflicting with class names that I may have created weeks earlier.
+Each entry can be found in their own separate folder (inside `/entries`) labeled by the day number. In each folder, there will be:
+- `style.css` file with all related styling
+- `content.js` file that returns the HTML markup 
+- `README.md` file where I go over any new concepts or tricks that I learned from completing that day’s challenge
+- `script.js` file for functionality
+
+**Note**
+
+To avoid conflict with class naming, I'll be assigning a parent class that will indicate which day of the challenge it is, _e.g. `day-001` or `day-023`_, which will then be used with the descendant selector to target classes only within that parent. This is so that I can use generic class names for each day and not worry about conflicting with class names that I may have created weeks earlier.
+
+Additionally, each `script.js` file wraps its functions in an Immediately Invoked Function Expression (IIFE) to prevent namespace conflicts in JavaScript.
 
 ---
 
