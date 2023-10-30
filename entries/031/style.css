@@ -4,7 +4,8 @@
 }
 
 .day-031 .dot {
-	--time: calc(60 / (60 - var(--index)));
+	--time: calc(30 / (30 - var(--index)));
+
 	background: #fff;
 	height: 12px;
 	width: 12px;
