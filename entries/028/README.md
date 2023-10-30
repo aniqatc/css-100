@@ -55,3 +55,8 @@ We can see the commands more clearly if we break each command into a new line (n
 - `S` is a cubic bezier curve but its first point is relative to previous position
 - `Q` is a quadratic bezier curve
 - `A` represents an arc
+
+#### Resources
+
+- <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">MDN Reference: SVG Paths</a>
+- <a href="https://www.nan.fyi/svg-paths">Interactive Guide: Understanding SVG Paths</a>
