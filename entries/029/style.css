@@ -1,0 +1,69 @@
+.day-029 {
+	background: #5ca4e9;
+	color: #333;
+}
+
+.day-029 .center {
+	left: calc(50% - 125px);
+	top: calc(50% - 40px);
+	transform: none;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1),
+		4px 12px 16px 0 rgba(0, 0, 0, 0.1);
+	max-width: 250px;
+}
+
+.day-029 .search-wrapper {
+	position: relative;
+}
+
+.day-029 .search-input {
+	outline: 0;
+	border: 0;
+	height: 40px;
+	width: 250px;
+	padding: 10px 46px 10px 16px;
+	font-weight: 600;
+	color: #4d8dcb;
+	border-radius: 2px;
+	border-bottom: 1px solid #4d8dcb;
+}
+
+.day-029 .search-input::placeholder {
+	color: #a4b9ce;
+}
+
+.day-029 .search-btn {
+	border: 0;
+	background: transparent;
+	position: absolute;
+	top: calc(50% - 12px);
+	right: 12px;
+	color: #4d8dcb;
+	font-size: 18px;
+}
+
+.day-029 .suggestions {
+	list-style-type: none;
+	background: #fff;
+}
+
+.day-029 .suggestions li {
+	padding: 8px 16px;
+	font-size: 12px;
+	color: #777;
+	word-break: break-all;
+	transition: color 300ms ease-out;
+}
+
+.day-029 .suggestions li:first-of-type {
+	padding-top: 16px;
+}
+
+.day-029 .suggestions li:last-of-type {
+	padding-bottom: 16px;
+}
+
+.day-029 .suggestions li:hover {
+	color: #5ca4e9;
+	cursor: pointer;
+}
