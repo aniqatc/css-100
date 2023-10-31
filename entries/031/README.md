@@ -1,4 +1,4 @@
-# Day 031
+## Day 031
 
 **<a href="https://css100.aniqa.dev#day-031">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Setting CSS Variable with JavaScript
+## Setting CSS Variable with JavaScript
 
 ```javascript
 dots.forEach((dot, index) => {
@@ -20,7 +20,7 @@ Using the `setProperty()` function on the `style` object allows us to set proper
 
 After the `--index` value is set for each dot, I can now manipulate how each dot is animated directly in the stylesheet.
 
-#### Chaining the Animations with `calc()` Function
+## Chaining the Animations with `calc()` Function
 
 All of the 20 dots will be given the same `@keyframe` animation -- they'll move side to side on the x-axis going `50px` both ways. In order to get a cascading effect where each individual dot is moving side to side at a different speed for a different length of time, we can use their respective `--index` value along with a `calc() formula` to compute a different animation duration.
 

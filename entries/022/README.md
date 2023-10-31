@@ -1,4 +1,4 @@
-# Day 022
+## Day 022
 
 **<a href="https://css100.aniqa.dev#day-022">Live Demo</a>**
 
@@ -10,7 +10,7 @@
 
 For most of the positioning and layout, I used absolute positioning and flexbox. The bigger challenge was figuring out which values to use for `stroke-dasharray` and `stroke-dashoffset` to represent a percentage on the circular progress bar. Getting the progress bar to represent a percentage isn't a requirement for this design but I think knowing how to do it could be really helpful for when I want to make a functional and dynamic circular progress bar in the future.
 
-### `stroke-dasharray`
+## `stroke-dasharray`
 
 Since the progress bar is circular, we need to get the circumference of the circle (the space around the circle) to define the `stroke-dasharray` which represents the length of the dashed line pattern. If the circumference of the circle is set to `stroke-dasharray` - it would represent 100% on the progress bar.
 
@@ -33,7 +33,7 @@ Then we can set the circumference for `stroke-dasharray`:
 }
 ```
 
-### `stroke-dashoffset`
+## `stroke-dashoffset`
 
 **Now**, we need to set the `stroke-dashoffset` which will move progress bar out of our view depending on the value:
 
@@ -81,7 +81,7 @@ Here's the exact values I used for the `stroke-dashoffset` in the animations for
 }
 ```
 
-### Reusing animations with CSS Variables
+## Reusing animations with CSS Variables
 
 There's something very obvious happening with my original keyframe declarations (in the code block above). I am repeating the same single property (`stroke-dashoffset`) for the same duration **three** times. The only difference is that all three of the animations have a different starting and ending value for the `stroke-dashoffset`. There's a way to declare a single keyframe that'll achieve the same goal: using CSS variables to define the values.
 

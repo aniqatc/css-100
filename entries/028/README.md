@@ -1,4 +1,4 @@
-# Day 028
+## Day 028
 
 **<a href="https://css100.aniqa.dev#day-028">Live Demo</a>**
 
@@ -20,7 +20,7 @@ Usually, I like to create my own SVG elements. So far, it's been pretty straight
 
 It wouldn't make sense for me to create this from scratch or using a program when it's already defined here **but** I still wanted to understand how `<path>` elements work.
 
-#### SVG `<path>` Element
+## SVG `<path>` Element
 
 - can create any type of line, curve, arc, shape and more
 - only a single attribute needs to be defined `d`
@@ -56,7 +56,7 @@ We can see the commands more clearly if we break each command into a new line (n
 - `Q` is a quadratic bezier curve
 - `A` represents an arc
 
-#### Resources
+## Resources
 
 - <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">MDN Reference: SVG Paths</a>
 - <a href="https://www.nan.fyi/svg-paths">Interactive Guide: Understanding SVG Paths</a>

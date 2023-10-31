@@ -1,4 +1,4 @@
-# Day 024
+## Day 024
 
 **<a href="https://css100.aniqa.dev#day-024">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### SVG ViewBox & Scaling
+## SVG ViewBox & Scaling
 
 While most of the elements to create this button animation were created using the `<button>` tag and a few `<span>` elements, there is a circular loading animation that occurs at the middle point of the overall animation. For this, I used an SVG with the `<circle>` element as I believe it's the easiest to maneuver and manipulate.
 
@@ -20,7 +20,7 @@ While most of the elements to create this button animation were created using th
 
 I did not declare the `viewBox` attribute on the `<svg>` element because I want unrestricted scaling of the SVG through CSS declarations. This allows me more control over overflow, which is useful because I'll have to animate the circle to scale up at some point.
 
-#### Circle SVG Element
+## Circle SVG Element
 
 Additionally, I put a percentage to specify the `cx` and `cy` attributes in my `<circle>` element. These values represent the center of the circle and using a percentage of `50%` for these values ensures that the center point remains in the center of the circle even if I adjust the container height and width to larger numbers.
 
@@ -30,7 +30,7 @@ Instead, by ensuring that the `cx` and `cy` (the center of the circle) is always
 
 **Positioning** SVG elements: `<circle>` (and other SVG elements) cannot be positioned using absolute positioning but I can position the parent container (which is the `<svg>` tag) using absolute positioning. So, I applied any positioning properties to the parent container (`<svg>`) and all the styling properties to the `<circle>` itself.
 
-#### Progress Spinner
+## Progress Spinner
 
 The rest of the challenge was just making sure that all the animations and transitions were chained in the correct sequence and were given a delay value that ensured each animation would occur one after another. It's actually just like my challenge from <a href="https://github.com/aniqatc/css-100/tree/main/entries/023">Day 023</a>!
 
@@ -42,7 +42,7 @@ I noticed that even though my `<circle>` element was visually hidden, it was sti
 
 Setting `pointer-events` to `none` prevents the `<circle>` element from any user interactions -- which frees that clickable space for the button instead.
 
-#### Transitions vs Animations
+## Transitions vs Animations
 
 Sometimes transitions are enough to replace an animation. For example, I'd normally create a `@keyframes` declaration to adjust the opacity of an element from `0` to `1` to have a nice fading-in effect. But instead, the same can be done using the `transition` property.
 

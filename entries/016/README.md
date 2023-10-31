@@ -1,4 +1,4 @@
-# Day 016
+## Day 016
 
 **<a href="https://css100.aniqa.dev#day-016">Live Demo</a>**
 
@@ -10,7 +10,7 @@
 
 This is definitely my least favorite challenge so far. I spent at least 45 minutes trying to get the animations in sync with the right speed and transformations as the one that was made <a href="https://100dayscss.com/days/16/">by the creator</a> **without** peaking at his code. Although I got all the transformations more-or-less right, I just couldn't get the timing down for the circle's bounce and the subsequent ripple. So, I eventually took a look at the creator's code to guide me on the right path (in addition to the resource linked below).
 
-#### Chaining Animations
+## Chaining Animations
 
 I'll be writing my notes inside the following code block:
 
@@ -107,7 +107,7 @@ if I don't specify 53% here then the scaling down will happen slowly from 50% to
 }
 ```
 
-#### Note about transformations & animations:
+## Note about transformations & animations:
 
 Don't use `transform` to center an element if we're going to apply an animation that includes a transformation! The transformations inside the animation will cancel out the transformation that is used to position the element -- which would shift our starting and/or ending position of the element. It's better to center/position the element using any other method.
 
@@ -119,6 +119,6 @@ For now, I didn't want to re-do the positioning because then I'd have to change 
 }
 ```
 
-#### Resources
+## Resources
 
 - <a href="https://css-tricks.com/using-multi-step-animations-transitions/">CSS-Tricks: Using Multi-Step Animations & Transitions</a>

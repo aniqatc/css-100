@@ -1,4 +1,4 @@
-# Day 004
+## Day 004
 
 **<a href="https://css100.aniqa.dev#day-004">Live Demo</a>**
 
@@ -12,19 +12,19 @@ Originally for this challenege, I created a single animation that would scale fr
 
 Since this animation has to run in an infinite cycle including alternating backwards, I couldn't get away with it. I needed to create 3 different animations for the 3 different circles.
 
-**Timing within `@keyframes`**
+## Timing within `@keyframes`
 
 - I used `%` percentages to define the different time periods of the animation
 
 So, my largest circle started scaling earlier and my smallest circle started scaling later. I didn't use `animation-delay` or any other trick. I just specified that the `scale()` property would begin at different points of the 2-second animation for each of the circles.
 
-**`transform` property**
+## `transform` property
 
 I used `position: absolute` to create a stacking context: by default (which is the order of the DOM), the circles were stacked in the order I needed them to be. However, I opted to not use directional properties that come with absolute positioning, instead, I used `transform: translate(-50%, -50%)`. I figured it was giving me exactly what I needed without having to calculate exact positions for each individual circle.
 
 My animation was using `scale()` so it was cancelling out my positioning handled by `translate()` so I had to include it in my animation declaration so that the scaling would happen from the correct, _translated_ position.
 
-**Custom Timing Functions**
+## Custom Timing Functions
 
 - allows us to create our own timing functions that specify how transitions & animations move
 
@@ -39,7 +39,7 @@ Defines, two points from `0` to `1` to define a **curve**:
   - progression calculated on y-axis
 - if point is over `1`, animation will move out of our view
 
-**Resources for Cubic Beziers**:
+## Resources for Cubic Beziers
 
 - <a href="https://easings.net/">Easing Function Cheat Sheet</a>
 - <a href="https://cubic-bezier.com/">Create & Compare Cubic Bezier Functions</a>

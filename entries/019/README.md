@@ -1,4 +1,4 @@
-# Day 019
+## Day 019
 
 **<a href="https://css100.aniqa.dev#day-019">Live Demo</a>**
 
@@ -7,6 +7,8 @@
 **Key Concepts**: styling radio buttons, general sibling selector `~`
 
 **Notes**:
+
+## Radio Buttons
 
 Usually, to create a custom style for any `<input>` element (that doesn't use a text field), we need a dedicated `<label>` element that either wraps around the `<input>` or uses the `for` attribute with its value being the `<input>` element's `id` attribute:
 
@@ -31,7 +33,7 @@ For radio buttons, we need to specify the `name` attribute in the `<input>` so t
 
 Anyways, once the default styling is removed using `display: none` on the `<input>` element, we can apply the desired custom styling directly to the label element instead.
 
-#### General Sibling Selector
+## General Sibling Selector
 
 Since each radio button has its own ID -- I could use that ID to target that specific radio buttion along with the `:checked` pseudoselector which will allow me to specify styling for whenever that button is checked off.
 

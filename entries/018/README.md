@@ -1,4 +1,4 @@
-# Day 018
+## Day 018
 
 **<a href="https://css100.aniqa.dev#day-018">Live Demo</a>**
 
@@ -14,7 +14,7 @@ So, I had to work backwards: I wrote out the code using the creator's code as a 
 
 Once I had a completed version of the elastic animation -- I started removing properties to see how it effected the element.
 
-**Flip card mechanism**
+## Flip card mechanism
 
 ```html
 <div class="top"></div>

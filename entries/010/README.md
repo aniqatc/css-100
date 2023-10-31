@@ -1,4 +1,4 @@
-# Day 010
+## Day 010
 
 **<a href="https://css100.aniqa.dev#day-010">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Outline vs border property
+## Outline vs border property
 
 I originally used `border` to create the white dotted border but unfortunately, there's no way to offset the border outwards or inwards the element that it is applied to. The workaround would be to add an empty `<div>` with the border styling and then use absolute positioning to position it exactly where I need it to be.
 
@@ -28,7 +28,7 @@ I was still able to create a visual dotted border with the same styling that the
 - `border` is computed along with the width/height of the element; it's part of the box model (goes between margin & padding); can style individual sides
 - `outline` is drawn outside of the element and do not take up any space; cannot style individual sides
 
-#### Conic-gradients
+## Conic-gradients
 
 A conic gradient goes clockwise around a chosen point (default is the center) following a 360-degree path.
 
@@ -50,7 +50,7 @@ My other attempt to animate this was to rotate it from `0deg` to `360deg` and wh
 
 **So, I had to opt for an SVG trick instead - which is what the original design uses.**
 
-#### Animating SVG borders
+## Animating SVG borders
 
 For my SVG, I am using a `<circle>` element with a transparent fill and red stroke. The red stroke is what I animated into a continuous loading spinner animation.
 

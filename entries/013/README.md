@@ -1,4 +1,4 @@
-# Day 013
+## Day 013
 
 **<a href="https://css100.aniqa.dev#day-013">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Image Optimization
+## Image Optimization
 
 AVIF and WebP are image formats that provide high-quality image compression - they have a smaller file size and do not sacrifice image quality. This makes websites load faster than it would with large JPEG and PNG files. I've compressed JPEG and PNG files to reduce the file size but sometimes, I would be sacrificing some obvious quality to do that. With AVIF and WebP, they are already optimized without any obvious quality changes.
 
@@ -37,7 +37,7 @@ cwebp -q 80 image.png -o image.webp
 - `-q` flag defines quality between 1 and 100
 - `-o` flag specifies the output path (file to be converted into)
 
-#### Responsive Images
+## Responsive Images
 
 My 100 Days of CSS showcase is built using a responsive grid system and each grid item can't go below `400px` of width, but it can stretch up because the max column size is `1fr` (I've noticed it doesn't stretch beyond `800px`).
 
@@ -51,7 +51,7 @@ Here's how I approached it:
 
 Note: the images are also in a two-column grid and are given `1fr` of column space adding to the responsiveness.
 
-#### User Profile -- Transformations: Translations
+## User Profile -- Transformations: Translations
 
 When any of the images in the gallery are clicked, an animation begins and reveals a user profile. Each element of the user profile moves into the frame from different directions that are placed outside of the frame.
 
@@ -59,7 +59,7 @@ To get this effect, I moved all of the items outside of the frame using `transfo
 
 So, on an `active` class, I had all the translations reversed by using `transform: translateY(0)` which meant that when the `active` class is applied to the elements, then they would be moved into their original position.
 
-#### User Profile -- Transitions & Transition Delays
+## User Profile -- Transitions & Transition Delays
 
 With the use of the `transition` and `transition-delay` property - I can have each element move into the frame at different rates. For example, I wanted the background of the user profile to appear first so these elements only had a `100ms` delay before they appered, whereas, the profile avatar and close button appeared about `400ms` and `600ms` later.
 
@@ -73,7 +73,7 @@ close-button {
 
 - The `transform` transition has a delay and longer duration but the `background-color` property has a short `200ms` transition that occurs immediately (this is for whenever the close button is hovered).
 
-#### Pointer Events
+## Pointer Events
 
 Technically, there are two layouts going on in this frame: the gallery and the other is the user profile that appears on top of the gallery when toggled. I noticed that even though I used a transformation to move the elements out of the frame, they were still taking up space on top of the gallery. I couldn't click on the gallery images because the `profile` div was still layered over the `gallery` div. I couldn't solve this with `z-index` because I can't have the profile be positioned behind the gallery. It would ruin the transition into the frame when it's toggled.
 

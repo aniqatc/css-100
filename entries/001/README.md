@@ -6,8 +6,6 @@
 
 **Key Concepts**: z-index, absolute positioning, flow layout, pseudo-elements
 
----
-
 **Notes**:
 
 ## For `position: absolute;` & flow layout

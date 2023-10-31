@@ -1,4 +1,4 @@
-# Day 025
+## Day 025
 
 **<a href="https://css100.aniqa.dev#day-025">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Transform Property: `perspective()` function
+## Transform Property: `perspective()` function
 
 The `perspective()` function lets us apply a 3D space to an individual element. For this challenge, it was perfect because I needed to apply a separate 3D flip to two elements that are contained in different `div` elements. The `perspective` property would not be the best choice in this case because the `perspective` property lets us create a shared 3D space for a containing element's children and transformations that are applied to these child elements will be relative to each other.
 
@@ -16,7 +16,7 @@ In addition to applying `perspective()`, I added a `rotate()` to both elements t
 
 - <a href="https://github.com/aniqatc/css-100/tree/main/entries/014">On Day 14, I created a flip card that uses `perspective` property to create a 3D space</a>.
 
-#### Animation Play State
+## Animation Play State
 
 I haven't had much opportunity to use this particular property but I knew it exists so it really came in handy for an issue I came across.
 
@@ -34,7 +34,7 @@ So here's how I tackled it: I used `animation-play-state: paused` on the `active
 }
 ```
 
-#### Handling transitions for different states of an element
+## Handling transitions for different states of an element
 
 So far, whenever I want a transition -- usually when hovering over a button or to apply a transformation -- I've been using the property on the initial element as I know it'll apply to hover and focus states and active classes. But transitions can be applied to individual elements at every state.
 
@@ -92,7 +92,7 @@ So I kept the transitions I applied on my active class and added a different tra
 }
 ```
 
-#### Tap highlight on mobile
+## Tap highlight on mobile
 
 On mobile, I noticed that when I tapped on the location marker icon, a greyed out box would appear for a split second. This box appears on most mobile devices as a default indication that we are tapping (clicking) a clickable element. In this case, I found it annoying to see a box appear around my location marker, especially because it doesn't adapt to the shape of the element itself.
 

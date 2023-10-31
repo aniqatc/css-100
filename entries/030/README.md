@@ -1,4 +1,4 @@
-# Day 030
+## Day 030
 
 **<a href="https://css100.aniqa.dev#day-030">Live Demo</a>**
 
@@ -49,7 +49,7 @@ Instead, we can now set `stroke-dasharray` and `stroke-dashoffset` based on the 
 - `stroke-dashoffset` is set to `0` so that nothing can be seen
 - the @keyframes declaration for `path-line` defines that the `stroke-dashoffset` is `1` meaning the 5% gap will run along 100% of the line
 
-#### Resources
+## Resources
 
 - <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/pathLength">MDN Reference: pathLength Attribute</a>
 - <a href="https://css-tricks.com/a-trick-that-makes-drawing-svg-lines-way-easier/">CSS Tricks: A Trick That Makes Drawing SVG Lines Way Easier</a>

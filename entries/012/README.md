@@ -1,4 +1,4 @@
-# Day 012
+## Day 012
 
 **<a href="https://css100.aniqa.dev#day-012">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-**Text properties: `line-height` and `letter-spacing`**
+## Text properties: `line-height` and `letter-spacing`
 
 I used a pseudoelement to create faded quote marks that lay underneath the start of the quote text. I played around with the `font-size` before settling on `240px`. The quote marks don't actually measure out to be `240px` which would be more than 50% of the height of my frame.
 
@@ -22,7 +22,7 @@ In addition to the extra space above & below my quote marks, the quote marks had
 
 - `letter-spacing` - sets the horizontal white space between text characters
 
-**Tooltip on hover**
+## Tooltip on hover
 
 To get the tooltip to appear on `:hover`, I took advantage of the **next-sibling combinator** which uses a `+` sign. The `+` separates two sibling elements (direct children of the same parent element) and applies declarations to the **second** sibling ONLY if it is directly next to the first sibling. Meaning, if there was another element between the two siblings, then this would not work.
 

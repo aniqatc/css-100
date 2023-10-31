@@ -1,4 +1,4 @@
-# Day 005
+## Day 005
 
 **<a href="https://css100.aniqa.dev#day-005">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Transition property on toggle element
+## Transition property on toggle element
 
 **Transitions on `display: none` don't work**
 
@@ -24,7 +24,7 @@ To get around this issue, I used a combination of the `visibility`, `opacity` an
 - `opacity` changes how transparent or opaque an element is (set to `0`, and then increased to `1` on hover, giving a fade-in effect)
 - `height` sets the height (set to `0` and then, increased to intended height on hover)
 
-#### Different ways to achieve a tooltip
+## Different ways to achieve a tooltip
 
 **`data-` attribute and pseudoelements**
 
@@ -58,7 +58,7 @@ I created my graph entirely with SVG elements and it almost seemed too easy... u
 
 I didn't want to redo my graph entirely so I opted to create all the tooltips in a single `<div>` and I used absolute positioning to get them to appear in the correct spots. With the help of some JS event listeners `mouseover` and `mouseleave`, the tooltips appear rather nicely!
 
-#### Writing SVGs from scratch
+## Writing SVGs from scratch
 
 Whenever I see SVG code, it's always a bunch of numbers separated by commas and weird shorthand attributes in between. Up until now, I was intimidated by them and thought that everyone just uses generators/programs to create them. But they are actually AMAZING and not so bad to use (for something like this).
 
@@ -101,6 +101,6 @@ Whenever I see SVG code, it's always a bunch of numbers separated by commas and 
 
 Note about `stroke-dasharray`: takes two values seperated by a space, # of dashes and space between dashes
 
-**Resources**
+## Resources
 
 This short <a href="https://youtu.be/nhieMw1vegc?si=z-qJQR9oxWqcP8As">YouTube video</a> makes it super clear how to create a `<polyline>`.

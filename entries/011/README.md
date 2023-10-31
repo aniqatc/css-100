@@ -1,4 +1,4 @@
-# Day 011
+## Day 011
 
 **<a href="https://css100.aniqa.dev#day-011">Live Demo</a>**
 
@@ -8,13 +8,13 @@
 
 **Notes**:
 
-**Importing external SVG files**
+## Importing external SVG files
 
 An article by CSS-Tricks with <a href="https://css-tricks.com/using-svg/">everything about using SVGs</a>.
 
 I had to use the SVG link provided by the challenge to get the shoe design and while there was many options, I opted to import the SVG using the `<image>` tag. I wasn't making any changes to the SVG itself and I don't need the SVG to scale any smaller or larger so treating it as an image works for me here.
 
-**Radial Gradients**
+## Radial Gradients
 
 Radial gradients join colors from the center going outwards:
 
@@ -34,7 +34,7 @@ Radial gradients join colors from the center going outwards:
 - position defines the gradient's position -- similar to `transform-origin` or `background-position` (center is default)
 - minimum 2 colors need to be defined, the starting color and the final color
 
-**Understanding `transform-origin` property values**
+## Understanding `transform-origin` property values
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin">MDN's Documentation on Transform Origin</a>
 

@@ -1,4 +1,4 @@
-# Day 027
+## Day 027
 
 **<a href="https://css100.aniqa.dev#day-027">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Multiple labels for the checkbox input
+## Multiple labels for the checkbox input
 
 When I saw this challenge, I immediately knew that I was going to use checkbox `<input>` elements with two `<label>` elements dedicated to it. One would represent the unchecked state and the other would show a custom checkmark. I learned about this method when I did <a href="https://github.com/aniqatc/css-100/tree/main/entries/020">Day 20's challenge</a> where one button triggered an animation and the other reset the animation -- in reality, a checkbox was being checked and unchecked - they were just disguised as buttons.
 
@@ -49,7 +49,7 @@ input:checked ~ .checkmark {
 }
 ```
 
-#### Polyline SVG & Calculating `stroke-dasharray`
+## Polyline SVG & Calculating `stroke-dasharray`
 
 **Figuring out the points for the polyline**
 
@@ -123,6 +123,6 @@ console.log(length); // This will give you the total length of the polyline
 
 Apparently, there are dozens of native JavaScript functions that pertain to SVG elements. This really opens up a world of possibilities since I didn't know these existed. It makes me more excited to create more custom SVG elements knowing I have JavaScript to do these crazy calculations for me!
 
-#### Reference: Additional SVG Methods and Properties:
+## Reference: Additional SVG Methods and Properties:
 
 - <a href="https://developer.mozilla.org/en-US/docs/Web/API/SVGGeometryElement">MDN Reference: SVGGeometryElement represents SVG elements</a>

@@ -1,4 +1,4 @@
-# Day 021
+## Day 021
 
 **<a href="https://css100.aniqa.dev#day-021">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### PacMan Chomp
+## PacMan Chomp
 
 For me, getting the chomping animation for the Pac-Man to work was the hardest part. To get it right, I made us of the `stroke-width`, `stroke-dasharray` and `stroke-dashoffset` properties for the Pac-Man svg.
 
@@ -52,7 +52,7 @@ The gap becomes visible which makes us see how the `stroke-dasharray` and `strok
   - `stroke-dashoffset: 75` shifts the gap pattern 75 pixels around the circle, enough to open up the stroke (but since the stroke width is so thick, the opening isn't actually 75 pixels open, it only opens up enough to give the illusion I'm looking for)
   - `transform: rotate(30deg)` rotates the circle by 30 degrees gives the chomping effect
 
-#### PacMan Dots
+## PacMan Dots
 
 For the dots, I created a single horizontal line using the `<polyline>` element (where I defined two points where the line should connect).
 

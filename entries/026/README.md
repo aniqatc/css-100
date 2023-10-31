@@ -1,4 +1,4 @@
-# Day 026
+## Day 026
 
 **<a href="https://css100.aniqa.dev#day-026">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Centering elements that use absolute positioning without transforms
+## Centering elements that use absolute positioning without transforms
 
 My usual go-to trick to center an element (relative to its parent) is to use the following snippet:
 
@@ -80,7 +80,7 @@ Here's an example based on my modal element:
 }
 ```
 
-#### Modulo Operator `%`
+## Modulo Operator `%`
 
 A few days ago, I read an <a href="https://www.joshwcomeau.com/javascript/modulo-operator/">article by Josh Comeau about the JS Modulo Operator</a>. Before that, I had only known it as the operator that lets us get the remainder value for division equations. Josh does a fantastic job at explaining what the modulo operator does so when I worked on today's challenge - I immediately thought of using the modulo operator to cycle out which modal to show. It took some trial-and-error before it clicked but I'm so glad I worked through the confusion.
 

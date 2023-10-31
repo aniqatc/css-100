@@ -1,4 +1,4 @@
-# Day 002
+## Day 002
 
 **<a href="https://css100.aniqa.dev#day-002">Live Demo</a>**
 
@@ -8,13 +8,13 @@
 
 **Notes**:
 
-**Block vs inline elements**
+## Block vs inline elements
 
 - `<span>` only takes up space necessary for its content
 - `<div>` takes up full width of parent container
 - in my case, I already used `<span>` tags for my hamburger lines, so I applied `display: block` to these elements allowing them to convert into block-level elements
 
-**Animaton property limitations**
+## Animaton property limitations
 
 I was determined not to create 6 different animations (3 for opening the menu and 3 for closing it) for this challenge, and here's how I approached it:
 
@@ -37,7 +37,7 @@ animation: combine-line-1 1000ms ease-in reverse;
 
 **However**, this was not working when I used JavaScript to add/remove the relevant classes on button click. The animation would play only once and every subsequent click after that would toggle the hamburger icon but it would **not** play the animation anymore. <a href="https://stackoverflow.com/questions/33347992/reuse-css-animation-in-reversed-direction-by-resetting-the-state">Apparently, this is a known issue</a>: you can't restart an animation without some delay in between removing and re-adding the class.
 
-**Reset Animations w/ Reflow Trick**
+## Reset Animations w/ Reflow Trick
 
 **The solution**, thanks to an article by <a href="https://css-tricks.com/restart-css-animation">CSS-Tricks</a>. In order to restart the animation every time a button click occurs, I needed to use JavaScript to trigger a reflow in between removing a class and re-adding it.
 

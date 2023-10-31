@@ -1,4 +1,4 @@
-# Day 009
+## Day 009
 
 **<a href="https://css100.aniqa.dev#day-009">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Drawing a night scene with absolute positioning
+## Drawing a night scene with absolute positioning
 
 Key aspects of the background scene with hill landscape and a glowing moon with craters:
 
@@ -16,7 +16,7 @@ Key aspects of the background scene with hill landscape and a glowing moon with 
 - applying `overflow: hidden` to the moon so that it contains craters that appear at the edge of the moon; same property used on hills so that they don't overflow into the weather data section
 - used directional properties `top`, `bottom`, `right` and `left` to individually place 10 varying sizes of craters on the moon
 
-#### Flexbox margin trick
+## Flexbox margin trick
 
 Super cool flexbox trick: using `margin-{direction}` property with `auto` to take up all the extra space available in a flex container.
 
@@ -32,7 +32,7 @@ I used `justify-content: space-between` to space the three items equally -- most
 
 Here's a more <a href="https://css-tricks.com/the-peculiar-magic-of-flexbox-and-auto-margins/">detailed article by CSS-Tricks</a> to get an understanding about auto margins.
 
-#### Continuous rain animation with varying size droplets
+## Continuous rain animation with varying size droplets
 
 First step was to create the styling declarations for the droplets so I temporarily added rain droplets to get an idea of its shape, color, and sizing and applied these to specific classes. For sizing, I created three different classes: `lg`, `md` and `sm` which represent large, medium and small rain droplets.
 

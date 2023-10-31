@@ -1,4 +1,4 @@
-# Day 008
+## Day 008
 
 **<a href="https://css100.aniqa.dev#day-008">Live Demo</a>**
 
@@ -8,11 +8,11 @@
 
 **Notes**:
 
-#### Animatable properties
+## Animatable properties
 
 I found a <a href="https://projects.verou.me/animatable/">visual tool</a> that shows all the different CSS properties that can be animated using the `@keyframes` at-rule including an example for each.
 
-#### 8 value border-radius
+## 8 value border-radius
 
 `border-radius` that I've been familiar with so far:
 
@@ -31,13 +31,13 @@ I found a <a href="https://projects.verou.me/animatable/">visual tool</a> that s
 
 For the main element at the center of my frame: I used an animation to adjust the `border-radius` property on a circle that is also rotating slowly -- this gives it the shape-shifting illusion.
 
-#### Filter to get gooey effect
+## Filter to get gooey effect
 
 This <a href="https://css-tricks.com/shape-blobbing-css/">article by CSS-Tricks</a> goes over how to create a **gooey effect** between elements. For this challenge, I need my main rotating and shape-shifting blob to _absorb_ the mini balls that are rotating around it. The _absorbing_ part of the animation should have a gooey-look to it.
 
 The elements that need to morph into each other have to have a `filter: blur()` and `filter: contrast()`; the `blur` and `contrast` will fight each other and leave us with a shape that looks like the `contrast` won... but, the `blur` filter is still there. It only appears when the two elements that have a blur are near each other which is when they will start to share that blur radius. When they're sharing that blur space with each other, we get that gooey effect that is made clear with `contrast()`.
 
-#### Random numbers for CSS values using JS
+## Random numbers for CSS values using JS
 
 <a href="https://css-tricks.com/random-numbers-css/">There is no way to generate random numbers in pure CSS -- we need some JavaScript</a>. So, I opted to use JavaScript to set custom properties for my spinning mini circles around the main blob.
 
@@ -76,7 +76,7 @@ I had to set a custom `transform-origin` for the mini circles otherwise they wou
 
 - `400% 300%` means 60 pixels to the right and 45 pixels below -- rotations would now occur around this point instead of within the element's width/height (in place)
 
-#### Blob generators (SVG-Based)
+## Blob generators (SVG-Based)
 
 The easiest way to create an animated blob is to use a generator but I've only found generators that will do so in SVG-format only:
 

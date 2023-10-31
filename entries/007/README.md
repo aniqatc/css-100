@@ -1,4 +1,4 @@
-# Day 007
+## Day 007
 
 **<a href="https://css100.aniqa.dev#day-007">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-**Absolute Positioning**
+## Absolute Positioning
 
 <img src="/entries/007/alignment.png" width="500"/>
 
@@ -20,13 +20,13 @@ This is because in the regular flow of the page, there was no space being occupi
 
 On the same note, adding `height` and `width` also ensured that the entire element is hoverable. If I hadn't done that, then the space in between the two lines is not considered part of the element so hovering between that space doesn't allow the hover state to show -- it would only show when hovering within the icon itself.
 
-**Toggling Elements, Transformations**
+## Toggling Elements, Transformations
 
 Clicking the menu icon opens up a hidden nav that appears from underneath the notification feed. This is done by using a `translate()` transformation on both of these elements. The hidden nav also has a lower `z-index` to ensure that it remains below the notification feed.
 
 Also, an animation wasn't required -- just some JavaScript to toggle back and forth from the menu and the notification feed.
 
-**Overflow & animation delay**
+## Overflow & animation delay
 
 There is an animation that occurs as soon as the design loads: the notifications appear one-by-one from the bottom of the feed. This is done by hiding the `overflow` of the notifications frame so that we don't see the notifications until they start to appear.
 
@@ -37,7 +37,7 @@ The animation itself focuses on getting the elements to move upwards into its de
 - `translate()` value for `transform`
 - set the opacity from `0` to `1` to get a fade-in effect
 
-**`animationend` JavaScript Event**
+## `animationend` JavaScript Event
 
 `animationend`, along with `animationstart`, `animationcancel`, `animationiteration` are events that are triggered based on the cycle of a CSS animation.
 

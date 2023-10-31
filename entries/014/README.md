@@ -1,4 +1,4 @@
-# Day 014
+## Day 014
 
 **<a href="https://css100.aniqa.dev#day-014">Live Demo</a>**
 
@@ -12,7 +12,7 @@ This challenge features a card flip with each side showing a different animation
 
 In order to achieve a card flip animation, I need to create a 3D space for it. Elements are rendered on a 2D plane so they exist in a two-dimensional space with width and height but they lack depth. So, we can't achieve the **flip** mechanism without intializing our elements to work with 3D transformations, which will give us the depth and perspective we need.
 
-### Perspective
+## Perspective
 
 **1. Initializing the 3D space: Perspective**
 
@@ -104,7 +104,7 @@ Now, when the `card` container is hovered over, the `.card-face` which holds bot
 }
 ```
 
-### `perspective-origin`
+## `perspective-origin`
 
 I didn't need this property for this specific challenge but I learned about it anyways. `perspective-origin` determines the vanishing point of the 3D space. It has to be declarated on the parent element (just like the `perspective` property). It takes 2 values: `x` and `y` coordinates of the persective point (which is where the viewer is looking from):
 
@@ -118,12 +118,12 @@ I didn't need this property for this specific challenge but I learned about it a
 
 <a href="https://codepen.io/desandro/pen/bMqZmr">Here's a Codepen that lets you play with different values for perspective properties</a>! Values can be in percentages or in pixels.
 
-### NOTE: `perspective` vs `transform: perspective()`
+## NOTE: `perspective` vs `transform: perspective()`
 
 - `perspective` applies perspective (depth) to all its child elements and they share a single 3D space
 - `transform: perspective()` only creates one 3D space for each individual element even if they are sibling elements -- each element is given its own perspective
 
-### JavaScript to Randomize Animation Properties
+## JavaScript to Randomize Animation Properties
 
 Once again, I'm not using a CSS preprocessor which sometimes gives the ability to generate random numbers in the declarations.
 
@@ -137,7 +137,7 @@ I used JavaScript to generate random values for the little dashes that are anima
 - `animation-delay` - some dashes can start their animation later
 - `width` - each dash will have a random width
 
-### Resources
+## Resources
 
 - <a href="https://3dtransforms.desandro.com/">Intro to CSS 3D Transforms</a>
 - <a href="https://css-irl.info/learning-about-css-3d-transforms/">CSS 3D Transforms & Perspective + Demos</a>

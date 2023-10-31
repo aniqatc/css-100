@@ -1,4 +1,4 @@
-# Day 020
+## Day 020
 
 **<a href="https://css100.aniqa.dev#day-020">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-#### Checkbox Input to Trigger & Reset Animation
+## Checkbox Input to Trigger & Reset Animation
 
 ```html
 <style>
@@ -44,7 +44,7 @@ Note: the general sibling combinator only allows us to select subsequent sibling
 
 The second `<label>` element represents the reset button -- this simply unchecks the checkbox which takes us back to our initial starting state.
 
-#### Animating SVG Polylines
+## Animating SVG Polylines
 
 ```html
 <svg class="mail">

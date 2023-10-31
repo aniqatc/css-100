@@ -1,4 +1,4 @@
-# Day 006
+## Day 006
 
 **<a href="https://css100.aniqa.dev#day-006">Live Demo</a>**
 
@@ -8,7 +8,8 @@
 
 **Notes**:
 
-**Border property**
+## Border property
+
 I think the most common way that border is taught is its shorthand:
 
 ```css
@@ -30,7 +31,7 @@ However, we can target border properties individually **AND** we can target each
   - `border-right-style`
   - `border-bottom-color`
 
-**Transformations only work on transformable elements**
+## Transformations only work on transformable elements
 
 What is a transformable element? <a href="https://drafts.csswg.org/css-transforms-1/#terminology">Any element whose layout uses the CSS box model except non-replaced inline boxes</a>.
 

@@ -1,4 +1,4 @@
-# Day 015
+## Day 015
 
 **<a href="https://css100.aniqa.dev#day-015">Live Demo</a>**
 
@@ -8,7 +8,7 @@
 
 **Notes**:
 
-### Styling the default file upload input
+## Styling the default file upload input
 
 Note: The `<input>` and the `.dropzone` element and image are nested inside a `<label>` element.
 
@@ -20,7 +20,7 @@ Note: The `<input>` and the `.dropzone` element and image are nested inside a `<
 
 4. In place of the default button and text provided by the file input, I am using an SVG icon that'll be replaced with the name of the file that is chosen by the user.
 
-### Progress Bar
+## Progress Bar
 
 The progress bar was super easy - I used aboslute positioning to ensure that it lines up at the left edge of the container (`left: 0`) so that when the active class is added, the width will increase to the entire width of the container and it'll transition in over `2s` from the left edge.
 
@@ -39,7 +39,7 @@ The progress bar was super easy - I used aboslute positioning to ensure that it 
 }
 ```
 
-### Accessing the file input with JavaScript
+## Accessing the file input with JavaScript
 
 ```html
 <!-- Single file upload -->
@@ -64,7 +64,7 @@ Since I'm only looking to handle a single upload, I can access the first (and on
 - `files[0].type` = the type of file in MIME format
 - `files[0].lastModified` = timestamp of last modification
 
-#### Updating the dropzone with the filename
+## Updating the dropzone with the filename
 
 The `.dropzone` is the element that represents the area in which we can drop a file or click and upload a file. Once a file is selected, I'd like the `.dropzone` icon to be replaced with the file name. To do that, I added the `change` event listener on the file input element (which is specifically triggered when the value of an input element changes).
 
@@ -79,7 +79,7 @@ fileInput.addEventListener('change', event => {
 });
 ```
 
-### Disabling Elements
+## Disabling Elements
 
 In order to disable an input element or button, I simply attached the `disabled` property and assigned it to `true`.
 
