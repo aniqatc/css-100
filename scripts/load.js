@@ -35,4 +35,14 @@ function loadScript(entry) {
 		loadScript(entry);
 		await loadContent(entry);
 	}
+
+	/* Scroll to hashed location */
+	const hash = window.location.hash;
+	console.log(hash);
+	if (hash) {
+		const targetElement = document.querySelector(hash);
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
 })();
