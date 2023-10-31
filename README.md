@@ -26,6 +26,47 @@ Additionally, each `script.js` file wraps its functions in an Immediately Invoke
 
 ---
 
+### Challenge Index
+	
+| README | Key Topics |
+|:--------:|:--------|
+| [Day 001](https://github.com/aniqatc/css-100/tree/main/entries/001) | absolute positioning, z-index |
+| [Day 002](https://github.com/aniqatc/css-100/tree/main/entries/002) | transform, animation |
+| [Day 003](https://github.com/aniqatc/css-100/tree/main/entries/003) | clip-path, animation, transform-origin |
+| [Day 004](https://github.com/aniqatc/css-100/tree/main/entries/004) | timing animation steps |
+| [Day 005](https://github.com/aniqatc/css-100/tree/main/entries/005) | SVG elements, tooltips |
+| [Day 006](https://github.com/aniqatc/css-100/tree/main/entries/006) | borders |
+| [Day 007](https://github.com/aniqatc/css-100/tree/main/entries/007) | absolute positioning, toggling elements, overflow |
+| [Day 008](https://github.com/aniqatc/css-100/tree/main/entries/008) | 8-value border-radius, filter, random numbers w/ JS, transform-origin |
+| [Day 009](https://github.com/aniqatc/css-100/tree/main/entries/009) | flexbox margin, rain animation w/ JS |
+| [Day 010](https://github.com/aniqatc/css-100/tree/main/entries/010) | outline vs border, conic-gradient, animate SVG stroke |
+| [Day 011](https://github.com/aniqatc/css-100/tree/main/entries/011) | radial-gradient, transform-origin |
+| [Day 012](https://github.com/aniqatc/css-100/tree/main/entries/012) | text properties, tooltip |
+| [Day 013](https://github.com/aniqatc/css-100/tree/main/entries/013) | image optimization, responsive images, transforms, transition delays, pointer events |
+| [Day 014](https://github.com/aniqatc/css-100/tree/main/entries/014) | perspective, 3D transforms, backface-visibility, random animation values w/ JS |
+| [Day 015](https://github.com/aniqatc/css-100/tree/main/entries/015) | custom file upload input, access file input in JS, progress loading bar |
+| [Day 016](https://github.com/aniqatc/css-100/tree/main/entries/016) | chaining multiple animations |
+| [Day 017](https://github.com/aniqatc/css-100/tree/main/entries/017) | rotations, absolute positioning, SVG polygons |
+| [Day 018](https://github.com/aniqatc/css-100/tree/main/entries/018) | 3D animations |
+| [Day 019](https://github.com/aniqatc/css-100/tree/main/entries/019) | styling radio buttons, general sibling selector |
+| [Day 020](https://github.com/aniqatc/css-100/tree/main/entries/020) | checkbox input, animating svg polylines |
+| [Day 021](https://github.com/aniqatc/css-100/tree/main/entries/021) | animating SVGs |
+| [Day 022](https://github.com/aniqatc/css-100/tree/main/entries/022) | stroke-dasharray, stroke-dashoffset |
+| [Day 023](https://github.com/aniqatc/css-100/tree/main/entries/023) | sequential animations |
+| [Day 024](https://github.com/aniqatc/css-100/tree/main/entries/024) | SVG viewBox, circle SVG element, pointer-events, transitions vs animations |
+| [Day 025](https://github.com/aniqatc/css-100/tree/main/entries/025) | transform perspective, animation-play-state, different transitions for different states |
+| [Day 026](https://github.com/aniqatc/css-100/tree/main/entries/026) | center absolute positioned elements without transform, modulo operator in JS |
+| [Day 027](https://github.com/aniqatc/css-100/tree/main/entries/027) | multiple labels for checkbox, polyline svg, stroke-dasharray |
+| [Day 028](https://github.com/aniqatc/css-100/tree/main/entries/028) | svg path element |
+| [Day 029](https://github.com/aniqatc/css-100/tree/main/entries/029) | input text |
+| [Day 030](https://github.com/aniqatc/css-100/tree/main/entries/030) | pathLength & animating svg elements |
+| [Day 031](https://github.com/aniqatc/css-100/tree/main/entries/031) | sequential animations with calc() & css variables |
+| [Day 032](https://github.com/aniqatc/css-100/tree/main/entries/032) | number input |
+| [Day 033](https://github.com/aniqatc/css-100/tree/main/entries/033) | absolute positioning & animating SVG elements |
+
+
+---
+
 ### Note Template
 
 **Day 000**
