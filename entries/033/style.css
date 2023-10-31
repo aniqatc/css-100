@@ -1,0 +1,58 @@
+.day-033 {
+	background: #75c1e8;
+	color: #fff;
+}
+
+.day-033 .sun {
+	background: #ffd93c;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 16px 0 rgba(255, 217, 60, 0.4);
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	animation: sunny-day-movement 30s ease-out infinite alternate;
+}
+
+.day-033 .cloud-lg {
+	width: 155px;
+	height: 70px;
+	fill: #fff;
+	position: absolute;
+	top: 30%;
+	right: 2%;
+	animation: cloudy-day-movement 50s ease-out infinite alternate;
+}
+
+.day-033 .cloud-md {
+	width: 115px;
+	height: 60px;
+	fill: #fff;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	animation: cloudy-day-movement 60s ease-out infinite alternate;
+}
+
+.day-033 .cloud-sm {
+	width: 70px;
+	height: 30px;
+	fill: #fff;
+	position: absolute;
+	top: 12%;
+	right: 10%;
+	animation: cloudy-day-movement 40s ease-out infinite alternate;
+}
+
+@keyframes cloudy-day-movement {
+	to {
+		transform: translateX(-400px);
+	}
+}
+
+@keyframes sunny-day-movement {
+	to {
+		transform: translateX(200px);
+	}
+}
