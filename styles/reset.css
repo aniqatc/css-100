@@ -13,7 +13,6 @@
 body {
 	font-family: 'Quattrocento Sans', sans-serif;
 	background-color: #f2f4f6;
-	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
