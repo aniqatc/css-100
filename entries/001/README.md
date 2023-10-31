@@ -1,4 +1,4 @@
-# Day 001
+## Day 001
 
 **<a href="https://css100.aniqa.dev#day-001">Live Demo</a>**
 
@@ -6,15 +6,17 @@
 
 **Key Concepts**: z-index, absolute positioning, flow layout, pseudo-elements
 
+---
+
 **Notes**:
 
-**For `position: absolute;` & flow layout**
+## For `position: absolute;` & flow layout
 
 - elements will anchor itself to the closest parent element that uses the `position` property with `relative` or `absolute`
 - positioned element is taken out of the normal flow of the page which is important to keep in mind because it will cause the positioned element to stack on top of other elements in the page because those other elements are still in normal flow
 - by declaring a height/width for the parent of the positioned elements, it'll make sure to take up that amout of space within the normal flow of the page
 
-**For `z-index;`**
+## For `z-index;`
 
 - only works on **positioned** elements (...and flexbox)
 - default value is `auto` which is the same `0`
