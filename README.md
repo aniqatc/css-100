@@ -19,11 +19,11 @@ Each entry can be found in their own separate folder (inside `/entries`) labeled
 - `script.js` file for functionality
 - `README.md` file where I go over any new concepts or tricks that I learned from completing that day’s challenge
 
-**Note**
+<br/>
 
-To avoid conflict with class naming, I'll be assigning a parent class that will indicate which day of the challenge it is, _e.g. `day-001` or `day-023`_, which will then be used with the descendant selector to target classes only within that parent. This is so that I can use generic class names for each day and not worry about conflicting with class names that I may have created weeks earlier.
-
-Additionally, each `script.js` file wraps its functions in an Immediately Invoked Function Expression (IIFE) to prevent namespace conflicts.
+> [!NOTE]
+> To avoid conflict with class naming, I'll be assigning a parent class that will indicate which day of the challenge it is, _e.g. `day-001` or `day-023`_, which will then be used with the descendant selector to target classes only within that parent. <br/><br/>
+> Additionally, each `script.js` file wraps its functions in an Immediately Invoked Function Expression (IIFE) to prevent namespace conflicts.
 
 ## Challenge Index
 
