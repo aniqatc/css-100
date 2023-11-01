@@ -1,0 +1,35 @@
+.day-034 {
+	background: #7f7caf;
+	color: #d6d6f2;
+}
+
+.day-034 .line {
+	width: 315px;
+	height: 2px;
+	background-color: #d6d6f2;
+	border-radius: 10px;
+	margin: 16px -6px;
+	transform: scaleX(0);
+	animation: line-scalex-out 1600ms ease-in forwards;
+}
+
+.day-034 .letters {
+	fill: #d6d6f2;
+	stroke: #7f7caf;
+	stroke-dasharray: 1;
+	stroke-dashoffset: 0;
+	stroke-width: 22;
+	animation: word-fill 2200ms ease-in forwards;
+}
+
+@keyframes word-fill {
+	to {
+		stroke-dashoffset: 1;
+	}
+}
+
+@keyframes line-scalex-out {
+	to {
+		transform: scaleX(1);
+	}
+}
