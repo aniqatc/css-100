@@ -27,6 +27,16 @@ function loadScript(entry) {
 	});
 }
 
+function scrollToHash() {
+	const hash = window.location.hash;
+	if (hash) {
+		const targetElement = document.querySelector(hash);
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+}
+
 /* Load files for current number of entries */
 (async function () {
 	for (let i = 35; i > 0; i--) {
@@ -36,13 +46,6 @@ function loadScript(entry) {
 		await loadContent(entry);
 	}
 
-	/* Scroll to hashed location */
-	const hash = window.location.hash;
-	console.log(hash);
-	if (hash) {
-		const targetElement = document.querySelector(hash);
-		if (targetElement) {
-			targetElement.scrollIntoView({ behavior: 'smooth' });
-		}
-	}
+	/* Scroll to # location in link */
+	scrollToHash();
 })();
