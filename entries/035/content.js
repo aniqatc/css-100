@@ -11,9 +11,9 @@ export function getMarkup() {
 			>
 		</span>
 	    <div class="center">
-			<svg width="104" height="104" viewBox="0 0 104 104">
-				<circle r="50" cx="52" cy="52" pathLength="1" class="circle-bg" />
-				<circle r="50" cx="52" cy="52" pathLength="1" class="circle-loading" />
+			<svg width="110" height="110">
+				<circle r="50" cx="50%" cy="50%" pathLength="1" class="circle-bg" />
+				<circle r="50" cx="50%" cy="50%" pathLength="1" class="circle-loading" />
 			</svg>
 	    </div>
     </div>  
