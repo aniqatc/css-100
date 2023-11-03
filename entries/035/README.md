@@ -44,7 +44,7 @@ In the markup for this challenge, I defined the `pathLength` of both circles to 
 
 When `stroke-dashoffset` is set to `0`, the `stroke` is set at the beginning of the path and that's why the entire stroke is visible. When it is set to `1`, the stroke is offset by the its entire length, making the stroke start at the end of its own length and that's why we don't see it -- because it's starting point begins where the line ends.
 
-So, when the `stroke-dashoffset` is set to `2`, it is offset the length around the cycle twice: once to make it invisible and the second time making it visible. When it gets animated down to `0`, the stroke will reduce itself (bringing the `stroke-dashoffset` to `1`), then it'll reappear (bringing the `stroke-dashoffset` to `1`).
+However, when the `stroke-dashoffset` is set to `2`, it is offset by its length around the cycle **twice**: once pushing the stroke to start at the end and the second time -- pushing it back to the start position (like running a lap and getting back to the starting position). When it gets animated down to `0`, the stroke will reduce itself (bringing the `stroke-dashoffset` to `1`), then it'll reappear (bringing the `stroke-dashoffset` to `0`).
 
 Why is this relevant? I think a visual will make it clear. Here's what it looks like when the animation uses the following CSS (notice how it resets at the end...):
 
@@ -52,6 +52,7 @@ Why is this relevant? I think a visual will make it clear. Here's what it looks 
 @keyframes circle-loading-turn {
 	from {
 		transform: rotate(-90deg);
+		/* offset only once by full length */
 		stroke-dashoffset: 1;
 	}
 	to {
@@ -69,6 +70,7 @@ Here's what the desired animation looks like (and it's corresponding `@keyframes
 @keyframes circle-loading-turn {
 	from {
 		transform: rotate(-90deg);
+		/* offset twice by full length */
 		stroke-dashoffset: 2;
 	}
 	to {
