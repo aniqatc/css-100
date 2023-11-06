@@ -1,3 +1,5 @@
+import ShopBanner from '/entries/025/images/banner.jpeg';
+
 export function getMarkup() {
 	return ` 
     <!-- Day 025 -->
@@ -24,7 +26,7 @@ export function getMarkup() {
 		<div class="shadow"></div>
 	</div>
 	<div class="card">
-		<img src="/entries/025/images/banner.jpeg" alt="surfshop business front" />
+		<img src="${ShopBanner}" alt="surfshop business front" />
 		<div class="card-content">
 			<h1>Phil's Surfshop</h1>
 			<p>High Street 19 <br />8579 Arkney</p>

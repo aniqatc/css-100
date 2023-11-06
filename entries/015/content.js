@@ -1,3 +1,5 @@
+import FileUploadIcon from '/entries/015/images/upload.svg';
+
 export function getMarkup() {
 	return `
     <!-- Day 015 -->
@@ -14,7 +16,7 @@ export function getMarkup() {
 		<div class="title">Drop File to Upload <span class="progress"></span></div>
 		<label class="file-label">
 			<span class="dropzone">
-				<img src="/entries/015/images/upload.svg" />
+				<img src="${FileUploadIcon}" />
 			</span>
 			<input id="file-input" type="file" required />
 		</label>

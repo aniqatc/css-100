@@ -1,3 +1,5 @@
+import boots from '/entries/011/images/boots.svg';
+
 export function getMarkup() {
 	return `
 	<!-- Day 011 -->
@@ -12,8 +14,8 @@ export function getMarkup() {
 	</span>
 	<div class="center">
 		<div>
-			<img src="/entries/011/images/boots.svg" class="left-shoe" />
-			<img src="/entries/011/images/boots.svg" class="right-shoe" />
+			<img src="${boots}" class="left-shoe" />
+			<img src="${boots}" class="right-shoe" />
 		</div>
 		<div class="floor"></div>
 	</div>

@@ -1,3 +1,5 @@
+import CheckmarkIcon from '/entries/024/images/checkmark.svg';
+
 export function getMarkup() {
 	return `
     <!-- Day 024 -->
@@ -14,7 +16,7 @@ export function getMarkup() {
 		<button class="button">
 			<span class="text">Finish</span>
 			<span
-				><img src="/entries/024/images/checkmark.svg" class="checkmark" />
+				><img src="${CheckmarkIcon}" class="checkmark" />
 			</span>
 		</button>
 		<svg class="circle-wrapper">
