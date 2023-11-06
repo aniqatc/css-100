@@ -3,7 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+	mode: 'production',
+	entry: './src/scripts/load.js',
+	output: {
+		path: path.resolve(__dirname, 'public'),
+		filename: 'main.js',
+		chunkFilename: 'scripts.js',
+		publicPath: '/',
+		clean: true,
+	},
 	optimization: {
+		minimize: true,
 		splitChunks: {
 			cacheGroups: {
 				scripts: {
@@ -14,16 +24,6 @@ module.exports = {
 				},
 			},
 		},
-	},
-	mode: 'development',
-
-	entry: './src/scripts/load.js',
-	output: {
-		path: path.resolve(__dirname, 'public'),
-		filename: 'main.js',
-		chunkFilename: 'scripts.js',
-		publicPath: '/',
-		clean: true,
 	},
 	module: {
 		rules: [
