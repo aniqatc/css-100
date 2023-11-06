@@ -32,7 +32,7 @@ function scrollToHash() {
 	}
 }
 
-/* Load files for current number of entries */
+// Load files for current number of entries
 (async function () {
 	for (let i = 35; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');

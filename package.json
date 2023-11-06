@@ -1,7 +1,7 @@
 {
 	"name": "css-100",
 	"version": "1.0.0",
-	"description": "🎨 My version of the <a href=\"https://100dayscss.com/about/\">100 Days of CSS challenge</a>.",
+	"description": "🎨 My version of the 100 Days of CSS challenge.",
 	"private": true,
 	"scripts": {
 		"build": "webpack --mode production",
