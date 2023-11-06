@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const dropzone = document.querySelector('.day-015 .dropzone');
 	const fileInput = document.querySelector('#file-input');
 	const fileUpload = document.querySelector('.day-015 .file-upload');
@@ -36,4 +36,4 @@
 			fileUpload.disabled = true;
 		}
 	});
-})();
+}

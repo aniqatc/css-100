@@ -17,5 +17,7 @@ function insertAnimatedDashes(container, dashNum) {
 	});
 }
 
-insertAnimatedDashes('sky', 24);
-insertAnimatedDashes('ground', 12);
+export function init() {
+	insertAnimatedDashes('sky', 24);
+	insertAnimatedDashes('ground', 12);
+}

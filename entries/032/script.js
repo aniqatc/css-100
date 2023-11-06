@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const decrementBtn = document.querySelector('.day-032 .btn-decrement');
 	const incrementBtn = document.querySelector('.day-032 .btn-increment');
 	const numInput = document.querySelector('.day-032 .num-input');
@@ -10,4 +10,4 @@
 	incrementBtn.addEventListener('click', () => {
 		numInput.value = parseInt(numInput.value) + 1;
 	});
-})();
+}

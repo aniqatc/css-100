@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const searchInput = document.querySelector('.day-029 .search-input');
 	const suggestionsList = document.querySelector('.day-029 .suggestions');
 
@@ -14,4 +14,4 @@
 			suggestionsList.innerHTML = '';
 		}
 	});
-})();
+}

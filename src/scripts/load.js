@@ -11,17 +11,15 @@ async function loadContent(entry) {
 	container.insertAdjacentHTML('beforeend', markup);
 }
 
-function loadScript(entry) {
-	const scriptURL = `/entries/${entry}/script.js`;
-
-	fetch(scriptURL, { method: 'HEAD' }).then(response => {
-		if (response.ok) {
-			const script = document.createElement('script');
-			script.src = scriptURL;
-			script.defer = true;
-			document.head.appendChild(script);
+async function loadScript(entry) {
+	try {
+		const module = await import(`/entries/${entry}/script.js`);
+		if (module && module.init) {
+			module.init();
 		}
-	});
+	} catch (error) {
+		// If the file doesn't exist, or there's another error, just move on
+	}
 }
 
 function scrollToHash() {
@@ -39,10 +37,10 @@ function scrollToHash() {
 	for (let i = 35; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');
 		styleContext(`./${entry}/style.css`);
-		loadScript(entry);
 		await loadContent(entry);
+		await loadScript(entry);
 	}
 
-	/* Scroll to # location in link */
+	// Allow scrolling for any of these entries
 	scrollToHash();
 })();

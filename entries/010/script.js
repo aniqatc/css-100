@@ -1,6 +1,6 @@
 /** Not required for design **/
 
-(function () {
+export function init() {
 	const date = document.querySelector('.day-010 .date');
 	const time = document.querySelector('.day-010 .time');
 	const calories = document.querySelector('.day-010 .calories');
@@ -26,4 +26,4 @@
 	)}`;
 	calories.innerHTML = `<b>${Math.floor(Math.random() * 1200) + 600}</b> CAL`;
 	heartRate.innerHTML = ` ${Math.floor(Math.random() * 100) + 65}`;
-})();
+}

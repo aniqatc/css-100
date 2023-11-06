@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const marker = document.querySelector('.day-025 .marker');
 	const shadow = document.querySelector('.day-025 .shadow');
 	const card = document.querySelector('.day-025 .card');
@@ -15,4 +15,4 @@
 		shadow.classList.remove('active');
 		card.classList.remove('active');
 	});
-})();
+}

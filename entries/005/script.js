@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const allPoints = document.querySelectorAll(
 		'.data-point-red, .data-point-blue'
 	);
@@ -21,4 +21,4 @@
 			allTooltips[i].style.visibility = 'hidden';
 		});
 	});
-})();
+}

@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const openActive = document.querySelectorAll('.day-013 .gallery-image span');
 	const closeActive = document.querySelector('.day-013 .close-icon');
 	const activeElements = document.querySelectorAll(
@@ -18,4 +18,4 @@
 			el.classList.remove('active');
 		});
 	});
-})();
+}

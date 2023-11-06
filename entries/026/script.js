@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const modals = document.querySelectorAll('.day-026 .modal');
 	const buttons = document.querySelectorAll('.day-026 .button');
 
@@ -11,4 +11,4 @@
 			modals[(index + 1) % modals.length].classList.remove('inactive');
 		});
 	});
-})();
+}

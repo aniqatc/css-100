@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	function getRandomDropletSize() {
 		const size = ['lg', 'md', 'sm'];
 		const randomIndex = Math.floor(Math.random() * size.length);
@@ -22,4 +22,4 @@
 		el.style.opacity = `${Math.random()}`;
 		el.style.animationDelay = `${600 + Math.random() * 2000}ms`;
 	});
-})();
+}

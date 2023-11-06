@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const groupOne = document.querySelector('.day-008 .group-1');
 	const miniOne = groupOne.querySelectorAll('.day-008 .mini');
 	miniOne.forEach((el, i) => {
@@ -36,4 +36,4 @@
 		el.style.top = `${-100 + i * 2}px`;
 		el.style.left = `${-100 + i * 2}px`;
 	});
-})();
+}

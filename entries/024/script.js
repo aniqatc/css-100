@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const button = document.querySelector('.day-024 .button');
 
 	const elements = [
@@ -11,4 +11,4 @@
 	button.addEventListener('click', () => {
 		elements.forEach(el => el.classList.toggle('active'));
 	});
-})();
+}

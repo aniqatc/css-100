@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const cardHeader = document.querySelector('.day-027 .card-header');
 	const today = new Date();
 	const locale = navigator.geolocation;
@@ -15,4 +15,4 @@
 		<h1>${today.toLocaleDateString(locale, weekday)}</h1>
 		<p>${today.toLocaleDateString(locale, date)}</p>
 `;
-})();
+}

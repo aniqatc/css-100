@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const searchInput = document.querySelector('.day-007 .search-bar');
 	const searchButton = document.querySelector('.day-007 .search-button');
 
@@ -29,4 +29,4 @@
 			}, 5000);
 		});
 	});
-})();
+}

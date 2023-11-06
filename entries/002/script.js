@@ -1,4 +1,4 @@
-(function () {
+export function init() {
 	const hamburger = document.querySelector('.day-002 .hamburger');
 
 	hamburger.addEventListener('click', () => {
@@ -12,4 +12,4 @@
 			hamburger.classList.add('active');
 		}
 	});
-})();
+}

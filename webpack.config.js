@@ -8,7 +8,8 @@ module.exports = {
 	entry: './src/scripts/load.js',
 	output: {
 		path: path.resolve(__dirname, 'public'),
-		filename: 'bundle.js',
+		filename: 'main.js',
+		chunkFilename: 'scripts.js',
 		publicPath: '/',
 		clean: true,
 	},
