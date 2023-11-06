@@ -1,17 +1,14 @@
-async function loadContent(entry) {
-	const htmlURL = `/entries/${entry}/content.js`;
+import '/src/styles/reset.css';
+import '/src/styles/main.css';
 
-	const module = await import(htmlURL);
+const contentContext = require.context('/entries', true, /content\.js$/);
+const styleContext = require.context('/entries', true, /style\.css$/);
+
+async function loadContent(entry) {
+	const module = contentContext(`./${entry}/content.js`);
 	const markup = module.getMarkup();
 	const container = document.querySelector('.container');
 	container.insertAdjacentHTML('beforeend', markup);
-}
-
-function loadStyle(entry) {
-	const stylesheet = document.createElement('link');
-	stylesheet.href = `/entries/${entry}/style.css`;
-	stylesheet.rel = 'stylesheet';
-	document.head.appendChild(stylesheet);
 }
 
 function loadScript(entry) {
@@ -41,7 +38,7 @@ function scrollToHash() {
 (async function () {
 	for (let i = 35; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');
-		loadStyle(entry);
+		styleContext(`./${entry}/style.css`);
 		loadScript(entry);
 		await loadContent(entry);
 	}
