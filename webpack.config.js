@@ -7,7 +7,7 @@ module.exports = {
 	entry: './src/scripts/load.js',
 	output: {
 		path: path.resolve(__dirname, 'public'),
-		filename: 'main.js',
+		filename: 'index.js',
 		chunkFilename: 'scripts.js',
 		publicPath: '/',
 		clean: true,
@@ -74,7 +74,7 @@ module.exports = {
 			favicon: './assets/favicon.png',
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].css',
+			filename: 'all.css',
 		}),
 	],
 };
