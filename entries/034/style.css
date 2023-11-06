@@ -23,14 +23,14 @@
 }
 
 @keyframes word-fill {
-	50%,
+	75%,
 	100% {
 		stroke-dashoffset: 1;
 	}
 }
 
 @keyframes line-scalex-out {
-	50%,
+	75%,
 	100% {
 		transform: scaleX(1);
 	}
