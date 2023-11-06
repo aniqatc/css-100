@@ -4168,7 +4168,7 @@ ul {
 	border-radius: 10px;
 	margin: 16px -6px;
 	transform: scaleX(0);
-	animation: line-scalex-out 1600ms ease-in forwards;
+	animation: line-scalex-out 5000ms ease-in forwards infinite;
 }
 
 .day-034 .letters {
@@ -4177,17 +4177,19 @@ ul {
 	stroke-dasharray: 1;
 	stroke-dashoffset: 0;
 	stroke-width: 22;
-	animation: word-fill 2200ms ease-in forwards;
+	animation: word-fill 5000ms ease-in forwards infinite;
 }
 
 @keyframes word-fill {
-	to {
+	50%,
+	100% {
 		stroke-dashoffset: 1;
 	}
 }
 
 @keyframes line-scalex-out {
-	to {
+	50%,
+	100% {
 		transform: scaleX(1);
 	}
 }
