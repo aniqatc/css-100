@@ -10,20 +10,27 @@ A version of my completed daily challenge can be found on my own dedicated websi
 
 ## Project Structure
 
-All challenges will be written in **HTML** & **CSS** with the occasional JavaScript wherever necessary.
+This project includes a series of challenges, each primarily utilizing **HTML**, **CSS**, and occasionally JavaScript for necessary functionality.
 
-Each entry can be found in their own separate folder (inside `/entries`) labeled by the day number. In each folder, there will be:
+#### General Webpage Resources
 
-- `style.css` file with all related styling
-- `content.js` file that returns the HTML markup
-- `script.js` file for functionality
-- `README.md` file where I go over any new concepts or tricks that I learned from completing that day’s challenge
+- The `/src` directory holds all files related to the general structure and styling of the webpage, as well as the main script for loading each entry
+- The `/public` directory contains all production-ready code, bundled and optimized using Webpack
+
+
+#### Challenges Directory
+
+Each challenge is self-contained in its own directory within `/entries`, labeled by day number (e.g., `day-001`, `day-023`). Within each challenge's directory, you will find:
+
+- `style.css`: Contains all the CSS styling specific to the challenge
+- `content.js`: Returns the HTML markup needed for the challenge
+- `script.js`: Holds any JavaScript code required for the challenge's functionality
+- `README.md`: Provides insights and learning takeaways from each challenge
 
 <br/>
 
 > [!NOTE]
-> To avoid conflict with class naming, I'll be assigning a parent class that will indicate which day of the challenge it is, _e.g. `day-001` or `day-023`_, which will then be used with the descendant selector to target classes only within that parent. <br/><br/>
-> Additionally, each `script.js` file wraps its functions in an Immediately Invoked Function Expression (IIFE) to prevent namespace conflicts.
+> To prevent class naming conflicts, each challenge will be wrapped with a unique parent class corresponding to the day of the challenge (e.g., `.day-001`, `.day-023`). This convention allows for the use of descendant selectors to target elements within a specific challenge's scope, ensuring that styles do not bleed across challenges.
 
 ## Challenge Index
 
