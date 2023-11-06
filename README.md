@@ -113,3 +113,21 @@ Notes:
 	transform: translate(-50%, -50%);
 }
 ```
+
+## Available Scripts
+
+#### `npm run build`
+- Build in production mode, output to `public` directory
+
+#### `npm run build:dev`
+- Build in development mode, not optimized for production
+
+#### `npm run watch`
+- Runs the app in the development mode and watches for any file changes
+
+#### `npm run start`
+- Starts the development server with hot reloading
+
+#### `npm run stats`
+- Generates a `stats.json` file with statistics about the project's modules and chunks
+
