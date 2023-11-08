@@ -1,0 +1,96 @@
+.day-037 {
+	background: #5a717b;
+	color: #fff;
+}
+
+.day-037 .center {
+	position: absolute;
+	top: calc(50% - 75px);
+	height: 150px;
+	width: 400px;
+	perspective: 75px;
+	transform: translateX(-50%);
+	transform-style: preserve-3d;
+}
+
+.day-037 .card {
+	position: absolute;
+	width: 180px;
+	height: 150px;
+	top: 0;
+	left: calc(50% - 90px);
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), 2px 4px 16px rgba(0, 0, 0, 0.1);
+	animation: carousel-rotate 4s ease-out infinite both;
+}
+
+.day-037 .top {
+	width: 100%;
+	height: 30px;
+	background: #ff9800;
+	border-radius: 4px 4px 0 0;
+}
+
+.day-037 .content {
+	padding: 12px 8px;
+}
+
+.day-037 .line {
+	display: block;
+	height: 4px;
+	margin: 6px;
+	border-radius: 4px;
+	background: #e9e9e9;
+}
+
+.day-037 .line-1 {
+	width: 120px;
+}
+
+.day-037 .line-2 {
+	width: 152px;
+}
+
+.day-037 .line-3 {
+	width: 142px;
+}
+
+.day-037 .line-4 {
+	width: 117px;
+}
+
+.day-037 .line-5 {
+	width: 90px;
+}
+
+.day-037 .card:nth-child(1) {
+	--translate-start-end: 0, 0, 0;
+	--translate-mid-1: 140px, 0, -40px;
+	--translate-mid-2: -140px, 0, -40px;
+}
+
+.day-037 .card:nth-child(2) {
+	--translate-start-end: 140px, 0, -40px;
+	--translate-mid-1: -140px, 0, -40px;
+	--translate-mid-2: 0, 0, 0;
+}
+
+.day-037 .card:nth-child(3) {
+	--translate-start-end: -140px, 0, -40px;
+	--translate-mid-1: 0, 0, 0;
+	--translate-mid-2: 140px, 0, -40px;
+}
+
+@keyframes carousel-rotate {
+	0%,
+	100% {
+		transform: translate3d(var(--translate-start-end));
+	}
+	33% {
+		transform: translate3d(var(--translate-mid-1));
+	}
+	66% {
+		transform: translate3d(var(--translate-mid-2));
+	}
+}
