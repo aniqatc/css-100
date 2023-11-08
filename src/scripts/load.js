@@ -22,6 +22,16 @@ async function loadScript(entry) {
 	}
 }
 
+// Load files for current number of entries
+(async function () {
+	for (let i = 36; i > 0; i--) {
+		const entry = String(i).padStart(3, '0');
+		styleContext(`./${entry}/style.css`);
+		await loadContent(entry);
+		await loadScript(entry);
+	}
+})();
+
 function scrollToHash() {
 	const hash = window.location.hash;
 	if (hash) {
@@ -32,15 +42,4 @@ function scrollToHash() {
 	}
 }
 
-// Load files for current number of entries
-(async function () {
-	for (let i = 36; i > 0; i--) {
-		const entry = String(i).padStart(3, '0');
-		styleContext(`./${entry}/style.css`);
-		await loadContent(entry);
-		await loadScript(entry);
-	}
-
-	// Allow scrolling for any of these entries
-	scrollToHash();
-})();
+scrollToHash();
