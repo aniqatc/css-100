@@ -4249,6 +4249,30 @@ ul {
 	color: #8398ad;
 }
 
+.day-036 .search-input {
+	position: absolute;
+	right: 12px;
+	border: 0;
+	outline: 0;
+	opacity: 0;
+	width: 0;
+	border-radius: 20px;
+	height: 20px;
+	font-size: 12px;
+	color: #777;
+	transition: all 500ms ease-out;
+}
+
+.day-036 .active.search-icon {
+	opacity: 0;
+}
+
+.day-036 .active.search-input {
+	opacity: 1;
+	width: 100px;
+	padding: 0 6px;
+}
+
 .day-036 input[type='radio'] {
 	display: none;
 }
@@ -4276,7 +4300,7 @@ ul {
 	gap: 8px;
 }
 
-.day-036 .active {
+.day-036 .active.content {
 	opacity: 1;
 	transform: translateY(0);
 	transition: all 1000ms ease-out;

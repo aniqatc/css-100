@@ -22,6 +22,7 @@ export function getMarkup() {
 				<input type="radio" id="tab-4" name="tab" />
 				<label for="tab-4"><i class="fa-solid fa-gear"></i></label>
 				<span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+				<input class="search-input" type="text" />
 			</div>
 			<div class="content content-1 active">
 				<p class="heading">Dashboard</p>
