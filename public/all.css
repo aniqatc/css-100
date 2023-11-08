@@ -4354,12 +4354,9 @@ ul {
 }
 
 .day-037 .center {
-	position: absolute;
-	top: calc(50% - 75px);
 	height: 150px;
 	width: 400px;
 	perspective: 75px;
-	transform: translateX(-50%);
 	transform-style: preserve-3d;
 }
 
