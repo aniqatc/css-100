@@ -17,10 +17,9 @@ This project includes a series of challenges, each primarily utilizing **HTML**,
 - The `/src` directory holds all files related to the general structure and styling of the webpage, as well as the main script for loading each entry
 - The `/public` directory contains all production-ready code, bundled and optimized using Webpack
 
-
 #### Challenges Directory
 
-Each challenge is self-contained in its own directory within `/entries`, labeled by day number (e.g., `day-001`, `day-023`). Within each challenge's directory, you will find:
+Each challenge is self-contained in its own directory within `/entries`, labeled by day number (e.g., `/001`, `/023`). Within each challenge's directory, you will find:
 
 - `style.css`: Contains all the CSS styling specific to the challenge
 - `content.js`: Returns the HTML markup needed for the challenge
@@ -69,6 +68,10 @@ Each challenge is self-contained in its own directory within `/entries`, labeled
 | [Day 031](https://github.com/aniqatc/css-100/tree/main/entries/031) | sequential animations with calc() & css variables                                       |
 | [Day 032](https://github.com/aniqatc/css-100/tree/main/entries/032) | number input                                                                            |
 | [Day 033](https://github.com/aniqatc/css-100/tree/main/entries/033) | absolute positioning & animating SVG elements                                           |
+| [Day 034](https://github.com/aniqatc/css-100/tree/main/entries/034) | creating text SVGs + animating text SVGs                                                |
+| [Day 035](https://github.com/aniqatc/css-100/tree/main/entries/035) | stroke-dashoffset starting value                                                        |
+| [Day 036](https://github.com/aniqatc/css-100/tree/main/entries/036) | radio buttons                                                                           |
+| [Day 037](https://github.com/aniqatc/css-100/tree/main/entries/037) | 3D transforms - carousel animation                                                      |
 
 ## Note Template
 
@@ -124,17 +127,21 @@ Notes:
 ## Available Scripts
 
 #### `npm run build`
+
 - Build in production mode, output to `public` directory
 
 #### `npm run build:dev`
+
 - Build in development mode, not optimized for production
 
 #### `npm run watch`
+
 - Runs the app in the development mode and watches for any file changes
 
 #### `npm run start`
+
 - Starts the development server with hot reloading
 
 #### `npm run stats`
-- Generates a `stats.json` file with statistics about the project's modules and chunks
 
+- Generates a `stats.json` file with statistics about the project's modules and chunks
