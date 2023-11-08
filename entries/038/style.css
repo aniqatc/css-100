@@ -1,0 +1,33 @@
+.day-038 {
+	background: #3a4e48;
+	color: #fff;
+	cursor: pointer;
+}
+
+.day-038 .shape {
+	position: absolute;
+	top: calc(50% - 29px);
+	left: calc(50% - 31px);
+	transition: all 500ms ease-out;
+}
+
+.day-038 .shape-base {
+	fill: #b4c0af;
+}
+
+.day-038 .shape-invert {
+	fill: #3a4e48;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.day-038 .expand {
+	transform: scale(20);
+	fill: #b4c0af;
+}
+
+.day-038 .normal {
+	transform: scale(1);
+	fill: #3a4e48;
+	opacity: 1;
+}
