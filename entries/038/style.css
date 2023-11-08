@@ -23,11 +23,9 @@
 
 .day-038 .expand {
 	transform: scale(20);
-	fill: #b4c0af;
 }
 
 .day-038 .normal {
 	transform: scale(1);
-	fill: #3a4e48;
 	opacity: 1;
 }
