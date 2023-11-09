@@ -30,10 +30,7 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [MiniCssExtractPlugin.loader, 'css-loader'],
-				include: [
-					path.resolve(__dirname, './src/styles'),
-					path.resolve(__dirname, './entries'),
-				],
+				include: [path.resolve(__dirname, './src/styles'), path.resolve(__dirname, './entries')],
 			},
 			{
 				test: /\.(png|jpe?g|gif|avif|webp|svg)$/i,
@@ -71,7 +68,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
-			favicon: './assets/favicon.png',
+			favicon: './src/assets/favicon.png',
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'all.css',
