@@ -34,7 +34,7 @@ function scrollToHash() {
 
 // Load files for current number of entries
 (async function () {
-	for (let i = 38; i > 0; i--) {
+	for (let i = 39; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');
 		styleContext(`./${entry}/style.css`);
 		await loadContent(entry);
