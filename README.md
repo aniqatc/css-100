@@ -72,6 +72,8 @@ Each challenge is self-contained in its own directory within `/entries`, labeled
 | [Day 035](https://github.com/aniqatc/css-100/tree/main/entries/035) | stroke-dashoffset starting value                                                        |
 | [Day 036](https://github.com/aniqatc/css-100/tree/main/entries/036) | radio buttons                                                                           |
 | [Day 037](https://github.com/aniqatc/css-100/tree/main/entries/037) | 3D transforms - carousel animation                                                      |
+| [Day 038](https://github.com/aniqatc/css-100/tree/main/entries/038) | SVG transitions and transforms                                                                         |
+| [Day 039](https://github.com/aniqatc/css-100/tree/main/entries/039) | Pointer events, variables in animations                                                  |
 
 ## Note Template
 
