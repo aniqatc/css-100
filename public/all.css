@@ -4497,6 +4497,33 @@ ul {
 	margin: 20px auto;
 }
 
+.day-039 .menu {
+	display: flex;
+	gap: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
+	opacity: 0;
+	transition: all 500ms ease-out 100ms;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.day-039 .menu li:hover {
+	color: #aaaaaa;
+}
+
+/* Classes to toggle via JS */
+.day-039 .active.menu {
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 500ms ease-out 600ms;
+}
+
+.day-039 .active.icon {
+	pointer-events: none;
+}
+
 .day-039 .line-top {
 	--translate-value: -20px;
 }
@@ -4505,38 +4532,12 @@ ul {
 	--translate-value: 20px;
 }
 
-.day-039 .active.icon {
-	pointer-events: none;
-}
-
 .day-039 .active.line {
 	animation: expand-menu-lines 600ms ease-out both;
 }
 
 .day-039 .close.line {
 	animation: collapse-menu-lines 600ms ease-out both;
-}
-
-.day-039 .menu {
-	display: flex;
-	gap: 24px;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 18px;
-	opacity: 0;
-	transition: all 500ms ease-out;
-	pointer-events: none;
-	cursor: pointer;
-}
-
-.day-039 .active.menu {
-	opacity: 1;
-	pointer-events: all;
-	transition: all 500ms ease-out 600ms;
-}
-
-.day-039 .menu li:hover {
-	color: #aaaaaa;
 }
 
 @keyframes expand-menu-lines {
