@@ -4477,6 +4477,7 @@ ul {
 .day-039 {
 	background: #4a627a;
 	color: #fff;
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .day-039 .icon {
@@ -4504,30 +4505,8 @@ ul {
 	--translate-value: 20px;
 }
 
-.day-039 .menu {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: flex;
-	gap: 24px;
-	font-weight: 500;
-	text-transform: uppercase;
-	font-size: 18px;
-	opacity: 0;
-	transition: all 500ms ease-out;
+.day-039 .active.icon {
 	pointer-events: none;
-	cursor: pointer;
-}
-
-.day-039 .menu li:hover {
-	color: #adadad;
-}
-
-.day-039 .active.menu {
-	opacity: 1;
-	pointer-events: all;
-	transition: all 500ms ease-out 600ms;
 }
 
 .day-039 .active.line {
@@ -4536,6 +4515,28 @@ ul {
 
 .day-039 .close.line {
 	animation: collapse-menu-lines 600ms ease-out both;
+}
+
+.day-039 .menu {
+	display: flex;
+	gap: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
+	opacity: 0;
+	transition: all 500ms ease-out;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.day-039 .active.menu {
+	opacity: 1;
+	pointer-events: all;
+	transition: all 500ms ease-out 600ms;
+}
+
+.day-039 .menu li:hover {
+	color: #aaaaaa;
 }
 
 @keyframes expand-menu-lines {

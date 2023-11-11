@@ -5,10 +5,12 @@ export function init() {
 
 	icon.addEventListener('click', () => {
 		lines.forEach(line => {
-			line.classList.add('active');
 			line.classList.remove('close');
+			line.classList.add('active');
 		});
+
 		menu.classList.add('active');
+		icon.classList.add('active');
 	});
 
 	menu.addEventListener('click', () => {
@@ -16,6 +18,8 @@ export function init() {
 			line.classList.remove('active');
 			line.classList.add('close');
 		});
+
 		menu.classList.remove('active');
+		icon.classList.remove('active');
 	});
 }
