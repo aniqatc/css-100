@@ -6,7 +6,7 @@
 .day-040 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 6px;
+	gap: 5px;
 }
 
 .day-040 img {
