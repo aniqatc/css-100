@@ -4685,6 +4685,7 @@ ul {
 
 .day-041 .active.card {
 	animation: modal-disappear 750ms ease-in forwards;
+	filter: none;
 }
 
 @keyframes modal-disappear {
