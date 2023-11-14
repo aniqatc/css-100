@@ -1,0 +1,75 @@
+.day-041 {
+	background: #3f3f3f;
+	color: #fff;
+}
+
+.day-041 .card {
+	height: 180px;
+	width: 280px;
+	position: absolute;
+	top: calc(50% - 90px);
+	left: calc(50% - 140px);
+	background: #fff;
+	color: #415868;
+	border-radius: 4px;
+	filter: drop-shadow(4px 8px 16px rgba(0, 0, 0, 0.5));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	padding-top: 24px;
+}
+
+.day-041 .card img {
+	width: 44px;
+	height: 38px;
+}
+
+.day-041 .text {
+	text-align: center;
+	width: 180px;
+}
+
+.day-041 .text p:first-of-type {
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+.day-041 .text p:last-of-type {
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 1.4;
+	margin-bottom: 6px;
+}
+
+.day-041 .dismiss-btn {
+	border: 0;
+	width: 100%;
+	padding: 12px;
+	margin-top: auto;
+	border-radius: 0 0 4px 4px;
+	background: #f65656;
+	color: #fff;
+	transition: all 300ms ease-out;
+}
+
+.day-041 .dismiss-btn:hover {
+	background: #ec3434;
+	cursor: pointer;
+}
+
+.day-041 .active.card {
+	animation: modal-disappear 750ms ease-in forwards;
+}
+
+@keyframes modal-disappear {
+	0% {
+		transform: scale(1);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
