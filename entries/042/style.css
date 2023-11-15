@@ -1,0 +1,48 @@
+.day-042 {
+	background: #fff;
+	color: #000;
+}
+
+.day-042 .center {
+	background: linear-gradient(to bottom, #1e4557, #66afbe);
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.day-042 .star {
+	display: block;
+	width: 1px;
+	height: 1px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+}
+
+@keyframes star-flickers {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+}
+
+.day-042 .shooting-star {
+	height: 2px;
+	position: absolute;
+	top: -10px;
+	transform: rotate(30deg);
+}
+
+@keyframes shooting-stars {
+	from {
+		opacity: 0;
+	}
+	to {
+		transform: rotate(35deg) translateX(300px);
+		opacity: 1;
+	}
+}
