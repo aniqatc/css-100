@@ -1,0 +1,44 @@
+.day-043 {
+	background: #404556;
+	color: #fff35c;
+}
+
+.day-043 .center {
+	position: absolute;
+	top: calc(50% - 63.5px);
+	left: calc(50% - 38px);
+	transform: none;
+}
+
+.day-043 .glow {
+	height: 70px;
+	width: 65px;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	box-shadow: 6px 8px 20px 22px rgba(255, 240, 0, 0.5);
+	transition: opacity 400ms ease-out;
+}
+
+.day-043 .bulb {
+	position: absolute;
+	z-index: 10;
+	fill: #fff35c;
+	transition: all 400ms ease-out;
+}
+
+.day-043 .bulb:hover {
+	fill: #8c8f99;
+	cursor: pointer;
+}
+
+.day-043 .bulb:hover + .glow {
+	opacity: 0;
+}
+
+.day-043 .base {
+	position: absolute;
+	left: 22px;
+	top: 99px;
+	fill: #e5e5e5;
+}
