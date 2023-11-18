@@ -4794,3 +4794,26 @@ ul {
 	fill: #e5e5e5;
 }
 
+.day-044 {
+	background: #222222;
+	color: #fff;
+}
+
+.day-044 .square {
+	border: 1px solid #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: twisting-pyramid 3s ease-in infinite alternate;
+}
+
+@keyframes twisting-pyramid {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
