@@ -8,8 +8,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	animation: twisting-pyramid 3s ease-in infinite alternate;
+	animation: twisting-pyramid 3s ease-in infinite alternate both;
 }
 
 @keyframes twisting-pyramid {

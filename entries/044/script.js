@@ -7,7 +7,7 @@ export function init() {
 		square.classList.add('square');
 		square.style.width = length + 'px';
 		square.style.height = length + 'px';
-		square.style.animationDelay = i / 20 + 's';
+		square.style.animationDelay = i / 22 + 's';
 		squares.appendChild(square);
 
 		length += 10;
