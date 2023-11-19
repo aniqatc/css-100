@@ -1,0 +1,47 @@
+.day-045 {
+	background: #5ca4e9;
+	color: #fff;
+}
+
+.day-045 .border {
+	fill: transparent;
+	stroke: #91c9ff;
+	stroke-width: 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	transition: fill 100ms ease-in;
+}
+
+.day-045 .hover-border {
+	stroke-dashoffset: -1;
+	stroke-width: 2px;
+	stroke-dasharray: 0.1 0.9;
+	stroke: #fff;
+	transition: stroke-dashoffset 750ms ease-in;
+}
+
+.day-045 .button {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.day-045 .button-text {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+.day-045 .button:hover .border {
+	fill: #4f95da;
+	transition: fill 600ms ease-in;
+}
+
+.day-045 .button:hover .hover-border {
+	stroke-dashoffset: 0;
+	stroke-dasharray: 0.1 0.9;
+}
