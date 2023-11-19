@@ -12,7 +12,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: -1;
-	transition: fill 100ms ease-in;
+	transition: fill 300ms ease-in;
 }
 
 .day-045 .hover-border {
@@ -38,7 +38,7 @@
 
 .day-045 .button:hover .border {
 	fill: #4f95da;
-	transition: fill 600ms ease-in;
+	transition: fill 750ms ease-in;
 }
 
 .day-045 .button:hover .hover-border {
