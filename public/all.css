@@ -4864,3 +4864,153 @@ ul {
 	stroke-dasharray: 0.1 0.9;
 }
 
+.day-046 {
+	background: #000;
+	color: #fff;
+}
+
+.day-046:hover .ring {
+	animation-play-state: paused;
+}
+
+/* General ring & dots */
+.day-046 .ring {
+	--position: -100px;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: calc(50% - 100px);
+	left: calc(50% - 100px);
+	animation: ring-rotate 6s alternate ease-in-out infinite;
+}
+
+.day-046 .dot {
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: calc(50% - 5px);
+	left: calc(50% - 5px);
+	transform-origin: 0 100px;
+}
+
+/* Positioning the individual dots inside each ring */
+.day-046 .ring .dot:nth-child(1) {
+	transform: translateY(var(--position)) rotate(0deg);
+}
+.day-046 .ring .dot:nth-child(2) {
+	transform: translateY(var(--position)) rotate(30deg);
+}
+.day-046 .ring .dot:nth-child(3) {
+	transform: translateY(var(--position)) rotate(60deg);
+}
+.day-046 .ring .dot:nth-child(4) {
+	transform: translateY(var(--position)) rotate(90deg);
+}
+.day-046 .ring .dot:nth-child(5) {
+	transform: translateY(var(--position)) rotate(120deg);
+}
+.day-046 .ring .dot:nth-child(6) {
+	transform: translateY(var(--position)) rotate(150deg);
+}
+.day-046 .ring .dot:nth-child(7) {
+	transform: translateY(var(--position)) rotate(180deg);
+}
+.day-046 .ring .dot:nth-child(8) {
+	transform: translateY(var(--position)) rotate(210deg);
+}
+.day-046 .ring .dot:nth-child(9) {
+	transform: translateY(var(--position)) rotate(240deg);
+}
+.day-046 .ring .dot:nth-child(10) {
+	transform: translateY(var(--position)) rotate(270deg);
+}
+.day-046 .ring .dot:nth-child(11) {
+	transform: translateY(var(--position)) rotate(300deg);
+}
+.day-046 .ring .dot:nth-child(12) {
+	transform: translateY(var(--position)) rotate(330deg);
+}
+
+/* Individual ring styling, positioning and animation details */
+.day-046 .ring-1 {
+	--scale-start: 0.92;
+	--scale-end: 1.05;
+	--rotate-start: 0deg;
+	--rotate-end: 360deg;
+}
+
+.day-046 .ring-1 .dot {
+	opacity: 1;
+	background: red;
+}
+
+.day-046 .ring-2 {
+	--scale-start: 0.8;
+	--scale-end: 0.95;
+	--rotate-start: 3deg;
+	--rotate-end: 370deg;
+}
+
+.day-046 .ring-2 .dot {
+	opacity: 0.9;
+	background: orange;
+}
+
+.day-046 .ring-3 {
+	--scale-start: 0.7;
+	--scale-end: 0.85;
+	--rotate-start: 5deg;
+	--rotate-end: 380deg;
+}
+
+.day-046 .ring-3 .dot {
+	opacity: 0.8;
+	background: yellow;
+}
+
+.day-046 .ring-4 {
+	--scale-start: 0.6;
+	--scale-end: 0.75;
+	--rotate-start: 7deg;
+	--rotate-end: 390deg;
+}
+
+.day-046 .ring-4 .dot {
+	opacity: 0.7;
+	background: lime;
+}
+
+.day-046 .ring-5 {
+	--scale-start: 0.5;
+	--scale-end: 0.65;
+	--rotate-start: 9deg;
+	--rotate-end: 400deg;
+}
+
+.day-046 .ring-5 .dot {
+	opacity: 0.6;
+	background: aqua;
+}
+
+.day-046 .ring-6 {
+	--scale-start: 0.4;
+	--scale-end: 0.55;
+	--rotate-start: 11deg;
+	--rotate-end: 410deg;
+}
+
+.day-046 .ring-6 .dot {
+	opacity: 0.5;
+	background: magenta;
+}
+
+@keyframes ring-rotate {
+	from {
+		transform: scale(var(--scale-start)) rotate(var(--rotate-start));
+	}
+	to {
+		transform: scale(var(--scale-end)) rotate(var(--rotate-end));
+	}
+}
+
