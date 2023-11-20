@@ -4869,10 +4869,6 @@ ul {
 	color: #fff;
 }
 
-.day-046:hover .ring {
-	animation-play-state: paused;
-}
-
 /* General ring & dots */
 .day-046 .ring {
 	--position: -100px;
