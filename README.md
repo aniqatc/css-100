@@ -72,8 +72,15 @@ Each challenge is self-contained in its own directory within `/entries`, labeled
 | [Day 035](https://github.com/aniqatc/css-100/tree/main/entries/035) | stroke-dashoffset starting value                                                        |
 | [Day 036](https://github.com/aniqatc/css-100/tree/main/entries/036) | radio buttons                                                                           |
 | [Day 037](https://github.com/aniqatc/css-100/tree/main/entries/037) | 3D transforms - carousel animation                                                      |
-| [Day 038](https://github.com/aniqatc/css-100/tree/main/entries/038) | SVG transitions and transforms                                                                         |
-| [Day 039](https://github.com/aniqatc/css-100/tree/main/entries/039) | Pointer events, variables in animations                                                  |
+| [Day 038](https://github.com/aniqatc/css-100/tree/main/entries/038) | SVG transitions and transforms                                                          |
+| [Day 039](https://github.com/aniqatc/css-100/tree/main/entries/039) | pointer-events, variables in animations                                                 |
+| [Day 040](https://github.com/aniqatc/css-100/tree/main/entries/040) | transform-origin with scale()                                                           |
+| [Day 041](https://github.com/aniqatc/css-100/tree/main/entries/041) | animation on active class                                                               |
+| [Day 042](https://github.com/aniqatc/css-100/tree/main/entries/042) | Math.random() in JavaScript                                                             |
+| [Day 043](https://github.com/aniqatc/css-100/tree/main/entries/043) | box-shadow for glow effect                                                              |
+| [Day 044](https://github.com/aniqatc/css-100/tree/main/entries/044) | adjust properties dynamically via JS                                                    |
+| [Day 045](https://github.com/aniqatc/css-100/tree/main/entries/045) | animating polyline svg                                                                  |
+| [Day 046](https://github.com/aniqatc/css-100/tree/main/entries/046) | transform-origin, staggered rotating animation                                          |
 
 ## Note Template
 

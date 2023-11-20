@@ -4,7 +4,7 @@
 
 **Time to Complete**: 50 mins
 
-**Key Concepts**:
+**Key Concepts**: transform-origin, staggered rotating animation
 
 **Notes**:
 
