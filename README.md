@@ -81,6 +81,9 @@ Each challenge is self-contained in its own directory within `/entries`, labeled
 | [Day 044](https://github.com/aniqatc/css-100/tree/main/entries/044) | adjust properties dynamically via JS                                                    |
 | [Day 045](https://github.com/aniqatc/css-100/tree/main/entries/045) | animating polyline svg                                                                  |
 | [Day 046](https://github.com/aniqatc/css-100/tree/main/entries/046) | transform-origin, staggered rotating animation                                          |
+| [Day 047](https://github.com/aniqatc/css-100/tree/main/entries/047) | dynamically adding checkboxes, styling labels                                           |
+| [Day 048](https://github.com/aniqatc/css-100/tree/main/entries/048) | 3D cube with transformations                                                            |
+| [Day 049](https://github.com/aniqatc/css-100/tree/main/entries/049) | element following mouse movement via JS                                                 |
 
 ## Note Template
 
