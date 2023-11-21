@@ -16,8 +16,7 @@ Using JavaScript, I added an event listener to this day's frame (`.day-049`) to 
 
 - `getBoundingClientRect()` is a method that obtains an element's position and dimensions
 - `clientX` and `clientY` on the `event` object gets the exact position of the mouse pointer
-- the hard-coded values (`10` and `10`) represent half of the element's height/width
-  - Note: if we don't want to hard-code the values, we can use `offsetHeight` and `offsetWidth` to get an element's height and width and then divide it by `2` -- this will position the mouse cursor at the center of the element.
+- the hard-coded values (`10` and `10`) represent half of the element's height/width _(note: if we don't want to hard-code the values, we can use `offsetHeight` and `offsetWidth` to get an element's height and width and then divide it by `2` -- this will position the mouse cursor at the center of the element)_.
 
 ```js
 frame.addEventListener('mousemove', function (event) {
