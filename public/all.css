@@ -5039,3 +5039,65 @@ ul {
 	cursor: pointer;
 }
 
+.day-048 {
+	background: #e37512;
+	color: #fff;
+}
+
+.day-048 .center {
+	position: absolute;
+	top: calc(50% - 100px);
+	left: calc(50% - 100px);
+	transform: none;
+	perspective: 800px;
+}
+
+.day-048 .cube {
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	transform: translateZ(-150px) rotateX(75deg) rotateZ(-35deg);
+	transition: all 1s ease-in;
+	cursor: pointer;
+}
+
+.day-048 .cube:hover {
+	transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+}
+
+.day-048 .cube-face {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+
+.day-048 .cube--front {
+	transform: translateZ(100px);
+	background: #fff;
+}
+
+.day-048 .cube--back {
+	transform: rotateY(180deg) translateZ(100px);
+	background: #ccc;
+}
+
+.day-048 .cube--right {
+	transform: rotateY(90deg) translateZ(100px);
+	background: #ddd;
+}
+
+.day-048 .cube--left {
+	transform: rotateY(-90deg) translateZ(100px);
+	background: #eee;
+}
+
+.day-048 .cube--top {
+	transform: rotateX(90deg) translateZ(100px);
+	background: #eee;
+}
+
+.day-048 .cube--bottom {
+	transform: rotateX(-90deg) translateZ(100px);
+	background: #ddd;
+}
+
