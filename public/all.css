@@ -5101,3 +5101,40 @@ ul {
 	background: #ddd;
 }
 
+.day-049 {
+	background-color: #2d3e50;
+	color: #2fcc71;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.day-049 .circle-inner {
+	position: absolute;
+	background-color: #2fcc71;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.day-049 .circle-outer {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid #2fcc71;
+	animation: mouse-circle-scale 1.2s ease-in infinite;
+}
+
+@keyframes mouse-circle-scale {
+	to {
+		opacity: 0;
+		border-width: 1px;
+		transform: scale(4);
+	}
+}
+
