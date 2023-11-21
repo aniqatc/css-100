@@ -21,7 +21,11 @@
 		"css art",
 		"100 days of code"
 	],
-	"author": "@aniqatc",
+	"author": {
+		"name": "Aniqa",
+		"email": "hello@aniqa.io",
+		"url": "https://aniqa.dev"
+	},
 	"license": "MIT",
 	"devDependencies": {
 		"css-loader": "^6.8.1",
