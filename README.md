@@ -10,7 +10,7 @@ A version of my completed daily challenge can be found on my own dedicated websi
 
 ## Project Structure
 
-This project includes a series of challenges, each primarily utilizing **HTML**, **CSS**, and occasionally JavaScript for necessary functionality.
+This project includes a series of completed challenges, with the first **50** utilizing **HTML**, **CSS**, and occasionally JavaScript for necessary functionalities, and the final **50** utilizes the same except with **SCSS** to practice more complex styling.
 
 #### General Webpage Resources
 
@@ -21,7 +21,7 @@ This project includes a series of challenges, each primarily utilizing **HTML**,
 
 Each challenge is self-contained in its own directory within `/entries`, labeled by day number (e.g., `/001`, `/023`). Within each challenge's directory, you will find:
 
-- `style.css`: Contains all the CSS styling specific to the challenge
+- `style.css` or `style.scss`: Contains all the CSS or SCSS styling specific to the challenge
 - `content.js`: Returns the HTML markup needed for the challenge
 - `script.js`: Holds any JavaScript code required for the challenge's functionality
 - `README.md`: Provides insights and learning takeaways from each challenge
@@ -84,6 +84,7 @@ Each challenge is self-contained in its own directory within `/entries`, labeled
 | [Day 047](https://github.com/aniqatc/css-100/tree/main/entries/047) | dynamically adding checkboxes, styling labels                                           |       ---       | ---               |
 | [Day 048](https://github.com/aniqatc/css-100/tree/main/entries/048) | 3D cube with transformations                                                            |       ---       | ---               |
 | [Day 049](https://github.com/aniqatc/css-100/tree/main/entries/049) | element following mouse movement via JS                                                 |       ---       | ---               |
+| [Day 050](https://github.com/aniqatc/css-100/tree/main/entries/050) | border-radius, multi-step animation                                                     |       ---       | ---               |
 
 ## Note Template
 
