@@ -5138,3 +5138,48 @@ ul {
 	}
 }
 
+.day-050 {
+	background: #8e43ad;
+	color: #fff;
+}
+
+.day-050 .egg {
+	position: absolute;
+	top: calc(50% - 65px);
+	left: calc(50% - 50px);
+	height: 130px;
+	width: 100px;
+	border-radius: 100% / 125% 125% 80% 80%;
+	background: #fff;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
+	transform-origin: center bottom;
+	animation: egg-in-out 3s ease infinite both;
+}
+
+@keyframes egg-in-out {
+	0% {
+		transform: translateY(-300px) scaleX(1) scaleY(1) rotate(0deg);
+	}
+	40% {
+		transform: translateY(30px) scaleX(1.1) scaleY(0.95) rotate(0deg);
+	}
+	50% {
+		transform: translateY(0) scaleX(1) scaleY(1) rotate(0deg);
+	}
+	55%,
+	65% {
+		transform: translateY(0) scaleX(1) scaleY(1) rotate(3deg);
+	}
+	60%,
+	70% {
+		transform: translateY(0) scaleX(1) scaleY(1) rotate(-3deg);
+	}
+	75%,
+	80% {
+		transform: translateY(0) scaleX(1) scaleY(1) rotate(0deg);
+	}
+	100% {
+		transform: translateY(300px) scaleY(1.2) rotate(0deg);
+	}
+}
+
