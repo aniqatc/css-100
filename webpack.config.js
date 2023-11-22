@@ -33,6 +33,11 @@ module.exports = {
 				include: [path.resolve(__dirname, './src/styles'), path.resolve(__dirname, './entries')],
 			},
 			{
+				test: /\.scss$/,
+				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+				include: [path.resolve(__dirname, './entries')],
+			},
+			{
 				test: /\.(png|jpe?g|gif|avif|webp|svg)$/i,
 				type: 'asset',
 				generator: {
