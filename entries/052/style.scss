@@ -1,0 +1,31 @@
+.day-052 {
+	background: #28ae60;
+	color: #fff;
+
+	& .dots {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 6px dotted #fff;
+		border-radius: 50%;
+
+		@for $dot from 1 through 12 {
+			&:nth-child(#{$dot}) {
+				width: ($dot * 20px) + 50px;
+				height: ($dot * 20px) + 50px;
+				animation: dots-wave 3s ease-in infinite both ($dot * 500ms) alternate;
+			}
+		}
+	}
+}
+
+@keyframes dots-wave {
+	0% {
+		opacity: 0;
+	}
+	75%,
+	100% {
+		opacity: 1;
+	}
+}

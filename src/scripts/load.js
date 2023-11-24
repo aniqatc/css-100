@@ -35,7 +35,7 @@ function scrollToHash() {
 
 // Load files for current number of entries
 (async function () {
-	for (let i = 51; i > 0; i--) {
+	for (let i = 52; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');
 
 		// Load SCSS files for entries above 50
