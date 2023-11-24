@@ -4,7 +4,7 @@
 
 **Time to Complete**: 1 hour
 
-**Key Concepts**: border property, multiple labels for checkbox input, carousel numbers, for loops in SCSS
+**Key Concepts**: border property, multiple labels for checkbox input, 3D carousel, for loops in SCSS
 
 **Notes**:
 
@@ -50,7 +50,7 @@ input[type='checkbox'] {
 }
 ```
 
-## Carousel numbers
+## 3D carousel for numbers
 
 In order to increment the numbers each second, I created 4 different carousels: each represent the `ones`, `tens`, `hundredths` and `thousandths` place of a number. Each of these groups have 10 nested `div`s that represent the numbers `0`-`9`. Using flexbox, I have all of these numbers stacked on top of each other in rows.
 
@@ -90,7 +90,7 @@ Finally, each of the `num` elements must be given a different starting position 
 
 The `translateZ(-80px)` is crucial for the carousel effect: it moves the element along the Z-axis, which creates depth in the 3D space. When the `translateZ()` is used with `rotateX()`, it positions the element in at different depths in the 3D space. Without this crucial declaration, all the elements would rotate around the same plane and we wouldn't see the carousel effect of the elements rotating into view as if its on a wheel. Additionally, `.group` class (which wraps around each group of `.num` elements), also has the `transform: translateZ(-80px)` applied - this establishes a consistent plane for the rotation of the child elements (`.num`). Without the `.group` using `translateZ()`, the overall carousel effect appears misaligned.
 
-## Carousel numbers: SCSS syntax in the `@for` loop
+## 3D carousel numbers: SCSS syntax in the `@for` loop
 
 ```scss
 @for $num from 1 through 10 {
@@ -123,7 +123,7 @@ Once it is compiled into CSS, here's what it'll look like:
 }
 ```
 
-## Carousel animation: SCSS syntax in the `@for` loop
+## 3D carousel animation: SCSS syntax in the `@for` loop
 
 Now that the carousel has all of its elements in place, I can apply the animation. For the animation, I used SCSS's `@for` loop:
 
