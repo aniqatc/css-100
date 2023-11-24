@@ -42,7 +42,7 @@
 		opacity: 0;
 	}
 	to {
-		transform: rotate(35deg) translateX(300px);
+		transform: rotate(35deg) translateX(400px);
 		opacity: 1;
 	}
 }
