@@ -3,6 +3,7 @@ import '/src/styles/main.css';
 
 const contentContext = require.context('/entries', true, /content\.js$/);
 const styleCSSContext = require.context('/entries', true, /style\.css$/);
+const styleSCSSContext = require.context('/entries', true, /style\.scss$/);
 
 async function loadContent(entry) {
 	const module = contentContext(`./${entry}/content.js`);
@@ -34,22 +35,16 @@ function scrollToHash() {
 
 // Load files for current number of entries
 (async function () {
-	for (let i = 50; i > 0; i--) {
+	for (let i = 51; i > 0; i--) {
 		const entry = String(i).padStart(3, '0');
-		styleCSSContext(`./${entry}/style.css`);
+		if (i < 51 && i > 0) {
+			styleCSSContext(`./${entry}/style.css`);
+		} else if (i > 51 && i < 100) {
+			styleSCSSContext(`./${entry}/style.scss`);
+		}
 		await loadContent(entry);
 		await loadScript(entry);
 	}
 	// Allow scroll to hash after loop is complete
 	scrollToHash();
 })();
-
-// ---- Incorportate/Refactor SCSS Support Later ---- //
-
-// const styleSCSSContext = require.context('/entries', true, /style\.scss$/);
-
-// if (i < 51 && i > 0) {
-// 	styleCSSContext(`./${entry}/style.css`);
-// } else if (i > 51 && i < 100) {
-// 	styleSCSSContext(`./${entry}/style.scss`);
-// }
