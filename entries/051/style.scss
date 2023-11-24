@@ -96,22 +96,22 @@
 		position: absolute;
 		top: 5px;
 
-		&.thousand {
+		&.thousandths {
 			left: 6px;
 			animation-duration: 10000s;
 		}
 
-		&.hundred {
+		&.hundredths {
 			left: 30px;
 			animation-duration: 1000s;
 		}
 
-		&.minute {
+		&.tens {
 			left: 54px;
 			animation-duration: 100s;
 		}
 
-		&.second {
+		&.ones {
 			left: 78px;
 			animation-duration: 10s;
 		}
@@ -142,50 +142,3 @@
 		transform: rotateX(-360deg);
 	}
 }
-
-// For readme notes:
-// @keyframes num-change {
-// 	0%,
-// 	9.99% {
-// 		transform: translateZ(-61px) rotateX(0deg);
-// 	}
-// 	10%,
-// 	19.99% {
-// 		transform: translateZ(-61px) rotateX(-36deg);
-// 	}
-// 	20%,
-// 	29.99% {
-// 		transform: translateZ(-61px) rotateX(-72deg);
-// 	}
-// 	30%,
-// 	39.99% {
-// 		transform: translateZ(-61px) rotateX(-108deg);
-// 	}
-// 	40%,
-// 	49.99% {
-// 		transform: translateZ(-61px) rotateX(-144deg);
-// 	}
-// 	50%,
-// 	59.99% {
-// 		transform: translateZ(-61px) rotateX(-180deg);
-// 	}
-// 	60%,
-// 	69.99% {
-// 		transform: translateZ(-61px) rotateX(-216deg);
-// 	}
-// 	70%,
-// 	79.99% {
-// 		transform: translateZ(-61px) rotateX(-252deg);
-// 	}
-// 	80%,
-// 	89.99% {
-// 		transform: translateZ(-61px) rotateX(-288deg);
-// 	}
-// 	90%,
-// 	99.99% {
-// 		transform: translateZ(-61px) rotateX(-324deg);
-// 	}
-// 	100% {
-// 		transform: translateZ(-61px) rotateX(-360deg);
-// 	}
-// }

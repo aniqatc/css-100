@@ -12,7 +12,7 @@ export function getMarkup() {
 		</span>
     	<div class="center">
 		<div class="counter">
-			<div class="group thousand">
+			<div class="group thousandths">
 				<span class="num">0</span>
 				<span class="num">1</span>
 				<span class="num">2</span>
@@ -24,7 +24,7 @@ export function getMarkup() {
 				<span class="num">8</span>
 				<span class="num">9</span>
 			</div>
-			<div class="group hundred">
+			<div class="group hundredths">
 				<span class="num">0</span>
 				<span class="num">1</span>
 				<span class="num">2</span>
@@ -36,7 +36,7 @@ export function getMarkup() {
 				<span class="num">8</span>
 				<span class="num">9</span>
 			</div>
-			<div class="group minute">
+			<div class="group tens">
 				<span class="num">0</span>
 				<span class="num">1</span>
 				<span class="num">2</span>
@@ -48,7 +48,7 @@ export function getMarkup() {
 				<span class="num">8</span>
 				<span class="num">9</span>
 			</div>
-			<div class="group second">
+			<div class="group ones">
 				<span class="num">0</span>
 				<span class="num">1</span>
 				<span class="num">2</span>

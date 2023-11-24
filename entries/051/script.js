@@ -3,10 +3,10 @@ export function init() {
 	const numGroup = document.querySelectorAll('.day-051 .group');
 
 	checkbox.addEventListener('change', () => {
-		numGroup.forEach(el => {
+		numGroup.forEach(group => {
 			checkbox.checked
-				? (el.style.animationPlayState = 'paused')
-				: (el.style.animationPlayState = 'running');
+				? (group.style.animationPlayState = 'paused')
+				: (group.style.animationPlayState = 'running');
 		});
 	});
 }
