@@ -10,16 +10,16 @@ export function getMarkup() {
 				>Day 052: Dot Wave</a
 			>
 		</span>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
-		<div class="dots"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
+		<div class="rings"></div>
 </div>  
 `;
 }

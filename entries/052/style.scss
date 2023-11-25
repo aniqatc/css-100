@@ -2,7 +2,7 @@
 	background: #28ae60;
 	color: #fff;
 
-	& .dots {
+	& .rings {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -10,18 +10,19 @@
 		border: 6px dotted #fff;
 		border-radius: 50%;
 
-		@for $dot from 1 through 12 {
-			&:nth-child(#{$dot}) {
-				width: ($dot * 20px) + 50px;
-				height: ($dot * 20px) + 50px;
-				animation: dots-wave 3s ease-in infinite both ($dot * 500ms) alternate;
+		@for $ring from 1 through 11 {
+			&:nth-child(#{$ring}) {
+				width: ($ring * 20px) + 50px;
+				height: ($ring * 20px) + 50px;
+				animation: rings-wave 3s ease-in infinite both ($ring * 500ms) alternate;
 			}
 		}
 	}
 }
 
-@keyframes dots-wave {
-	0% {
+@keyframes rings-wave {
+	0%,
+	25% {
 		opacity: 0;
 	}
 	75%,
