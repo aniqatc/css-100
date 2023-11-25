@@ -19,14 +19,14 @@ export function init() {
 			progressBar.classList.add('active');
 			dropzone.style.border = `0`;
 			dropzone.innerHTML = `
-					<img src="/entries/015/images/sync.svg" class="sync">
+					<img src="https://100dayscss.com/codepen/syncing.svg" class="sync">
 	`;
 			fileUpload.textContent = 'Uploading...';
 			fileUpload.style.boxShadow = '0 1px 10px #6ece3b';
 
 			/* After 2s, show upload complete */
 			setTimeout(() => {
-				dropzone.innerHTML = `<img src="/entries/015/images/check.svg" class="complete">`;
+				dropzone.innerHTML = `<img src="https://100dayscss.com/codepen/checkmark.svg" class="complete">`;
 				fileUpload.style.boxShadow = 'none';
 				fileUpload.textContent = 'Upload Complete';
 			}, 2000);
