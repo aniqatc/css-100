@@ -1,0 +1,71 @@
+.day-054 {
+	background: #263a4e;
+	color: #fff;
+
+	$bg-color: #263a4d;
+	$back-color: #406384;
+	$middle-color: #5d90bf;
+	$front-color: #7eb3e6;
+
+	@mixin general-circle($bg, $bg-invert) {
+		background: $bg;
+		height: 45px;
+		width: 45px;
+		border-radius: 50%;
+		margin-top: -25px;
+
+		&:nth-child(2n + 2) {
+			background: $bg-invert;
+		}
+	}
+
+	& .wave {
+		width: 1000px;
+		height: 75px;
+		display: flex;
+		position: absolute;
+		animation: wave-shifting infinite 3s ease-in-out alternate both;
+
+		&.wave-back {
+			--start-pos: -50px;
+			--end-pos: 0;
+			bottom: 100px;
+			background: $back-color;
+
+			& .circle {
+				@include general-circle($back-color, $bg-color);
+			}
+		}
+
+		&.wave-middle {
+			--start-pos: 0px;
+			--end-pos: -50px;
+			bottom: 50px;
+			background: $middle-color;
+
+			& .circle {
+				@include general-circle($middle-color, $back-color);
+			}
+		}
+
+		&.wave-front {
+			--start-pos: -50px;
+			--end-pos: 0;
+			bottom: 0;
+			background: $front-color;
+
+			& .circle {
+				@include general-circle($front-color, $middle-color);
+			}
+		}
+	}
+}
+
+@keyframes wave-shifting {
+	from {
+		transform: translateX(var(--start-pos));
+	}
+	to {
+		transform: translateX(var(--end-pos));
+	}
+}
