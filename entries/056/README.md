@@ -19,6 +19,9 @@ I used a SCSS `@for` loop to generate 20 unique `@keyframes` animation that are 
 		animation-delay: ($num * 50) + 0ms;
 	}
 
+	// Rotate value: 360 / 20 = 18
+	// TranslateX value: 30px to push it outwards from its current position
+	// Scaling to give a growth appearance
 	@keyframes petal-#{$num} {
 		0% {
 			transform: rotate(($num * 18) + 0deg) translateX(30px) scale(0.75);
@@ -49,3 +52,5 @@ Each petal receives a unique animation with a slight delay, creating a sequentia
 	}
 }
 ```
+
+Lastly, because all the petals are given an opacity of `0.7`, they are slightly see-through which is why we are able to see the petals overlapping on top of each other.
