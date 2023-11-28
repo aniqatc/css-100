@@ -24,14 +24,10 @@
 			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 			background: #fff;
 			border-radius: 60px 0;
-			opacity: 0.6;
+			opacity: 0.7;
 			transform-origin: 50% 100%;
 			z-index: 1;
 			transition: all 300ms ease;
-
-			&:nth-child(2n + 2) {
-				opacity: 0.8;
-			}
 
 			@for $num from 1 through 20 {
 				&:nth-child(#{$num}) {
@@ -62,7 +58,7 @@
 			border-radius: 50%;
 			background: #f4d055;
 			z-index: 2;
-			transition: all 300ms ease;
+			transition: all 600ms ease;
 		}
 
 		&:hover {
@@ -75,7 +71,6 @@
 
 		&:hover .stigma {
 			transform: scale(0);
-			opacity: 0;
 		}
 	}
 }
