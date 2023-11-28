@@ -122,7 +122,3 @@ input[type='range'] {
 
 - <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/">CSS Tricks: Styling Cross-Browser Compatible Range Inputs with CSS</a>
 - <a href="https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/">Creating A Custom Range Input That Looks Consistent Across All Browsers</a>
-
-```
-
-```
