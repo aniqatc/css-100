@@ -7,3 +7,11 @@
 **Key Concepts**: icosahedron 3D shape
 
 **Notes**:
+
+## Setting 3D space
+
+## Hover transition
+
+## Individual side values
+
+## References

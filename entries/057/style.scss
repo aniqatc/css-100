@@ -8,14 +8,14 @@
 
 	& .shape {
 		transform-style: preserve-3d;
-		transform: rotateX(15deg) rotateY(15deg);
+		transform: rotateX(30deg) rotateY(30deg);
 		height: 280px;
 		width: 160px;
 		cursor: pointer;
 		transition: all 4s ease-in-out;
 
 		&:hover {
-			transform: rotateX(-375deg) rotateY(-375deg);
+			transform: rotateX(-390deg) rotateY(-390deg);
 		}
 
 		& .side {
