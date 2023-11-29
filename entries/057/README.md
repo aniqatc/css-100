@@ -65,7 +65,7 @@ All 20 triangles must be equilateral. `border-left/right` properties set the sid
 }
 ```
 
-Understanding the `.side` `@for` loop values:
+**Understanding the `.side` `@for` loop values:**
 
 - 1 through 12 (red in example gif)
   - the height is applied to `border-bottom`
