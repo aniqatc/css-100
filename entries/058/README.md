@@ -4,7 +4,7 @@
 
 **Time to Complete**: 2 hours
 
-**Key Concepts**: using @mixins for repeating properties with different values, reverse-engineer original code to get formula for each sphere slice
+**Key Concepts**: reverse-engineer original code to get formula for each sphere slice, using @mixins, @function, and @if @else directives
 
 **Notes**:
 

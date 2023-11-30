@@ -40,128 +40,161 @@
 			left: $num;
 		}
 
+		@function calculateSize($i) {
+			@if $i <= 9 {
+				@return 200px - (2 * ($i * $i)); // Original calculation for slices 1-9
+			} @else {
+				$mirror_i: 20 - $i; // Mirroring the index
+				@return 200px - (2 * ($mirror_i * $mirror_i)); // Calculations for slices 11-19
+			}
+		}
+
+		@function calculatePosition($i) {
+			@return ((200px - calculateSize($i)) / 2); // Center each slice based on its size
+		}
+
+		@function calculateTransform($i) {
+			@if $i <= 9 {
+				@return ($i * 15) - (($i * $i) / 2) * 1px; // Original calculation for slices 1-9
+			} @else {
+				$mirror_i: 20 - $i; // Mirroring the index
+				@return (($mirror_i * 15) - (($mirror_i * $mirror_i) / 2)) * -1px; // Calculations for slices 11-19
+			}
+		}
+
+		@for $i from 1 through 19 {
+			@if $i != 10 {
+				&-#{$i} {
+					@include position(calculatePosition($i));
+					@include size(calculateSize($i));
+					@include transform(calculateTransform($i));
+				}
+			}
+		}
+
 		// middle
 		&-10 {
-			@include position(-2px);
-			@include size(204px);
+			@include position(0px);
+			@include size(200px);
 			@include transform(0);
 		}
 
-		// pair 1 + 19
-		&-1 {
-			@include position(1px);
-			@include size(198px);
-			@include transform(14.5px);
-		}
+		// Hard-coded values //
+		// // pair 1 + 19
+		// &-1 {
+		// 	@include position(1px);
+		// 	@include size(calculateSize(1));
+		// 	@include transform(14.5px);
+		// }
 
-		&-19 {
-			@include position(1px);
-			@include size(198px);
-			@include transform(-14.5px);
-		}
+		// &-19 {
+		// 	@include position(1px);
+		// 	@include size(198px);
+		// 	@include transform(-14.5px);
+		// }
 
-		// pair 2 + 18
-		&-2 {
-			@include position(4px);
-			@include size(192px);
-			@include transform(28px);
-		}
+		// // pair 2 + 18
+		// &-2 {
+		// 	@include position(4px);
+		// 	@include size(192px);
+		// 	@include transform(28px);
+		// }
 
-		&-18 {
-			@include position(4px);
-			@include size(192px);
-			@include transform(-28px);
-		}
+		// &-18 {
+		// 	@include position(4px);
+		// 	@include size(192px);
+		// 	@include transform(-28px);
+		// }
 
-		// pair 3 + 17
-		&-3 {
-			@include position(9px);
-			@include size(182px);
-			@include transform(40.5px);
-		}
+		// // pair 3 + 17
+		// &-3 {
+		// 	@include position(9px);
+		// 	@include size(182px);
+		// 	@include transform(40.5px);
+		// }
 
-		&-17 {
-			@include position(9px);
-			@include size(182px);
-			@include transform(-40.5px);
-		}
+		// &-17 {
+		// 	@include position(9px);
+		// 	@include size(182px);
+		// 	@include transform(-40.5px);
+		// }
 
-		// pair 4 + 16
-		&-4 {
-			@include position(16px);
-			@include size(168px);
-			@include transform(52px);
-		}
+		// // pair 4 + 16
+		// &-4 {
+		// 	@include position(16px);
+		// 	@include size(168px);
+		// 	@include transform(52px);
+		// }
 
-		&-16 {
-			@include position(16px);
-			@include size(168px);
-			@include transform(-52px);
-		}
+		// &-16 {
+		// 	@include position(16px);
+		// 	@include size(168px);
+		// 	@include transform(-52px);
+		// }
 
-		// pair 5 + 15
-		&-5 {
-			@include position(25px);
-			@include size(150px);
-			@include transform(62.5px);
-		}
+		// // pair 5 + 15
+		// &-5 {
+		// 	@include position(25px);
+		// 	@include size(150px);
+		// 	@include transform(62.5px);
+		// }
 
-		&-15 {
-			@include position(25px);
-			@include size(150px);
-			@include transform(-62.5px);
-		}
+		// &-15 {
+		// 	@include position(25px);
+		// 	@include size(150px);
+		// 	@include transform(-62.5px);
+		// }
 
-		// pair 6 + 14
-		&-6 {
-			@include position(36px);
-			@include size(128px);
-			@include transform(72px);
-		}
+		// // pair 6 + 14
+		// &-6 {
+		// 	@include position(36px);
+		// 	@include size(128px);
+		// 	@include transform(72px);
+		// }
 
-		&-14 {
-			@include position(36px);
-			@include size(128px);
-			@include transform(-72px);
-		}
+		// &-14 {
+		// 	@include position(36px);
+		// 	@include size(128px);
+		// 	@include transform(-72px);
+		// }
 
-		// pair 7 + 13
-		&-7 {
-			@include position(49px);
-			@include size(102px);
-			@include transform(80.5px);
-		}
+		// // pair 7 + 13
+		// &-7 {
+		// 	@include position(49px);
+		// 	@include size(102px);
+		// 	@include transform(80.5px);
+		// }
 
-		&-13 {
-			@include position(49px);
-			@include size(102px);
-			@include transform(-80.5px);
-		}
+		// &-13 {
+		// 	@include position(49px);
+		// 	@include size(102px);
+		// 	@include transform(-80.5px);
+		// }
 
-		// pair 8 + 12
-		&-8 {
-			@include position(64px);
-			@include size(72px);
-			@include transform(88px);
-		}
+		// // pair 8 + 12
+		// &-8 {
+		// 	@include position(64px);
+		// 	@include size(72px);
+		// 	@include transform(88px);
+		// }
 
-		&-12 {
-			@include position(64px);
-			@include size(72px);
-			@include transform(-88px);
-		}
+		// &-12 {
+		// 	@include position(64px);
+		// 	@include size(72px);
+		// 	@include transform(-88px);
+		// }
 
-		// pair 9 + 11
-		&-9 {
-			@include position(81px);
-			@include size(38px);
-			@include transform(94.5px);
-		}
+		// // pair 9 + 11
+		// &-9 {
+		// 	@include position(81px);
+		// 	@include size(38px);
+		// 	@include transform(94.5px);
+		// }
 
-		&-11 {
-			@include position(81px);
-			@include size(38px);
-			@include transform(-94.5px);
-		}
+		// &-11 {
+		// 	@include position(81px);
+		// 	@include size(38px);
+		// 	@include transform(-94.5px);
+		// }
 	}
 }
