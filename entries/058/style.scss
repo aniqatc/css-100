@@ -25,6 +25,12 @@
 		border-radius: 50%;
 		position: absolute;
 		transform-origin: center center;
+		transition: all 200ms ease-out;
+
+		&:hover {
+			border: 2px solid #fff;
+			background: #d33526;
+		}
 
 		@mixin transform($num) {
 			transform: translateY(#{$num}) rotateX(90deg);
@@ -48,11 +54,16 @@
 		* $i == 10, represents middle piece
 		*
 		* Formulas: 
+		* quadratic: accounts for sphere curvature
 		* calculatePosition: center each slice based on its size
-		* calculateSize: $i increase results in smaller subsequent slice; quadratic ($i * $i) for sphere curvature
+		* calculateSize: as $i increases, each subsequent slice size decreases
 		* calculateTransform: offset position to create space between each slice while maintaining sphere curvature
 		*
 		*/
+
+		@function quadratic($var) {
+			@return $var * $var;
+		}
 
 		@function calculatePosition($i) {
 			@return ((200px - calculateSize($i)) / 2);
@@ -60,19 +71,19 @@
 
 		@function calculateSize($i) {
 			@if $i <= 9 {
-				@return 200px - (2 * ($i * $i));
+				@return 200px - (2 * quadratic($i));
 			} @else {
 				$mirror_i: 20 - $i;
-				@return 200px - (2 * ($mirror_i * $mirror_i));
+				@return 200px - (2 * quadratic($mirror_i));
 			}
 		}
 
 		@function calculateTransform($i) {
 			@if $i <= 9 {
-				@return ($i * 15) - (($i * $i) / 2) * 1px;
+				@return ($i * 15) - (quadratic($i) / 2) * 1px;
 			} @else {
 				$mirror_i: 20 - $i;
-				@return (($mirror_i * 15) - (($mirror_i * $mirror_i) / 2)) * -1px;
+				@return (($mirror_i * 15) - (quadratic($mirror_i) / 2)) * -1px;
 			}
 		}
 
