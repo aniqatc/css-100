@@ -10,5 +10,4 @@
 
 ## References
 
-- <a href="https://codepen.io/roydigerhund/pen/GZMLbK">Codepen by Matthias Martin: Original 3D Sphere for Day 58</a>
 - <a href="https://observablehq.com/@stroked/how-to-slice-a-sphere">How To Slice A Sphere by Observable HQ</a>
