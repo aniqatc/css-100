@@ -40,25 +40,39 @@
 			left: $num;
 		}
 
-		@function calculateSize($i) {
-			@if $i <= 9 {
-				@return 200px - (2 * ($i * $i)); // Original calculation for slices 1-9
-			} @else {
-				$mirror_i: 20 - $i; // Mirroring the index
-				@return 200px - (2 * ($mirror_i * $mirror_i)); // Calculations for slices 11-19
-			}
-		}
+		/* 
+		*
+		* Variables: 
+		* $i <= 9, represents bottom half
+		* $mirror_i, represents top half
+		* $i == 10, represents middle piece
+		*
+		* Formulas: 
+		* calculatePosition: center each slice based on its size
+		* calculateSize: $i increase results in smaller subsequent slice; quadratic ($i * $i) for sphere curvature
+		* calculateTransform: offset position to create space between each slice while maintaining sphere curvature
+		*
+		*/
 
 		@function calculatePosition($i) {
-			@return ((200px - calculateSize($i)) / 2); // Center each slice based on its size
+			@return ((200px - calculateSize($i)) / 2);
+		}
+
+		@function calculateSize($i) {
+			@if $i <= 9 {
+				@return 200px - (2 * ($i * $i));
+			} @else {
+				$mirror_i: 20 - $i;
+				@return 200px - (2 * ($mirror_i * $mirror_i));
+			}
 		}
 
 		@function calculateTransform($i) {
 			@if $i <= 9 {
-				@return ($i * 15) - (($i * $i) / 2) * 1px; // Original calculation for slices 1-9
+				@return ($i * 15) - (($i * $i) / 2) * 1px;
 			} @else {
-				$mirror_i: 20 - $i; // Mirroring the index
-				@return (($mirror_i * 15) - (($mirror_i * $mirror_i) / 2)) * -1px; // Calculations for slices 11-19
+				$mirror_i: 20 - $i;
+				@return (($mirror_i * 15) - (($mirror_i * $mirror_i) / 2)) * -1px;
 			}
 		}
 
