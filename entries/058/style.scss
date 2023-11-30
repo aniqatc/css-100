@@ -54,14 +54,14 @@
 		* $i == 10, represents middle piece
 		*
 		* Formulas: 
-		* quadratic: accounts for sphere curvature
+		* squared: accounts for sphere curvature
 		* calculatePosition: center each slice based on its size
 		* calculateSize: as $i increases, each subsequent slice size decreases
 		* calculateTransform: offset position to create space between each slice while maintaining sphere curvature
 		*
 		*/
 
-		@function quadratic($var) {
+		@function squared($var) {
 			@return $var * $var;
 		}
 
@@ -71,19 +71,19 @@
 
 		@function calculateSize($i) {
 			@if $i <= 9 {
-				@return 200px - (2 * quadratic($i));
+				@return 200px - (2 * squared($i));
 			} @else {
 				$mirror_i: 20 - $i;
-				@return 200px - (2 * quadratic($mirror_i));
+				@return 200px - (2 * squared($mirror_i));
 			}
 		}
 
 		@function calculateTransform($i) {
 			@if $i <= 9 {
-				@return ($i * 15) - (quadratic($i) / 2) * 1px;
+				@return ($i * 15) - (squared($i) / 2) * 1px;
 			} @else {
 				$mirror_i: 20 - $i;
-				@return (($mirror_i * 15) - (quadratic($mirror_i) / 2)) * -1px;
+				@return (($mirror_i * 15) - (squared($mirror_i) / 2)) * -1px;
 			}
 		}
 
