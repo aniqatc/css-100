@@ -4,7 +4,7 @@
 
 **Time to Complete**: 1 hour
 
-**Key Concepts**: background properties, @extend directive, modulo operator, adjustment via JavaScript
+**Key Concepts**: background properties, @extend directive, modulo operator, background properties adjusted via JavaScript
 
 **Notes**:
 
@@ -55,3 +55,56 @@ The two classes that declare a `background-image` also use `@extend` directive t
 ```
 
 ## `@for` loop with modulo operator
+
+I'll explain how I got several slices of the second image to appear and disappear on hover while retaining the image's aspect ratio (below) but first, I wanted to share how I used the `%` modulo operator in a `@for` loop to apply a different transition value for each of the slices based on if they are are an odd or even number:
+
+```scss
+@for $num from 1 through 12 {
+	& .slice-#{$num} {
+		@if $num % 2 == 0 {
+			transform: translateY(50px); // even
+		} @else {
+			transform: translateY(-50px); // odd
+		}
+	}
+}
+```
+
+If the `$num` is an even number, dividing it by `2` will result in a `0` for its remainder value -- in that case, `translateY(50px)` will be applied, otherwise, `translateY(-50px)` will be applied. This moves every other slice either upwards out of the frame or downwards out of the frame.
+
+## Adjusting background properties via JS
+
+Since my website uses a responsive grid, I have to ensure that all my challenge frames also use styling and layout properties and values that can adjust when the window is resized (so, I can't really use fixed values). Initially, I hoped that using percentage values would be sufficient to adjust the image but for some reason, the images appeared out-of-sync most of the time.
+
+So, I figured I couldn't do it with just SCSS because I would need each slices' `width`, `background-size` and `-position` properties to be adjusted every time the frame is resized - which sounds like a task that can be completed using JavaScript.
+
+Here's what I needed to achieve:
+
+- Using `resize` event on the `window` object, adjust the frame's `width`
+- Based on the frame's `width`, calculate each slice's `width` by dividing the frame `width` by the number of slices (allowing each slice to be evenly distributed along the frame)
+- For the slice `background-position` property, the image needs to be shifted on the x-axis to the left which requires a negative value - this shift is required so that each slice shows the right slice of the original image. This would be calculated by having a negative linear shift (slice width times slice element number)
+- For the slice `background-size` property, I need two values:
+  - Width which is set to be the same as the frame's width (when all the slices are aligned - the image should appear at this width)
+  - Height is set to `400px` because the height never changes
+
+Here's how I wrote it in JavaScript:
+
+```javascript
+window.onload = adjustSlices; // adjust on initial load
+window.addEventListener('resize', adjustSlices); // adjust on resize
+
+function adjustSlices() {
+	const container = document.querySelector('.day-059 .slices');
+	const slices = container.querySelectorAll('.slice');
+
+	const containerWidth = container.offsetWidth; // width of frame
+	const sliceWidth = containerWidth / slices.length; // frame width divided by # of slides
+
+	slices.forEach((slice, index) => {
+		const x = -(sliceWidth * index); // negative value to shift image to the left
+		slice.style.width = sliceWidth + 'px';
+		slice.style.backgroundPosition = `${x}px 0px`;
+		slice.style.backgroundSize = `${containerWidth}px 400px`;
+	});
+}
+```
