@@ -17,7 +17,7 @@
 		transform: translate(-50%, -50%);
 		text-align: center;
 		text-transform: uppercase;
-		text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+		text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.75);
 		letter-spacing: 2px;
 		pointer-events: none;
 
@@ -49,12 +49,11 @@
 			background-image: url('/entries/059/images/slide-2.jpeg');
 			transition: all 1s ease-out;
 			float: left;
+			opacity: 0;
 		}
 
 		@for $num from 1 through 10 {
 			& .slide-#{$num} {
-				opacity: 0;
-
 				@if $num % 2 == 0 {
 					transform: translateY(50px); // even
 				} @else {
@@ -68,6 +67,7 @@
 				transform: translateY(0);
 				opacity: 1;
 			}
+
 			h1 {
 				transform: translateX(-50px);
 				opacity: 0;
