@@ -2,10 +2,6 @@
 	color: #fff;
 	cursor: pointer;
 
-	& .code-link {
-		mix-blend-mode: exclusion;
-	}
-
 	& .heading {
 		position: absolute;
 		top: 50%;
@@ -35,21 +31,21 @@
 		height: 400px;
 	}
 
-	.slides {
+	.slices {
 		@extend %background;
+		display: flex;
 		background-size: 800px 400px;
-		background-image: url('/entries/059/images/slide-1.jpeg');
+		background-image: url('/entries/059/images/slice-1.jpeg');
 
-		& .slide {
+		& .slice {
 			@extend %background;
-			background-image: url('/entries/059/images/slide-2.jpeg');
-			transition: all 1s ease-out;
-			float: left;
+			background-image: url('/entries/059/images/slice-2.jpeg');
+			transition: transform 1s ease-out, opacity 1s ease-out;
 			opacity: 0;
 		}
 
-		@for $num from 1 through 10 {
-			& .slide-#{$num} {
+		@for $num from 1 through 12 {
+			& .slice-#{$num} {
 				@if $num % 2 == 0 {
 					transform: translateY(50px); // even
 				} @else {
@@ -59,7 +55,7 @@
 		}
 
 		&:hover {
-			.slide {
+			.slice {
 				transform: translateY(0);
 				opacity: 1;
 			}

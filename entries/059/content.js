@@ -7,20 +7,22 @@ export function getMarkup() {
 				href="https://github.com/aniqatc/css-100/tree/main/entries/059"
 				target="_blank"
 				rel="noreferrer"
-				>Day 059: Slide Transition</a
+				>Day 059: Slice & Slide Transition</a
 			>
 		</span>
-	<div class="slides">
-		<div class="slide slide-1"></div>
-		<div class="slide slide-2"></div>
-		<div class="slide slide-3"></div>
-		<div class="slide slide-4"></div>
-		<div class="slide slide-5"></div>
-		<div class="slide slide-6"></div>
-		<div class="slide slide-7"></div>
-		<div class="slide slide-8"></div>
-        		<div class="slide slide-9"></div>
-		<div class="slide slide-10"></div>
+	<div class="slices">
+		<div class="slice slice-1"></div>
+		<div class="slice slice-2"></div>
+		<div class="slice slice-3"></div>
+		<div class="slice slice-4"></div>
+		<div class="slice slice-5"></div>
+		<div class="slice slice-6"></div>
+		<div class="slice slice-7"></div>
+		<div class="slice slice-8"></div>
+        <div class="slice slice-9"></div>
+		<div class="slice slice-10"></div>
+		<div class="slice slice-11"></div>
+		<div class="slice slice-12"></div>
 		<div class="heading">
 			<h1>Slice</h1>
 			<h2>Transition</h2>
