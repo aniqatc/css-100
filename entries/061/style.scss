@@ -1,0 +1,15 @@
+.day-061 {
+	color: #fff;
+	background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+	background-size: 400% 400%;
+	animation: gradient-shift 3s ease-in infinite alternate;
+
+	@keyframes gradient-shift {
+		0% {
+			background-position: 0% 0%;
+		}
+		100% {
+			background-position: 100% 100%;
+		}
+	}
+}
