@@ -78,9 +78,8 @@ Since my website uses a responsive grid, I have to ensure that all my challenge 
 
 So, I figured I couldn't do it with just SCSS because I would need each slices' `width`, `background-size` and `-position` properties to be adjusted every time the frame is resized - which sounds like a task that can be completed using JavaScript.
 
-Here's what I needed to achieve:
+Using `resize` event on the `window` object, I'll find the frame's current `width` and apply the following calculations:
 
-- Using `resize` event on the `window` object, adjust the frame's `width`
 - Based on the frame's `width`, calculate each slice's `width` by dividing the frame `width` by the number of slices (allowing each slice to be evenly distributed along the frame)
 - For the slice `background-position` property, the image needs to be shifted on the x-axis to the left which requires a negative value - this shift is required so that each slice shows the right slice of the original image. This would be calculated by having a negative linear shift (slice width times slice element number)
 - For the slice `background-size` property, I need two values:
@@ -94,7 +93,7 @@ window.onload = adjustSlices; // adjust on initial load
 window.addEventListener('resize', adjustSlices); // adjust on resize
 
 function adjustSlices() {
-	const container = document.querySelector('.day-059 .slices');
+	const container = document.querySelector('.slices');
 	const slices = container.querySelectorAll('.slice');
 
 	const containerWidth = container.offsetWidth; // width of frame
