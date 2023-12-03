@@ -1,0 +1,149 @@
+.day-062 {
+	background: #e9edef;
+	color: #5e5e5e;
+
+	& .content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 12px;
+		padding: 42px 12px 24px;
+
+		& span {
+			display: block;
+		}
+	}
+
+	& .pricing {
+		background: #fff;
+		flex-basis: 110px;
+		height: 160px;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		transition: all 300ms ease-out;
+
+		& .pricing--heading {
+			background: #7dd0ed;
+			color: #fff;
+			border-radius: 4px 4px 0 0;
+			padding: 8px 0;
+			font-weight: 600;
+			font-size: 14px;
+			transition: all 300ms ease-out;
+		}
+
+		& .pricing--value {
+			padding-top: 12px;
+			padding-bottom: 8px;
+			transition: all 300ms ease-out;
+
+			& span:first-of-type {
+				font-size: 32px;
+				font-weight: 800;
+			}
+
+			& span:last-of-type {
+				font-size: 12px;
+			}
+		}
+
+		& .pricing--content {
+			& span {
+				height: 3px;
+				background: #e4e4e4;
+				border-radius: 10px;
+				margin: 6px auto;
+
+				&:nth-child(even) {
+					width: 50px;
+				}
+
+				&:nth-child(odd) {
+					width: 75px;
+				}
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.1);
+
+			& .pricing--heading {
+				background: #27a6d2;
+			}
+
+			& .pricing--value {
+				color: #27a6d2;
+			}
+		}
+
+		&.pricing-basic:hover {
+			& ~ .data .bar-users .fill {
+				width: 15%;
+			}
+
+			& ~ .data .bar-gb .fill {
+				width: 20%;
+			}
+
+			& ~ .data .bar-projects .fill {
+				width: 10%;
+			}
+		}
+
+		&.pricing-pro:hover {
+			& ~ .data .bar-users .fill {
+				width: 45%;
+			}
+
+			& ~ .data .bar-gb .fill {
+				width: 55%;
+			}
+
+			& ~ .data .bar-projects .fill {
+				width: 33%;
+			}
+		}
+
+		&.pricing-premium:hover {
+			& ~ .data .fill {
+				width: 100%;
+			}
+		}
+	}
+
+	& .data {
+		flex-basis: 100%;
+		background: #fff;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		font-size: 12px;
+
+		& div {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin: 16px 12px;
+
+			& p:last-of-type {
+				margin-left: auto;
+			}
+		}
+
+		& .bar {
+			flex-basis: 100%;
+			height: 12px;
+			background: #e4e4e4;
+			border-radius: 10px;
+
+			& .fill {
+				@extend .bar;
+				background: #7dd0ed;
+				width: 0;
+				transition: all 500ms ease-out;
+			}
+		}
+	}
+}
