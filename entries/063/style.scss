@@ -26,12 +26,12 @@
 
 			@keyframes hypnotic-ring {
 				0% {
-					transform: scale(0) translate(-200px);
+					transform: scale(0) translate(200px, -200px);
 					opacity: 0.25;
 				}
 				100% {
-					transform: scale(3.5) translate(0);
-					opacity: 0.75;
+					transform: scale(3) translate(0, 0);
+					opacity: 1;
 				}
 			}
 		}
