@@ -1,0 +1,46 @@
+.day-064 {
+	background: #2d3e50;
+	color: #fff;
+
+	%btn-center {
+		position: absolute;
+		top: calc(50% - 37.5px);
+		left: calc(50% - 100px);
+	}
+
+	& .btn {
+		@extend %btn-center;
+		border: 0;
+		background: #fff;
+		color: #121212;
+		width: 200px;
+		height: 75px;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		z-index: 1;
+		transition: all 300ms ease-out;
+
+		&:hover {
+			cursor: pointer;
+			background: #8e43ad;
+			color: #fff;
+			transform: translate(12px, 12px);
+		}
+
+		&:hover ~ .bg {
+			transform: translate(0);
+			background: #fff;
+		}
+	}
+
+	& .bg {
+		@extend %btn-center;
+		background: #8e43ad;
+		width: 200px;
+		height: 75px;
+		box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+		transform: translate(12px, 12px);
+		transition: all 300ms ease-out;
+	}
+}
