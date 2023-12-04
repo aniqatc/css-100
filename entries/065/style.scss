@@ -16,20 +16,16 @@
 
 		@for $num from 1 through 25 {
 			&:nth-child(#{$num}) {
-				animation: ellipse-to-sq-#{$num} 7s ease-in infinite alternate both;
+				animation: ellipse-to-sq-#{$num} 4s ease-in infinite alternate both;
 			}
 
 			@keyframes ellipse-to-sq-#{$num} {
 				0% {
-					transform: rotate($num * 15deg);
-					border-radius: 25% 150%;
-				}
-				50% {
 					transform: rotate(0);
 					border-radius: 0%;
 				}
 				100% {
-					transform: rotate($num * -15deg);
+					transform: rotate($num * 15deg);
 					border-radius: 25% 150%;
 				}
 			}
