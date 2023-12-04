@@ -1,0 +1,38 @@
+.day-065 {
+	background: #2091dd;
+	color: #fff;
+
+	%center-position {
+		position: absolute;
+		top: calc(50% - 125px);
+		left: calc(50% - 125px);
+	}
+
+	& .ellipse {
+		@extend %center-position;
+		border: 1px solid #fff;
+		width: 250px;
+		height: 250px;
+
+		@for $num from 1 through 25 {
+			&:nth-child(#{$num}) {
+				animation: ellipse-to-sq-#{$num} 7s ease-in infinite alternate both;
+			}
+
+			@keyframes ellipse-to-sq-#{$num} {
+				0% {
+					transform: rotate($num * 15deg);
+					border-radius: 25% 150%;
+				}
+				50% {
+					transform: rotate(0);
+					border-radius: 0%;
+				}
+				100% {
+					transform: rotate($num * -15deg);
+					border-radius: 25% 150%;
+				}
+			}
+		}
+	}
+}
