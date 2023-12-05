@@ -3,6 +3,7 @@
 	color: #fff;
 
 	& .sparkle-label {
+		box-sizing: border-box;
 		cursor: pointer;
 		display: block;
 		width: 40px;
@@ -27,7 +28,6 @@
 			width: 20px;
 			height: 2px;
 			background: #fff;
-			border-radius: 2px;
 			opacity: 1;
 			transform-origin: 0 0;
 			transition: none;
