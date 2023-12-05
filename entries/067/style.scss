@@ -1,0 +1,108 @@
+.day-067 {
+	background: #f6ce51;
+	color: #000;
+	perspective: 1000px;
+
+	& .inner-frame {
+		margin: 0 auto;
+		width: 400px;
+		height: 400px;
+
+		& .parasol {
+			position: absolute;
+			top: calc(50% - 150px);
+			left: calc(50% - 200px);
+			transform-style: preserve-3d;
+			transform: rotateX(75deg) rotateY(-20deg);
+
+			.pole {
+				position: absolute;
+				top: 120px;
+				left: 100px;
+				height: 110px;
+				width: 6px;
+				border-radius: 4px;
+				background: #888888;
+				transform-origin: center top;
+				transform: translateZ(-10px) rotateX(-75deg);
+			}
+
+			.top {
+				width: 200px;
+				height: 200px;
+				transform-style: preserve-3d;
+				animation: rotating-parasol-top 6s linear infinite;
+
+				& .triangle {
+					position: absolute;
+					top: 100px;
+					left: 80px;
+					border-style: solid;
+					border-width: 0 19px 80px 19px;
+					transform-origin: center top;
+
+					&:nth-of-type(odd) {
+						border-color: transparent transparent #fff transparent;
+					}
+
+					&:nth-of-type(even) {
+						border-color: transparent transparent #d70707 transparent;
+					}
+
+					@for $num from 1 through 12 {
+						&:nth-of-type(#{$num}) {
+							transform: rotate(360deg / 12 * $num) rotateX(-25deg);
+						}
+					}
+				}
+			}
+
+			.shadow-pole {
+				position: absolute;
+				height: 100px;
+				width: 12px;
+				border-radius: 4px;
+				transform-origin: center top;
+				top: 605px;
+				left: 138px;
+				background: #ab9038;
+				transform: rotateZ(-90deg);
+			}
+
+			.shadow-top {
+				position: absolute;
+				top: 490px;
+				left: 165px;
+				width: 200px;
+				height: 200px;
+				filter: blur(1px);
+				transform-style: preserve-3d;
+				animation: rotating-parasol-top 6s linear infinite;
+
+				& .triangle {
+					position: absolute;
+					top: 100px;
+					left: 80px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 22px 80px 22px;
+					border-color: transparent transparent #ab9038 transparent;
+					transform-origin: center top;
+
+					@for $num from 1 through 12 {
+						&:nth-of-type(#{$num}) {
+							transform: rotateZ(360deg / 12 * $num) scale(0.75);
+						}
+					}
+				}
+			}
+
+			@keyframes rotating-parasol-top {
+				to {
+					transform: rotateZ(360deg);
+				}
+			}
+		}
+	}
+}
