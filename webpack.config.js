@@ -74,6 +74,25 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
 			favicon: './src/assets/favicon.png',
+			meta: {
+				description:
+					'Completing the 100 Days of CSS challenge to become an expert at writing CSS. My completed daily challenges are showcased on this website.',
+				keywords: '100 days of css, css, css challenge, css art"',
+				author: 'Aniqa',
+				'og:type': 'website',
+				'og:title': '100 Days of CSS by Aniqa',
+				'og:description':
+					'Completing the 100 Days of CSS challenge to become an expert at writing CSS. My completed daily challenges are showcased on this website.',
+				'og:url': 'https://css100.aniqa.dev',
+				'og:image':
+					'https://raw.githubusercontent.com/aniqatc/css-100/main/src/assets/screenshot.png',
+				'twitter:title': '100 Days of CSS by Aniqa',
+				'twitter:card': 'summary_large_image',
+				'twitter:image':
+					'https://raw.githubusercontent.com/aniqatc/css-100/main/src/assets/screenshot.png',
+				'twitter:image:alt': "Screen capture of website's user interface",
+				'twitter:site': '@aniqatc',
+			},
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'all.css',
