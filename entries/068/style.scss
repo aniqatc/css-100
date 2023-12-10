@@ -1,0 +1,165 @@
+.day-068 {
+	background: #684595;
+	color: #fff;
+
+	& .center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transition: none;
+	}
+}
+
+.recording-label {
+	height: 110px;
+	width: 110px;
+	cursor: pointer;
+
+	& .mic-border {
+		height: 110px;
+		width: 110px;
+		fill: transparent;
+		stroke: #fff;
+		stroke-width: 3px;
+	}
+
+	& .mic-full {
+		position: absolute;
+		width: 25px;
+		height: 80px;
+		top: calc(50% - 37.5px);
+		left: calc(50% - 12.5px);
+
+		& .mic-speaker {
+			position: absolute;
+			height: 60px;
+			width: 25px;
+			background: #fff;
+			border-radius: 50px;
+
+			& .mic-mid {
+				position: absolute;
+				top: 8px;
+				left: calc(50% - 3px);
+				width: 6px;
+				height: 17px;
+				border-radius: 50px;
+				background: #684595;
+			}
+
+			& .mic-stand {
+				position: absolute;
+				top: 100%;
+				left: calc(50% - 2px);
+				width: 4px;
+				height: 12px;
+				background: #fff;
+			}
+
+			& .mic-foot {
+				position: absolute;
+				top: 115%;
+				left: 0;
+				width: 24px;
+				height: 4px;
+				background: #fff;
+				border-radius: 50px;
+			}
+		}
+	}
+
+	& .dots {
+		position: absolute;
+		top: calc(50% - 5px);
+		left: calc(50% - 23px);
+		display: flex;
+		gap: 8px;
+		opacity: 0;
+
+		& .dot {
+			height: 10px;
+			width: 10px;
+			border-radius: 50%;
+			background: #fff;
+		}
+	}
+}
+
+#recording-btn {
+	display: none;
+
+	&:checked ~ .recording-label .mic-border {
+		animation: mic-border-rotate 6s linear both infinite;
+	}
+
+	&:checked ~ .recording-label .mic-full {
+		animation: mic-scale-fade 1s ease-in forwards;
+	}
+
+	&:checked ~ .recording-label .dots {
+		animation: dots-scale-in 0.6s ease-out 1s both;
+
+		& .dot {
+			animation: bouncing-dots 1.5s ease infinite;
+
+			@for $num from 1 through 3 {
+				&:nth-child(#{$num}) {
+					animation-delay: -0.5s * ($num - 1);
+				}
+			}
+		}
+	}
+
+	@keyframes mic-scale-fade {
+		0% {
+			transform: scale(1);
+			opacity: 1;
+		}
+		10% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(0);
+			opacity: 0;
+		}
+	}
+
+	@keyframes mic-border-rotate {
+		0% {
+			stroke-dashoffset: 0;
+			stroke-dasharray: 1;
+			transform: rotate(0deg);
+		}
+		100% {
+			stroke-dashoffset: -2;
+			stroke-dasharray: 1;
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes bouncing-dots {
+		0% {
+			transform: translateY(6px);
+		}
+		50% {
+			transform: translateY(-6px);
+		}
+		100% {
+			transform: translateY(6px);
+		}
+	}
+
+	@keyframes dots-scale-in {
+		0% {
+			transform: scale(0);
+			opacity: 0;
+		}
+		100% {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
