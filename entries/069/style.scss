@@ -1,0 +1,79 @@
+.day-069 {
+	background: #363847;
+	color: #fff;
+
+	& .center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	& .eye {
+		background: #d8d8d8;
+		width: 150px;
+		height: 150px;
+		border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+		transform: rotate(45deg);
+		overflow: hidden;
+		position: relative;
+
+		& .pupil {
+			position: absolute;
+			top: calc(50% - 50px);
+			left: calc(50% - 50px);
+			width: 100px;
+			height: 100px;
+			background: #365314;
+			border-radius: 50%;
+			border: 35px solid #fff;
+			animation: eye-movement 4.9s ease-in-out infinite;
+		}
+
+		@keyframes eye-movement {
+			0%,
+			15% {
+				transform: translate(0);
+			}
+			25%,
+			40% {
+				transform: translateX(-30px) translateY(10px);
+			}
+			50%,
+			65% {
+				transform: translateX(40px) translateY(-10px);
+			}
+			75%,
+			90% {
+				transform: translateX(-30px) translateY(-10px);
+			}
+			100% {
+				transform: translateX(0) translateY(0);
+			}
+		}
+	}
+
+	& .lid {
+		background: #363847;
+		width: 300px;
+		height: 100px;
+		position: absolute;
+		z-index: 5;
+		animation: blinking-lids 750ms ease-in-out infinite alternate;
+
+		&.top {
+			--yOffset: 55px;
+			top: -50%;
+		}
+
+		&.bottom {
+			--yOffset: -55px;
+			bottom: -50%;
+		}
+
+		@keyframes blinking-lids {
+			100% {
+				transform: translateY(var(--yOffset));
+			}
+		}
+	}
+}
