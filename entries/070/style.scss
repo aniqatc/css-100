@@ -1,0 +1,41 @@
+.day-070 {
+	background: #121212;
+	color: #fff;
+	display: grid;
+	place-items: center;
+
+	.group {
+		display: flex;
+		flex-wrap: wrap;
+		height: 100%;
+		width: 100%;
+
+		& .card {
+			background: #e27474;
+			flex-basis: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			transition: all 300ms ease-out;
+
+			& .day {
+				display: block;
+			}
+
+			& .date {
+				display: block;
+				font-size: 64px;
+				font-weight: 600;
+				line-height: 1;
+			}
+
+			&:hover {
+				transform: scale(0.95);
+				box-shadow: inset 2px 2px 8px 2px rgba(0, 0, 0, 0.5),
+					inset -2px -2px 8px 2px rgba(0, 0, 0, 0.5);
+				cursor: pointer;
+			}
+		}
+	}
+}
