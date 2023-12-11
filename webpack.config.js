@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	mode: 'production',
@@ -84,18 +85,19 @@ module.exports = {
 				'og:description':
 					'Completing the 100 Days of CSS challenge to become an expert at writing CSS. My completed daily challenges are showcased on this website.',
 				'og:url': 'https://css100.aniqa.dev',
-				'og:image':
-					'https://raw.githubusercontent.com/aniqatc/css-100/main/src/assets/screenshot.png',
+				'og:image': 'https://css100.aniqa.dev/assets/screenshot.png',
 				'twitter:title': '100 Days of CSS by Aniqa',
 				'twitter:card': 'summary_large_image',
-				'twitter:image':
-					'https://raw.githubusercontent.com/aniqatc/css-100/main/src/assets/screenshot.png',
+				'twitter:image': 'https://css100.aniqa.dev/assets/screenshot.png',
 				'twitter:image:alt': "Screen capture of website's user interface",
 				'twitter:site': '@aniqatc',
 			},
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'all.css',
+		}),
+		new CopyPlugin({
+			patterns: [{ from: 'src/assets/screenshot.png', to: 'assets/screenshot.png' }],
 		}),
 	],
 };
