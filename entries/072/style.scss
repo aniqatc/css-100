@@ -1,0 +1,28 @@
+.day-072 {
+	background: #3498db;
+	color: #fff;
+	transform-style: preserve-3d;
+
+	& .circle {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		position: absolute;
+		top: calc(50% - 100px);
+		left: calc(50% - 100px);
+
+		@for $num from 1 through 11 {
+			&:nth-child(#{$num}) {
+				animation: circle-spin-#{$num} 5s ease infinite alternate;
+				animation-delay: $num * 100ms;
+			}
+
+			@keyframes circle-spin-#{$num} {
+				100% {
+					transform: rotateX(360deg) rotateY(360deg);
+				}
+			}
+		}
+	}
+}
