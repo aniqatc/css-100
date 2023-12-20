@@ -1,0 +1,46 @@
+.day-075 {
+	background: #d33526;
+	color: #fff;
+	perspective: 800px;
+
+	& .center {
+		position: absolute;
+		top: calc(50% - 100px);
+		left: calc(50% - 100px);
+		width: 200px;
+		height: 200px;
+		transform-style: preserve-3d;
+		animation: spinning-disc 5s ease-in-out infinite;
+
+		@keyframes spinning-disc {
+			0%,
+			100% {
+				transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+			}
+			25% {
+				transform: rotateY(45deg) rotateX(180deg) rotateZ(45deg);
+			}
+			50% {
+				transform: rotateY(180deg) rotateX(0deg) rotateZ(90deg);
+			}
+			75% {
+				transform: rotateY(45deg) rotateX(45deg) rotateZ(90deg);
+			}
+		}
+
+		& .disc {
+			background: #fff;
+			opacity: 0.2;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			position: absolute;
+
+			@for $num from 1 through 8 {
+				&:nth-child(#{$num}) {
+					transform: rotateX((360deg / 8) * $num);
+				}
+			}
+		}
+	}
+}
