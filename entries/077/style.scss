@@ -1,0 +1,49 @@
+.day-077 {
+	background: #9b59b6;
+	color: #fff;
+
+	& .ball {
+		background: #fff;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		animation: ball-movement 2s ease infinite;
+
+		@keyframes ball-movement {
+			0%,
+			100% {
+				transform: translateX(-130px);
+			}
+			50% {
+				transform: translateX(130px);
+			}
+		}
+
+		& .blur {
+			position: absolute;
+			inset: 0;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.25);
+
+			@for $num from 1 through 6 {
+				&.blur-#{$num} {
+					animation: blur-movement-#{$num} 2s ease-in infinite;
+				}
+
+				@keyframes blur-movement-#{$num} {
+					0%,
+					50%,
+					100% {
+						transform: translateX(0);
+					}
+					25% {
+						transform: translateX($num * -4px);
+					}
+					75% {
+						transform: translateX($num * 4px);
+					}
+				}
+			}
+		}
+	}
+}
