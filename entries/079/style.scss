@@ -1,0 +1,49 @@
+.day-079 {
+	background: #607d8b;
+	color: #fff;
+
+	& .center {
+		width: 40px;
+		height: 40px;
+
+		& .line {
+			position: absolute;
+			width: 40px;
+			height: 10px;
+			background: #fff;
+			top: 0;
+			left: 0;
+			transform-origin: center;
+
+			@for $i from 1 through 10 {
+				$base: $i - 1;
+				$degree: 36deg * $base;
+
+				&.line-#{$i} {
+					animation: line-#{$i} 6s ease-in-out infinite;
+				}
+
+				@keyframes line-#{$i} {
+					0%,
+					100% {
+						transform: rotate($degree) translate(100px) scale(0.5);
+						border-radius: 0;
+					}
+					25% {
+						transform: rotate($degree + 90deg) translate(150px) scale(1);
+						border-radius: 50%;
+					}
+					50% {
+						transform: rotate($degree + 180deg) translate(100px) scale(0.75);
+						border-radius: 0;
+						height: 40px;
+					}
+					75% {
+						transform: rotate($degree + 270deg) translate(50px) scale(1.25);
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}
