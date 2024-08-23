@@ -6,6 +6,7 @@ export function getMarkup() {
 		<a
 		href="https://github.com/aniqatc/css-100/tree/main/entries/080"
 	    target="_blank"
+		rel="noreferrer"
 		>Day 080: Flexbox Accordion</a
 		>
     </span>
