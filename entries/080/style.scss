@@ -1,0 +1,49 @@
+.day-080 {
+	background: #aa5454;
+	color: #dcb1b1;
+
+	& .center {
+		width: 100%;
+		height: 100%;
+		display: flex;
+
+		& .panel {
+			flex-basis: auto;
+			flex-grow: 1;
+			flex-shrink: 1;
+			width: 25%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 400ms ease;
+			cursor: pointer;
+			overflow: hidden;
+
+			&:nth-child(even) {
+				background: #a4071c;
+			}
+
+			& .text {
+				display: block;
+				text-align: center;
+				font-weight: bold;
+				font-size: 32px;
+				text-transform: uppercase;
+				opacity: 0;
+				transform: scale(0.7);
+				visibility: hidden;
+				transition: all 300ms ease;
+			}
+
+			&:hover {
+				width: 100%;
+
+				& .text {
+					visibility: visible;
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
