@@ -1,0 +1,59 @@
+.day-082 {
+	background: #bdcedb;
+	color: #121212;
+
+	& .btn-cb {
+		display: none;
+
+		&:checked ~ .btn-cb-label {
+			transform: translate(-50%, -50%) rotateX(180deg);
+			color: #fff;
+			background: #64c760;
+			border: 2px solid #fff;
+		}
+	}
+
+	& .btn-cb-label {
+		/* button styling */
+		background: #fff;
+		color: #121212;
+		border: 2px solid #fff;
+		border-radius: 50px;
+		box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+		/* positioning */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		/* sizing */
+		height: 50px;
+		width: 125px;
+		/* text */
+		text-align: center;
+		font-weight: 600;
+		letter-spacing: 1px;
+		/* behavior */
+		display: block;
+		transform-style: preserve-3d;
+		cursor: pointer;
+		transition: all 250ms ease-in;
+
+		%label-base {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			backface-visibility: hidden;
+		}
+
+		& .btn-cb-send {
+			@extend %label-base;
+			transform: translate(-50%, -50%) rotateX(0);
+		}
+
+		& .btn-cb-done {
+			@extend %label-base;
+			transform: translate(-50%, -50%) rotateX(180deg);
+		}
+	}
+}
