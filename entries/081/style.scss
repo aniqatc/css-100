@@ -1,0 +1,50 @@
+.day-081 {
+	background: #2f4f4f;
+	color: #fff;
+
+	& .top {
+		height: 400px;
+		width: 400px;
+		position: relative;
+
+		& .outer {
+			position: absolute;
+			height: 400px;
+			width: 35px;
+			animation: x-movement-ball 4.5s linear infinite alternate;
+
+			& .ball {
+				position: absolute;
+				background-color: #fff;
+				height: 35px;
+				width: 35px;
+				border-radius: 50%;
+				bottom: 0; /* Ensure the ball starts at the bottom */
+				animation: bouncing-movement-ball 4s infinite;
+			}
+		}
+	}
+
+	/* Horizontal animation */
+	@keyframes x-movement-ball {
+		from {
+			left: 0%;
+		}
+		to {
+			left: 100%;
+		}
+	}
+
+	/* Vertical bounce animation */
+	@keyframes bouncing-movement-ball {
+		0%,
+		100% {
+			bottom: 0;
+			animation-timing-function: ease-out;
+		}
+		50% {
+			bottom: 275px; /* Bounce height */
+			animation-timing-function: ease-in;
+		}
+	}
+}
