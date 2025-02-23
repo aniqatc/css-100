@@ -1,3 +1,5 @@
+import Me from './images/me4.png';
+
 export function getMarkup() {
 	return `
 	<!-- Day 006 -->
@@ -17,7 +19,7 @@ export function getMarkup() {
 					<span class="profile--circle profile--circle-1"></span>
 					<span class="profile--circle profile--circle-2"></span>
 					<img
-						src="https://www.aniqa.dev/assets/me.png"
+						src="${Me}"
 						alt="profile avatar of aniqa"
 					/>
 				</div>
@@ -26,8 +28,8 @@ export function getMarkup() {
 					<span class="text-sm">Frontend Developer</span>
 				</div>
 				<div class="profile--buttons">
-					<a href="https://twitter.com/aniqatc">Twitter</a>
-					<a href="https://aniqa.dev">Website</a>
+					<a href="https://github.com/aniqatc" target="_blank">Github</a>
+					<a href="https://aniqa.dev" target="_blank">Website</a>
 				</div>
 			</div>
 			<div class="profile-stats">
